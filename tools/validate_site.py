@@ -2,6 +2,7 @@
 """Static validation: pages, asset references, data integrity, WhatsApp links."""
 import json
 import re
+from collections import Counter
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -36,29 +37,33 @@ for p in plans:
     if not p["centre"] or not p["name"]:
         errors.append(f"{p['id']}: missing basic data")
 
-# Expected category counts
-from collections import Counter
 c = Counter(p["category"] for p in plans)
 for cat, n in [("general", 12), ("abdominal", 12), ("women", 12), ("cancer", 12)]:
     if c[cat] != n:
         errors.append(f"category {cat}: expected {n}, got {c[cat]}")
 
-# Featured images
-for i in range(1, 7):
-    f = ROOT / "assets" / "images" / f"e{i:02d}.svg"
-    if not f.exists():
-        errors.append(f"missing featured image {f.name}")
+featured_ids = re.findall(r'"id"\s*:\s*"(e0[1-6])"', featured_js)
+if sorted(featured_ids) != [f"e{i:02d}" for i in range(1, 7)]:
+    errors.append(f"featured ids: expected e01-e06, got {sorted(featured_ids)}")
+
+plan_imgs = [p["image"] for p in plans]
+featured_imgs = re.findall(r'"image"\s*:\s*"(assets/images/[^"]+)"', featured_js)
+all_imgs = plan_imgs + featured_imgs
+if len(all_imgs) != 54:
+    errors.append(f"expected 54 image references, got {len(all_imgs)}")
+if len(set(all_imgs)) != len(all_imgs):
+    dupes = [x for x, n in Counter(all_imgs).items() if n > 1]
+    errors.append(f"duplicate image references: {dupes}")
+for rel in all_imgs:
+    if not (ROOT / rel).exists():
+        errors.append(f"missing image: {rel}")
 
 app = (ROOT / "assets" / "js" / "app.js").read_text(encoding="utf-8")
 for needle in ['WA_NUMBER = "85246151993"', "encodeURIComponent", "無授權本平台代為 Booking", "plan-detail.html?id="]:
     if needle not in app:
         errors.append(f"app.js missing expected string: {needle}")
 
-unique_imgs = list((ROOT / "assets" / "images").glob("*.svg"))
-if len(unique_imgs) < 55:
-    warnings.append(f"only {len(unique_imgs)} svg images found")
-
-print(f"pages={len(pages)} plans={len(plans)} images={len(unique_imgs)}")
+print(f"pages={len(pages)} plans={len(plans)} images={len(set(all_imgs))}")
 print(f"errors={len(errors)} warnings={len(warnings)}")
 for e in errors:
     print("ERROR:", e)

@@ -42,11 +42,17 @@ import json
 plans = json.load(open("data/plans.json", encoding="utf-8"))
 featured_txt = open("data/featured.js", encoding="utf-8").read()
 imgs = set(p["image"] for p in plans)
-imgs |= set(re.findall(r'image:\s*"(assets/images/[^"]+)"', featured_txt))
+imgs |= set(re.findall(r'"image"\s*:\s*"(assets/images/[^"]+)"', featured_txt))
 img_errors = 0
 for img in sorted(imgs):
     status, body = fetch(img)
-    if status != 200 or b"<svg" not in body[:200]:
+    valid = status == 200 and (
+        b"<svg" in body[:200]
+        or body.startswith(b"\x89PNG")
+        or body.startswith(b"\xff\xd8\xff")
+        or b"WEBP" in body[:16]
+    )
+    if not valid:
         img_errors += 1
         print(f"IMG FAIL {img}: status={status}")
 print(f"IMAGES total={len(imgs)} failures={img_errors}")

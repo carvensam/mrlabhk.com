@@ -138,7 +138,7 @@ window.PLANS_DATA = [
     "sourceUrl": "https://health.esdlife.com/shop/hk/product/美邦-成人升級全面身體檢查-e-優惠時段",
     "authorised": false,
     "featured": false,
-    "image": "assets/images/g01.svg"
+    "image": "assets/images/g01.webp"
   },
   {
     "id": "g02",
@@ -218,7 +218,7 @@ window.PLANS_DATA = [
     "sourceUrl": "https://health.esdlife.com/shop/hk/product/德信醫療-全面優越健康檢查2項超聲波及4項癌症指標",
     "authorised": false,
     "featured": false,
-    "image": "assets/images/g02.svg"
+    "image": "assets/images/g02.webp"
   },
   {
     "id": "g03",
@@ -718,7 +718,7 @@ window.PLANS_DATA = [
     "sourceUrl": "https://health.esdlife.com/shop/hk/product/卓健醫療-全面身體檢查-白金-2",
     "authorised": false,
     "featured": false,
-    "image": "assets/images/g03.svg"
+    "image": "assets/images/g03.webp"
   },
   {
     "id": "g04",
@@ -807,7 +807,7 @@ window.PLANS_DATA = [
     "sourceUrl": "https://health.esdlife.com/shop/hk/product/時代-卓越健康檢查",
     "authorised": false,
     "featured": false,
-    "image": "assets/images/g04.svg"
+    "image": "assets/images/g04.webp"
   },
   {
     "id": "g05",
@@ -880,7 +880,7 @@ window.PLANS_DATA = [
     "sourceUrl": "https://health.esdlife.com/shop/hk/product/壹森健康-esd-標準全面檢查-3項癌症指標及心電圖",
     "authorised": false,
     "featured": false,
-    "image": "assets/images/g05.svg"
+    "image": "assets/images/g05.webp"
   },
   {
     "id": "g06",
@@ -946,7 +946,7 @@ window.PLANS_DATA = [
     "sourceUrl": "https://health.esdlife.com/shop/hk/product/晉上醫療-優尚健康檢查",
     "authorised": false,
     "featured": false,
-    "image": "assets/images/g06.svg"
+    "image": "assets/images/g06.webp"
   },
   {
     "id": "g07",
@@ -1041,7 +1041,7 @@ window.PLANS_DATA = [
     "sourceUrl": "https://health.esdlife.com/shop/hk/product/毅力kinetics特選周年身體檢查計劃-卓越",
     "authorised": false,
     "featured": false,
-    "image": "assets/images/g07.svg"
+    "image": "assets/images/g07.webp"
   },
   {
     "id": "g08",
@@ -1109,7 +1109,7 @@ window.PLANS_DATA = [
     "sourceUrl": "https://health.esdlife.com/shop/hk/product/尚醫-特選健康檢查-2項超聲波及癌症指標",
     "authorised": false,
     "featured": false,
-    "image": "assets/images/g08.svg"
+    "image": "assets/images/g08.webp"
   },
   {
     "id": "g09",
@@ -1180,7 +1180,7 @@ window.PLANS_DATA = [
     "sourceUrl": "https://health.esdlife.com/shop/hk/product/港怡醫院-至尊迅捷檢查計劃套餐-即日獲取報告分析",
     "authorised": false,
     "featured": false,
-    "image": "assets/images/g09.svg"
+    "image": "assets/images/g09.webp"
   },
   {
     "id": "g10",
@@ -1242,7 +1242,7 @@ window.PLANS_DATA = [
     "sourceUrl": "https://health.esdlife.com/shop/hk/product/仁安體檢中心-全面健康檢查計劃",
     "authorised": false,
     "featured": false,
-    "image": "assets/images/g10.svg"
+    "image": "assets/images/g10.webp"
   },
   {
     "id": "g11",
@@ -1327,7 +1327,7 @@ window.PLANS_DATA = [
     "sourceUrl": "https://health.esdlife.com/shop/hk/product/全仁醫務-皇牌健康檢查",
     "authorised": false,
     "featured": false,
-    "image": "assets/images/g11.svg"
+    "image": "assets/images/g11.webp"
   },
   {
     "id": "g12",
@@ -1401,7 +1401,7 @@ window.PLANS_DATA = [
     "sourceUrl": "https://health.esdlife.com/shop/hk/product/九龍半島醫學中心-特選全面身體檢查-上腹超聲波及3項癌症指標",
     "authorised": false,
     "featured": false,
-    "image": "assets/images/g12.svg"
+    "image": "assets/images/g12.webp"
   },
   {
     "id": "a01",
@@ -1467,7 +1467,7 @@ window.PLANS_DATA = [
     "sourceUrl": "https://health.esdlife.com/shop/hk/product/晉上醫療-全腹超聲波檢查-2項癌症指標",
     "authorised": false,
     "featured": false,
-    "image": "assets/images/a01.svg"
+    "image": "assets/images/a01.webp"
   },
   {
     "id": "a02",
@@ -1559,7 +1559,7 @@ window.PLANS_DATA = [
     "sourceUrl": "https://health.esdlife.com/shop/hk/product/美邦-全腹超聲波計劃",
     "authorised": false,
     "featured": false,
-    "image": "assets/images/a02.svg"
+    "image": "assets/images/a02.webp"
   },
   {
     "id": "a03",
@@ -1662,7 +1662,7 @@ window.PLANS_DATA = [
     "sourceUrl": "https://health.esdlife.com/shop/hk/product/博思醫學-ct上腹部-無顯影劑",
     "authorised": false,
     "featured": false,
-    "image": "assets/images/a03.svg"
+    "image": "assets/images/a03.webp"
   },
   {
     "id": "a04",
@@ -1766,7 +1766,7 @@ window.PLANS_DATA = [
     "sourceUrl": "https://health.esdlife.com/shop/hk/product/博思醫學-全腹部上腹及骨盆腔磁力共振-顯影劑",
     "authorised": false,
     "featured": false,
-    "image": "assets/images/a04.svg"
+    "image": "assets/images/a04.webp"
   },
   {
     "id": "a05",
@@ -1820,7 +1820,7 @@ window.PLANS_DATA = [
     "sourceUrl": "https://health.esdlife.com/shop/hk/product/仁輝專科-胃及大腸內視鏡套餐",
     "authorised": false,
     "featured": false,
-    "image": "assets/images/a05.svg"
+    "image": "assets/images/a05.webp"
   },
   {
     "id": "a06",
@@ -1863,7 +1863,7 @@ window.PLANS_DATA = [
     "sourceUrl": "https://health.esdlife.com/shop/hk/product/九龍半島醫學中心-大腸鏡檢查",
     "authorised": false,
     "featured": false,
-    "image": "assets/images/a06.svg"
+    "image": "assets/images/a06.webp"
   },
   {
     "id": "a07",
@@ -1908,7 +1908,7 @@ window.PLANS_DATA = [
     "sourceUrl": "https://health.esdlife.com/shop/hk/product/中環hd-胃及大腸內視鏡套餐",
     "authorised": false,
     "featured": false,
-    "image": "assets/images/a07.svg"
+    "image": "assets/images/a07.webp"
   },
   {
     "id": "a08",
@@ -1960,7 +1960,7 @@ window.PLANS_DATA = [
     "sourceUrl": "https://health.esdlife.com/shop/hk/product/中環專科-腸胃健康檢查",
     "authorised": false,
     "featured": false,
-    "image": "assets/images/a08.svg"
+    "image": "assets/images/a08.webp"
   },
   {
     "id": "a09",
@@ -2013,7 +2013,7 @@ window.PLANS_DATA = [
     "sourceUrl": "https://health.esdlife.com/shop/hk/product/香港駿檢-胃部健康檢查計劃",
     "authorised": false,
     "featured": false,
-    "image": "assets/images/a09.svg"
+    "image": "assets/images/a09.webp"
   },
   {
     "id": "a10",
@@ -2070,7 +2070,7 @@ window.PLANS_DATA = [
     "sourceUrl": "https://health.esdlife.com/shop/hk/product/時代-脂肪肝全面檢查計劃",
     "authorised": false,
     "featured": false,
-    "image": "assets/images/a10.svg"
+    "image": "assets/images/a10.webp"
   },
   {
     "id": "a11",
@@ -2128,7 +2128,7 @@ window.PLANS_DATA = [
     "sourceUrl": "https://health.esdlife.com/shop/hk/product/明德醫療中心-肝臟健康檢查計劃",
     "authorised": false,
     "featured": false,
-    "image": "assets/images/a11.svg"
+    "image": "assets/images/a11.webp"
   },
   {
     "id": "a12",
@@ -2182,7 +2182,7 @@ window.PLANS_DATA = [
     "sourceUrl": "https://health.esdlife.com/shop/hk/product/富樂醫療-肝功能健康檢查-肝纖維化掃瞄-由普通科醫生主理",
     "authorised": false,
     "featured": false,
-    "image": "assets/images/a12.svg"
+    "image": "assets/images/a12.webp"
   },
   {
     "id": "w01",
@@ -2285,7 +2285,7 @@ window.PLANS_DATA = [
     "sourceUrl": "https://health.esdlife.com/shop/hk/product/美邦活得精彩女性週年身體檢查-優越計劃優惠時段",
     "authorised": false,
     "featured": false,
-    "image": "assets/images/w01.svg"
+    "image": "assets/images/w01.webp"
   },
   {
     "id": "w02",
@@ -2345,7 +2345,7 @@ window.PLANS_DATA = [
     "sourceUrl": "https://health.esdlife.com/shop/hk/product/尚醫-女性全面健康檢查-7項超聲波及2項癌症指標",
     "authorised": false,
     "featured": false,
-    "image": "assets/images/w02.svg"
+    "image": "assets/images/w02.webp"
   },
   {
     "id": "w03",
@@ -2431,7 +2431,7 @@ window.PLANS_DATA = [
     "sourceUrl": "https://health.esdlife.com/shop/hk/product/德信醫療-女士健康護航檢查計劃-5項癌症指標",
     "authorised": false,
     "featured": false,
-    "image": "assets/images/w03.svg"
+    "image": "assets/images/w03.webp"
   },
   {
     "id": "w04",
@@ -2495,7 +2495,7 @@ window.PLANS_DATA = [
     "sourceUrl": "https://health.esdlife.com/shop/hk/product/仁安體檢中心-尊尚女士健康檢查計劃",
     "authorised": false,
     "featured": false,
-    "image": "assets/images/w04.svg"
+    "image": "assets/images/w04.webp"
   },
   {
     "id": "w05",
@@ -2585,7 +2585,7 @@ window.PLANS_DATA = [
     "sourceUrl": "https://health.esdlife.com/shop/hk/product/時代-尊貴婦科超聲波及癌症檢查-連子宮頸癌篩查",
     "authorised": false,
     "featured": false,
-    "image": "assets/images/w05.svg"
+    "image": "assets/images/w05.webp"
   },
   {
     "id": "w06",
@@ -2651,7 +2651,7 @@ window.PLANS_DATA = [
     "sourceUrl": "https://health.esdlife.com/shop/hk/product/晉上醫療-女士至尊身體檢查-9項超聲波",
     "authorised": false,
     "featured": false,
-    "image": "assets/images/w06.svg"
+    "image": "assets/images/w06.webp"
   },
   {
     "id": "w07",
@@ -2759,7 +2759,7 @@ window.PLANS_DATA = [
     "sourceUrl": "https://health.esdlife.com/shop/hk/product/聯合醫務-優越女士驗身計劃",
     "authorised": false,
     "featured": false,
-    "image": "assets/images/w07.svg"
+    "image": "assets/images/w07.webp"
   },
   {
     "id": "w08",
@@ -2827,7 +2827,7 @@ window.PLANS_DATA = [
     "sourceUrl": "https://health.esdlife.com/shop/hk/product/香港婦檢-女士全面健康檢查計劃-40-歲以上",
     "authorised": false,
     "featured": false,
-    "image": "assets/images/w08.svg"
+    "image": "assets/images/w08.webp"
   },
   {
     "id": "w09",
@@ -2908,7 +2908,7 @@ window.PLANS_DATA = [
     "sourceUrl": "https://health.esdlife.com/shop/hk/product/全仁醫務-優越婦科檢查計劃-5項超聲波及2項癌症指標",
     "authorised": false,
     "featured": false,
-    "image": "assets/images/w09.svg"
+    "image": "assets/images/w09.webp"
   },
   {
     "id": "w10",
@@ -2972,7 +2972,7 @@ window.PLANS_DATA = [
     "sourceUrl": "https://health.esdlife.com/shop/hk/product/中環專科-精選全面女士健康檢查",
     "authorised": false,
     "featured": false,
-    "image": "assets/images/w10.svg"
+    "image": "assets/images/w10.webp"
   },
   {
     "id": "w11",
@@ -3032,7 +3032,7 @@ window.PLANS_DATA = [
     "sourceUrl": "https://health.esdlife.com/shop/hk/product/基研健康醫療-女士身體檢查計劃",
     "authorised": false,
     "featured": false,
-    "image": "assets/images/w11.svg"
+    "image": "assets/images/w11.webp"
   },
   {
     "id": "w12",
@@ -3088,7 +3088,7 @@ window.PLANS_DATA = [
     "sourceUrl": "https://health.esdlife.com/shop/hk/product/仁安醫院-升級女士健康檢查計劃超聲波檢查",
     "authorised": false,
     "featured": false,
-    "image": "assets/images/w12.svg"
+    "image": "assets/images/w12.webp"
   },
   {
     "id": "c01",
@@ -3164,7 +3164,7 @@ window.PLANS_DATA = [
     "sourceUrl": "https://health.esdlife.com/shop/hk/product/美邦-女性全面癌指標檢查組合",
     "authorised": false,
     "featured": false,
-    "image": "assets/images/c01.svg"
+    "image": "assets/images/c01.webp"
   },
   {
     "id": "c02",
@@ -3231,7 +3231,7 @@ window.PLANS_DATA = [
     "sourceUrl": "https://health.esdlife.com/shop/hk/product/港安醫療中心太古坊-esd-男士癌症指標健康計劃-由普通科醫生主理",
     "authorised": false,
     "featured": false,
-    "image": "assets/images/c02.svg"
+    "image": "assets/images/c02.webp"
   },
   {
     "id": "c03",
@@ -3282,7 +3282,7 @@ window.PLANS_DATA = [
     "sourceUrl": "https://health.esdlife.com/shop/hk/product/晉上醫療-女性癌症預防檢查",
     "authorised": false,
     "featured": false,
-    "image": "assets/images/c03.svg"
+    "image": "assets/images/c03.webp"
   },
   {
     "id": "c04",
@@ -3335,7 +3335,7 @@ window.PLANS_DATA = [
     "sourceUrl": "https://health.esdlife.com/shop/hk/product/仁和體檢-腫瘤標記combo套餐女性",
     "authorised": false,
     "featured": false,
-    "image": "assets/images/c04.svg"
+    "image": "assets/images/c04.webp"
   },
   {
     "id": "c05",
@@ -3409,7 +3409,7 @@ window.PLANS_DATA = [
     "sourceUrl": "https://health.esdlife.com/shop/hk/product/時代-消化系統癌症檢查計劃-綜合",
     "authorised": false,
     "featured": false,
-    "image": "assets/images/c05.svg"
+    "image": "assets/images/c05.webp"
   },
   {
     "id": "c06",
@@ -3468,7 +3468,7 @@ window.PLANS_DATA = [
     "sourceUrl": "https://health.esdlife.com/shop/hk/product/香港專科-女士癌症篩查",
     "authorised": false,
     "featured": false,
-    "image": "assets/images/c06.svg"
+    "image": "assets/images/c06.webp"
   },
   {
     "id": "c07",
@@ -3521,7 +3521,7 @@ window.PLANS_DATA = [
     "sourceUrl": "https://health.esdlife.com/shop/hk/product/中環專科-早期癌症篩查計劃-進階版",
     "authorised": false,
     "featured": false,
-    "image": "assets/images/c07.svg"
+    "image": "assets/images/c07.webp"
   },
   {
     "id": "c08",
@@ -3626,7 +3626,7 @@ window.PLANS_DATA = [
     "sourceUrl": "https://health.esdlife.com/shop/hk/product/博思醫學-肺炎及早期肺癌篩查-ldct低劑量肺部電腦掃描",
     "authorised": false,
     "featured": false,
-    "image": "assets/images/c08.svg"
+    "image": "assets/images/c08.webp"
   },
   {
     "id": "c09",
@@ -3780,7 +3780,7 @@ window.PLANS_DATA = [
     "sourceUrl": "https://health.esdlife.com/shop/hk/product/新都醫療-全面星級肝癌風險評估",
     "authorised": false,
     "featured": false,
-    "image": "assets/images/c09.svg"
+    "image": "assets/images/c09.webp"
   },
   {
     "id": "c10",
@@ -3826,7 +3826,7 @@ window.PLANS_DATA = [
     "sourceUrl": "https://health.esdlife.com/shop/hk/product/基研健康醫療-胃癌篩檢組合",
     "authorised": false,
     "featured": false,
-    "image": "assets/images/c10.svg"
+    "image": "assets/images/c10.webp"
   },
   {
     "id": "c11",
@@ -3895,7 +3895,7 @@ window.PLANS_DATA = [
     "sourceUrl": "https://health.esdlife.com/shop/hk/product/天馬醫療-大腸健康篩查計劃",
     "authorised": false,
     "featured": false,
-    "image": "assets/images/c11.svg"
+    "image": "assets/images/c11.webp"
   },
   {
     "id": "c12",
@@ -3948,6 +3948,6 @@ window.PLANS_DATA = [
     "sourceUrl": "https://health.esdlife.com/shop/hk/product/明確醫療-癌症循環腫瘤細胞篩檢計劃-ctc",
     "authorised": false,
     "featured": false,
-    "image": "assets/images/c12.svg"
+    "image": "assets/images/c12.webp"
   }
 ];

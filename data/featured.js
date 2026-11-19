@@ -418,7 +418,7 @@ window.FEATURED_DATA = [
     "dataNote": "資料根據保協（LUAHK）公開會員優惠頁整理，優惠價及會員資格條款以該頁面及體檢中心最新公布為準。",
     "authorised": false,
     "featured": true,
-    "image": "assets/images/e06.svg",
+    "image": "assets/images/e06.webp",
     "bookingMode": "source-enquiry",
     "validityNote": "公開會員優惠；優惠資格及最新條款請先查詢來源。"
   }
