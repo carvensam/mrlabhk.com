@@ -32,6 +32,12 @@ python -m http.server 8123
 - 本站不設網頁 Booking 或線上付款。所有 WhatsApp 連結均為 `https://wa.me/85246151993` 並帶入計劃名稱。
 - 未授權中心之卡片與詳情頁均註明「該體檢中心無授權本平台代為 Booking，請直接聯絡該體檢中心自行預約」。
 
-## 部署
+## 部署狀態
 
-GitHub Repository + GitHub Pages，自訂網域 `www.mrlabhk.com`，Enforce HTTPS。DNS 於 GoDaddy 設定。
+- ✅ GitHub Repository：`carvensam/mrlabhk.com`（public），`main` branch 已推送。
+- ✅ GitHub Pages 已啟用（`built`），CNAME = `www.mrlabhk.com`。
+- ⏳ Enforce HTTPS：待 DNS 指向 GitHub、SSL 憑證簽發後開啟。
+- ❌ GoDaddy DNS：尚未設定（仍指向停車 IP）。詳細手動步驟見 `GODADDY_DNS_SETUP.md`。
+
+DNS 生效後執行 `python tools/github_pages_status.py` 開啟 Enforce HTTPS，
+並以 `https://www.mrlabhk.com` 驗證。
