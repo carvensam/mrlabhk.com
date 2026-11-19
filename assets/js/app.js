@@ -26,8 +26,64 @@
     return null;
   }
 
+  function isSourceEnquiry(p) {
+    return p.bookingMode === "source-enquiry";
+  }
+
+  function isPoster(p) {
+    return p.imageKind === "poster";
+  }
+
+  function bookingBadge(p) {
+    if (isSourceEnquiry(p)) {
+      return '<span class="badge badge--enquiry">' + (isPoster(p) ? "MrLab貼文優惠" : "優惠查詢") + "</span>";
+    }
+    if (p.authorised === true) return '<span class="badge badge--auth">可經本平台查詢預約</span>';
+    if (p.authorised === false) return '<span class="badge badge--noauth">無授權本平台代訂</span>';
+    return '<span class="badge badge--enquiry">優惠查詢</span>';
+  }
+
+  function bookingNote(p) {
+    if (isSourceEnquiry(p)) {
+      return (isPoster(p) ? "MrLab貼文" : "公開優惠資料") + "列明由" + p.centre + "提供，請經WhatsApp查詢最新收費、服務地點及預約安排。";
+    }
+    if (p.authorised === true) return "此計劃由" + p.centre + "提供，可經本平台 WhatsApp 查詢及預約。";
+    if (p.authorised === false) return "此體檢中心無授權本平台代為 Booking，請直接聯絡該體檢中心自行預約。";
+    return "請經 WhatsApp 查詢最新收費、服務地點及預約安排。";
+  }
+
+  function centreBadges(c) {
+    var seen = {};
+    return c.plans.map(function (p) {
+      if (!isSourceEnquiry(p) && p.authorised === false) return "";
+      var badge = bookingBadge(p);
+      if (seen[badge]) return "";
+      seen[badge] = true;
+      return badge;
+    }).join("");
+  }
+
+  function locationSummary(c) {
+    return (c.locations.length ? c.locations.length + " 個地點" : "服務地點待查詢") + " · " + c.plans.length + " 個計劃";
+  }
+
+  function priceLabel(p) {
+    return isPoster(p) ? "貼文標示／參考價" : "網上售價／參考價";
+  }
+
+  function planImage(p, detail) {
+    var poster = isPoster(p);
+    var alt = poster ? "MrLab Facebook 優惠貼文海報：" + p.name + "（服務提供者：" + p.centre + "）" : p.name + " 專屬配圖";
+    var cls = detail ? (poster ? ' class="detail-img--poster"' : "") : ' class="card-img' + (poster ? " card-img--poster" : "") + '"';
+    var img = "<img" + cls + ' src="' + esc(p.image) + '" alt="' + esc(alt) + '"' + (detail ? "" : ' loading="lazy"') + ">";
+    return poster ? '<a class="poster-link" href="' + esc(p.image) + '" target="_blank" rel="noopener" aria-label="' + esc("查看原始優惠海報：" + p.name) + '">' + img + "</a>" : img;
+  }
+
   function waText(p) {
-    if (p.authorised) {
+    if (isSourceEnquiry(p) || p.authorised == null) {
+      return "你好，我想查詢【" + p.name + "】（" + p.code + "，資料列明服務提供者：" + p.centre + "）。請問最新收費、優惠是否仍適用、適用資格、檢查詳情、服務地點、可用時段及預約安排？";
+    }
+    if (p.authorised === true) {
       return "你好，我想查詢及預約【" + p.name + "】（" + p.code + "），請提供詳情及可用時段。";
     }
     return "你好，我想查詢【" + p.name + "】（" + p.code + "）。本人了解該體檢中心無授權本平台代為 Booking，會直接聯絡該體檢中心自行預約，請提供聯絡方式。";
@@ -89,11 +145,11 @@
     document.getElementById("site-footer").innerHTML =
       '<div class="container">' +
         '<div class="footer-grid">' +
-          '<div><h4>MR LAB 化驗所優惠站</h4><p>重質與收費透明，不比機構數量。整理香港體檢計劃資料，方便你客觀比較檢查內容、價格與分店資訊。</p>' +
+          '<div><h4>MR LAB 化驗所優惠站</h4><p>重質與收費透明，不比機構數量。整理香港體檢計劃資料，方便你客觀比較檢查內容、價格與服務地點資訊。</p>' +
             '<p class="disclaimer">所有價格及資料僅供參考，實際內容、可用時段及收費以體檢中心及出處頁面最新公布為準。</p></div>' +
           '<div><h4>網站導覽</h4><ul><li><a href="index.html">首頁</a></li><li><a href="plans.html">全部體檢計劃</a></li><li><a href="centres.html">體檢中心列表</a></li><li><a href="about.html">關於我們</a></li><li><a href="partner.html">加入我們</a></li></ul></div>' +
           '<div><h4>分類</h4><ul><li><a href="plans.html?cat=general">一般／全身</a></li><li><a href="plans.html?cat=abdominal">腹腔相關</a></li><li><a href="plans.html?cat=women">女性</a></li><li><a href="plans.html?cat=cancer">癌症相關</a></li></ul></div>' +
-          '<div><h4>聯絡</h4><ul><li>WhatsApp / 電話：4615 1993</li><li>擁有者電郵：welldonemarketinghk@gmail.com</li><li><a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook 專頁</a></li></ul>' +
+          '<div><h4>聯絡</h4><ul><li>WhatsApp / 電話：4615 1993</li><li>擁有者電郵：welldonemarketinghk@gmail.com</li><li><a href="https://www.facebook.com/profile.php?id=61562009227913" target="_blank" rel="noopener">Facebook 專頁</a></li></ul>' +
             '<a class="btn btn--primary btn--small" style="margin-top:10px" href="https://wa.me/' + WA_NUMBER + '" target="_blank" rel="noopener">WhatsApp 4615 1993</a></div>' +
         "</div>" +
         '<div class="footer-bottom"><span>© ' + new Date().getFullYear() + ' MR Lab 化驗所優惠站. All rights reserved.</span>' +
@@ -102,21 +158,18 @@
   }
 
   function planCard(p) {
-    var authBadge = p.authorised
-      ? '<span class="badge badge--auth">可經本平台查詢預約</span>'
-      : '<span class="badge badge--noauth">無授權本平台代訂</span>';
-    var note = p.authorised
-      ? ""
-      : '<p class="note">此體檢中心無授權本平台代為 Booking，請直接聯絡該體檢中心自行預約。</p>';
+    var authBadge = bookingBadge(p);
+    var note = !isSourceEnquiry(p) && p.authorised === true ? "" : '<p class="note' + (isSourceEnquiry(p) ? " note--enquiry" : "") + '">' + esc(bookingNote(p)) + "</p>";
+    if (p.validityNote) note += '<p class="note note--enquiry">' + esc(p.validityNote) + "</p>";
     return '<article class="card">' +
-      '<img class="card-img" src="' + esc(p.image) + '" alt="' + esc(p.name) + ' 專屬配圖" loading="lazy">' +
+      planImage(p, false) +
       '<div class="card-body">' +
         '<div class="card-top"><span class="badge badge--code">' + esc(p.code) + "</span>" +
           '<span class="badge badge--cat">' + esc(CAT_LABEL[p.category] || p.categoryLabel || "體檢計劃") + "</span>" + authBadge + "</div>" +
         "<h3>" + esc(p.name) + "</h3>" +
         '<p class="centre">' + esc(p.centre) + (p.itemCount ? " · " + esc(p.itemCount) : "") + "</p>" +
         '<p class="summary">' + esc(p.highlight || "請查看完整檢查內容") + "</p>" +
-        '<div class="price-row"><span class="price-label">網上售價／參考價</span><span class="price-value">' + esc(money(p)) + "</span></div>" +
+        '<div class="price-row"><span class="price-label">' + priceLabel(p) + '</span><span class="price-value">' + esc(money(p)) + "</span></div>" +
         '<div class="card-actions">' +
           '<a class="btn btn--outline btn--small" href="plan-detail.html?id=' + encodeURIComponent(p.id) + '">查看詳情 ' + icon("arrow") + "</a>" +
           '<a class="btn btn--whatsapp btn--small" href="' + waLink(p) + '" target="_blank" rel="noopener">' + icon("whatsapp") + " WhatsApp 查詢</a>" +
@@ -143,12 +196,12 @@
     document.getElementById("centre-preview").innerHTML = centres.slice(0, 6).map(function (c, i) {
       return '<article class="card centre-card">' +
         '<div class="card-top"><span class="badge badge--code">' + String(i + 1).padStart(2, "0") + "</span>" +
-          (c.name.indexOf("醫家") === 0 ? '<span class="badge badge--auth">可查詢預約</span>' : "") + "</div>" +
+          centreBadges(c) + "</div>" +
         "<h3>" + esc(c.name) + "</h3>" +
-        '<p class="meta">' + c.locations.length + " 個地點 · " + c.plans.length + " 個計劃</p>" +
-        '<ul>' + c.locations.slice(0, 2).map(function (l) {
+        '<p class="meta">' + locationSummary(c) + "</p>" +
+        (c.locations.length ? '<ul>' + c.locations.slice(0, 2).map(function (l) {
           return "<li>" + esc(l.name) + '<div class="addr">' + esc(l.address || "地址請向中心查詢") + "</div></li>";
-        }).join("") + "</ul>" +
+        }).join("") + "</ul>" : '<p class="meta">請經 WhatsApp 查詢服務地點及時間</p>') +
         '<a class="text-link" href="centres.html">查看體檢中心列表 ' + icon("arrow") + "</a></article>";
     }).join("");
   }
@@ -235,35 +288,37 @@
         (l.note ? '<p><span class="lbl">備註</span>' + esc(l.note) + "</p>" : "") +
         "</div>";
     }).join("");
-    var authNote = p.authorised
-      ? "此計劃由醫家健康體檢中心提供，可經本平台 WhatsApp 查詢及預約。"
-      : "此體檢中心無授權本平台代為 Booking，請直接聯絡該體檢中心自行預約。";
+    var authNote = bookingNote(p);
 
     root.innerHTML =
       '<div class="page-head"><div class="container"><div class="breadcrumb"><a href="index.html">首頁</a> / <a href="plans.html">全部體檢計劃</a> / ' + esc(p.code) + "</div>" +
         '<span class="badge badge--code">' + esc(p.code) + "</span> " +
         '<span class="badge badge--cat">' + esc(CAT_LABEL[p.category] || p.categoryLabel) + "</span> " +
-        (p.authorised ? '<span class="badge badge--auth">可經本平台查詢預約</span>' : '<span class="badge badge--noauth">無授權本平台代訂</span>') +
-        "<h1>" + esc(p.name) + "</h1><p>" + esc(p.centre) + " · " + esc(p.itemCount) + " · " + esc(money(p)) + "</p></div></div>" +
+        bookingBadge(p) +
+        "<h1>" + esc(p.name) + "</h1><p>" + esc(p.centre) + (p.itemCount ? " · " + esc(p.itemCount) : "") + " · " + esc(money(p)) + "</p></div></div>" +
       '<div class="container section"><div class="detail-layout"><div class="detail-main">' +
-        '<img src="' + esc(p.image) + '" alt="' + esc(p.name) + ' 專屬配圖">' +
+        planImage(p, true) +
         '<div class="detail-content">' +
+          (isPoster(p) ? '<p class="poster-view"><a class="text-link" href="' + esc(p.image) + '" target="_blank" rel="noopener">查看原始優惠海報（亦可點擊上方圖片）</a></p>' : "") +
           "<h2>基本資料</h2><dl class=\"kv\">" +
             "<dt>計劃名稱</dt><dd>" + esc(p.name) + "</dd>" +
-            "<dt>體檢中心</dt><dd>" + esc(p.centre) + "</dd>" +
+            "<dt>服務提供者</dt><dd>" + esc(p.centre) + "</dd>" +
             "<dt>標示項目數</dt><dd>" + esc(p.itemCount || "n.a.") + "</dd>" +
-            "<dt>網上售價</dt><dd>" + esc(money(p)) + "</dd>" +
+            "<dt>" + priceLabel(p) + "</dt><dd>" + esc(money(p)) + "</dd>" +
             "<dt>出處</dt><dd>" + esc(p.source || "n.a.") + "</dd>" +
             "<dt>出處網址</dt><dd>" + (p.sourceUrl ? '<a class="text-link" href="' + esc(p.sourceUrl) + '" target="_blank" rel="noopener">' + esc(p.sourceUrl) + "</a>" : "n.a.") + "</dd>" +
+            (p.sourceCheckedAt ? "<dt>來源核對日期</dt><dd>" + esc(p.sourceCheckedAt) + "</dd>" : "") +
+            (p.validityNote ? "<dt>優惠適用提醒</dt><dd>" + esc(p.validityNote) + "</dd>" : "") +
           "</dl>" +
           "<h2>適用對象及重點</h2><ul>" + audience + "</ul>" +
           "<h2>檢查內容</h2>" + (exams || "<p>n.a.</p>") +
-          "<h2>分店資料</h2>" + (locs || "<p>n.a.</p>") +
+          (p.medicalNote ? "<h2>醫療提醒</h2><p>" + esc(p.medicalNote) + "</p>" : "") +
+          "<h2>服務地點及時間</h2>" + (locs || "<p>請經 WhatsApp 查詢服務地點及時間</p>") +
           "<h2>預約及收費說明</h2><p>所有價格為出處頁面所見售價，僅供參考；實際收費、檢查項目及辦公時間可能隨時更改，預約前請向體檢中心核實。" + (p.dataNote ? " " + esc(p.dataNote) : "") + "</p>" +
           "<p><strong>" + esc(authNote) + "</strong></p>" +
         "</div></div>" +
         '<aside class="detail-side">' +
-          '<div class="side-card"><span class="price-label">網上售價／參考價</span><span class="price-value">' + esc(money(p)) + "</span>" +
+          '<div class="side-card"><span class="price-label">' + priceLabel(p) + '</span><span class="price-value">' + esc(money(p)) + "</span>" +
             '<label>WhatsApp 查詢（4615 1993）</label>' +
             '<a class="btn btn--whatsapp btn--block" href="' + waLink(p) + '" target="_blank" rel="noopener">' + icon("whatsapp") + " 帶計劃名稱查詢</a>" +
             '<p style="margin-top:12px">' + esc(authNote) + "</p></div>" +
@@ -281,14 +336,14 @@
       }).join("");
       return '<article class="card centre-card">' +
         '<div class="card-top"><span class="badge badge--code">' + esc(String(c.plans[0].code).toUpperCase().slice(0, 1)) + "</span>" +
-          (c.name.indexOf("醫家") === 0 ? '<span class="badge badge--auth">可經本平台查詢預約</span>' : "") + "</div>" +
+          centreBadges(c) + "</div>" +
         "<h3>" + esc(c.name) + "</h3>" +
-        '<p class="meta">' + c.locations.length + " 個地點 · " + c.plans.length + " 個計劃</p>" +
-        "<ul>" + c.locations.map(function (l) {
-          return "<li><strong>" + esc(l.name) + "</strong><div class=\"addr\">" + esc(l.address || "n.a.") +
+        '<p class="meta">' + locationSummary(c) + "</p>" +
+        (c.locations.length ? "<ul>" + c.locations.map(function (l) {
+          return "<li><strong>" + esc(l.name) + "</strong><div class=\"addr\">" + esc(l.address || "地址請向中心查詢") +
             (l.hours && l.hours.length ? " · " + esc(l.hours.join("；")) : "") +
             (l.phone ? " · " + esc(l.phone) : "") + "</div></li>";
-        }).join("") + "</ul>" +
+        }).join("") + "</ul>" : '<p class="meta">請經 WhatsApp 查詢服務地點及時間</p>') +
         '<div class="plan-links">' + links + "</div></article>";
     }).join("");
   }
