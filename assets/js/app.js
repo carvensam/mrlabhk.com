@@ -90,7 +90,7 @@
       '<div class="container">' +
         '<div class="footer-grid">' +
           '<div><h4>MR LAB 化驗所優惠站</h4><p>重質與收費透明，不比機構數量。整理香港體檢計劃資料，方便你客觀比較檢查內容、價格與分店資訊。</p>' +
-            '<p class="disclaimer">本網站不設網頁 Booking 或線上付款。所有價格及資料僅供參考，實際內容、可用時段及收費以體檢中心及出處頁面最新公布為準。</p></div>' +
+            '<p class="disclaimer">所有價格及資料僅供參考，實際內容、可用時段及收費以體檢中心及出處頁面最新公布為準。</p></div>' +
           '<div><h4>網站導覽</h4><ul><li><a href="index.html">首頁</a></li><li><a href="plans.html">全部體檢計劃</a></li><li><a href="centres.html">體檢中心列表</a></li><li><a href="about.html">關於我們</a></li><li><a href="partner.html">加入我們</a></li></ul></div>' +
           '<div><h4>分類</h4><ul><li><a href="plans.html?cat=general">一般／全身</a></li><li><a href="plans.html?cat=abdominal">腹腔相關</a></li><li><a href="plans.html?cat=women">女性</a></li><li><a href="plans.html?cat=cancer">癌症相關</a></li></ul></div>' +
           '<div><h4>聯絡</h4><ul><li>WhatsApp / 電話：4615 1993</li><li>擁有者電郵：welldonemarketinghk@gmail.com</li><li><a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook 專頁</a></li></ul>' +
@@ -259,7 +259,7 @@
           "<h2>適用對象及重點</h2><ul>" + audience + "</ul>" +
           "<h2>檢查內容</h2>" + (exams || "<p>n.a.</p>") +
           "<h2>分店資料</h2>" + (locs || "<p>n.a.</p>") +
-          "<h2>預約及收費說明</h2><p>本網站不設線上付款或直接網頁 Booking。所有價格為出處頁面所見售價，僅供參考；實際收費、檢查項目及辦公時間可能隨時更改，預約前請向體檢中心核實。" + (p.dataNote ? " " + esc(p.dataNote) : "") + "</p>" +
+          "<h2>預約及收費說明</h2><p>所有價格為出處頁面所見售價，僅供參考；實際收費、檢查項目及辦公時間可能隨時更改，預約前請向體檢中心核實。" + (p.dataNote ? " " + esc(p.dataNote) : "") + "</p>" +
           "<p><strong>" + esc(authNote) + "</strong></p>" +
         "</div></div>" +
         '<aside class="detail-side">' +
