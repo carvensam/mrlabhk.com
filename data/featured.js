@@ -1,5 +1,6 @@
-/* 醫家健康體檢中心 — 資料根據「化驗所優惠站」公開貼文整理。
-   注意：価格及項目以專頁最新公布為準；此檔為本地佔位資料，待 in-app browser 接通後可替換。 */
+/* 醫家健康體檢中心 — 資料根據公開貼文及公開會員優惠頁（保協 LUAHK）整理。
+   注意：價格、項目及會員條款以各出處及專頁最新公布為準；此檔為整理／佔位資料，
+   待可自動化存取 Facebook 專頁後可替換為最新版本及對應圖片。 */
 window.FEATURED_DATA = [
   {
     id: "e01",
@@ -163,5 +164,38 @@ window.FEATURED_DATA = [
     authorised: true,
     featured: true,
     image: "assets/images/e05.svg"
+  },
+  {
+    id: "e06",
+    code: "E06",
+    category: "featured",
+    categoryLabel: "精選",
+    name: "醫家 EPH2.0 升級檢查計劃（58項）",
+    centre: "醫家健康體檢中心",
+    itemCount: "58項",
+    price: "HK$730（原價 HK$3,280）",
+    priceValue: 730,
+    audience: [
+      "適合18歲或以上人士",
+      "希望以升級版檢查涵蓋更多項目人士",
+      "重點檢查項目：58項升級身體檢查，涵蓋常規身體檢查、血液及尿液分析、肝腎功能、心電圖及超聲波等"
+    ],
+    highlight: "58項升級身體檢查、肝腎功能、心電圖、超聲波，優惠價 HK$730",
+    examSections: [
+      { title: "升級檢查", items: ["58項身體檢查", "肝腎功能分析", "心電圖", "超聲波檢查"] },
+      { title: "基本項目", items: ["常規身體檢查", "血液及尿液分析", "醫護人員講解報告"] }
+    ],
+    locations: [
+      { name: "尖沙咀", address: "尖沙咀", hours: ["星期一至日 9:00–11:30；14:00–16:30"], phone: "4615 1993", note: "" },
+      { name: "佐敦", address: "佐敦", hours: ["請向中心查詢"], phone: "4615 1993", note: "" },
+      { name: "中環", address: "中環", hours: ["請向中心查詢"], phone: "4615 1993", note: "" },
+      { name: "荃灣", address: "荃灣", hours: ["請向中心查詢"], phone: "4615 1993", note: "" }
+    ],
+    source: "保協（LUAHK）會員優惠頁 · 醫家健康體檢中心",
+    sourceUrl: "https://store.luahk.org/member_discount_items",
+    dataNote: "資料根據保協（LUAHK）公開會員優惠頁整理，優惠價及會員資格條款以該頁面及體檢中心最新公布為準。",
+    authorised: true,
+    featured: true,
+    image: "assets/images/e06.svg"
   }
 ];

@@ -9,7 +9,7 @@ IMG = ROOT / "assets" / "images"
 IMG.mkdir(parents=True, exist_ok=True)
 
 CODES = (
-    [f"e{i:02d}" for i in range(1, 6)]
+    [f"e{i:02d}" for i in range(1, 7)]
     + [f"g{i:02d}" for i in range(1, 13)]
     + [f"a{i:02d}" for i in range(1, 13)]
     + [f"w{i:02d}" for i in range(1, 13)]

@@ -44,7 +44,7 @@ for cat, n in [("general", 12), ("abdominal", 12), ("women", 12), ("cancer", 12)
         errors.append(f"category {cat}: expected {n}, got {c[cat]}")
 
 # Featured images
-for i in range(1, 6):
+for i in range(1, 7):
     f = ROOT / "assets" / "images" / f"e{i:02d}.svg"
     if not f.exists():
         errors.append(f"missing featured image {f.name}")

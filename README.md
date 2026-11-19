@@ -12,7 +12,7 @@
 - `partner.html` 加入我們
 - `data/plans.js` / `data/plans.json`：48 個 ESD Life 計劃（由附件 txt 自動解析）
 - `data/featured.js`：醫家健康體檢中心精選計劃（公開資料整理／佔位）
-- `assets/images/`：每個計劃一張獨立 SVG 圖片（共 53 張，另加 logo/favicon）
+- `assets/images/`：每個計劃一張獨立 SVG 圖片（共 54 張，另加 logo/favicon）
 - `assets/css/style.css`、`assets/js/app.js`：醫療專業視覺系統同共用邏輯
 - `tools/`：解析、生圖、驗證、GitHub 設定腳本
 
