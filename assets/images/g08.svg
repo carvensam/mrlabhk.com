@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1" gradientTransform="rotate(152 .5 .5)">
+      <stop offset="0%" stop-color="#0b3d6e"/>
+      <stop offset="58%" stop-color="#0e8f9e"/>
+      <stop offset="100%" stop-color="#62d6e6"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="30%" cy="28%" r="70%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity=".24"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="fade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#041c3a" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#041c3a" stop-opacity=".34"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bg)"/>
+  <rect width="1200" height="750" fill="url(#glow)"/>
+  <circle cx="1010" cy="120" r="131" fill="none" stroke="#62d6e6" stroke-width="2" opacity="0.10"/><circle cx="1010" cy="120" r="193" fill="none" stroke="#62d6e6" stroke-width="2" opacity="0.12"/><circle cx="1010" cy="120" r="255" fill="none" stroke="#62d6e6" stroke-width="2" opacity="0.15"/>
+  <path d="M0 620 L1200 620 L1200 750 L0 750 Z" fill="url(#fade)"/>
+  <circle cx="62" cy="548" r="2.6" fill="#62d6e6" opacity="0.10"/><circle cx="118" cy="548" r="2.6" fill="#62d6e6" opacity="0.10"/><circle cx="174" cy="548" r="2.6" fill="#62d6e6" opacity="0.10"/><circle cx="230" cy="548" r="2.6" fill="#62d6e6" opacity="0.10"/><circle cx="286" cy="548" r="2.6" fill="#62d6e6" opacity="0.10"/><circle cx="342" cy="548" r="2.6" fill="#62d6e6" opacity="0.10"/><circle cx="398" cy="548" r="2.6" fill="#62d6e6" opacity="0.10"/><circle cx="454" cy="548" r="2.6" fill="#62d6e6" opacity="0.10"/><circle cx="510" cy="548" r="2.6" fill="#62d6e6" opacity="0.10"/><circle cx="566" cy="548" r="2.6" fill="#62d6e6" opacity="0.10"/><circle cx="80" cy="580" r="2.6" fill="#62d6e6" opacity="0.10"/><circle cx="136" cy="580" r="2.6" fill="#62d6e6" opacity="0.10"/><circle cx="192" cy="580" r="2.6" fill="#62d6e6" opacity="0.10"/><circle cx="248" cy="580" r="2.6" fill="#62d6e6" opacity="0.10"/><circle cx="304" cy="580" r="2.6" fill="#62d6e6" opacity="0.10"/><circle cx="360" cy="580" r="2.6" fill="#62d6e6" opacity="0.10"/><circle cx="416" cy="580" r="2.6" fill="#62d6e6" opacity="0.10"/><circle cx="472" cy="580" r="2.6" fill="#62d6e6" opacity="0.10"/><circle cx="528" cy="580" r="2.6" fill="#62d6e6" opacity="0.10"/><circle cx="584" cy="580" r="2.6" fill="#62d6e6" opacity="0.10"/><circle cx="62" cy="612" r="2.6" fill="#62d6e6" opacity="0.10"/><circle cx="118" cy="612" r="2.6" fill="#62d6e6" opacity="0.10"/><circle cx="174" cy="612" r="2.6" fill="#62d6e6" opacity="0.10"/><circle cx="230" cy="612" r="2.6" fill="#62d6e6" opacity="0.10"/><circle cx="286" cy="612" r="2.6" fill="#62d6e6" opacity="0.10"/><circle cx="342" cy="612" r="2.6" fill="#62d6e6" opacity="0.10"/><circle cx="398" cy="612" r="2.6" fill="#62d6e6" opacity="0.10"/><circle cx="454" cy="612" r="2.6" fill="#62d6e6" opacity="0.10"/><circle cx="510" cy="612" r="2.6" fill="#62d6e6" opacity="0.10"/><circle cx="566" cy="612" r="2.6" fill="#62d6e6" opacity="0.10"/><circle cx="80" cy="644" r="2.6" fill="#62d6e6" opacity="0.10"/><circle cx="136" cy="644" r="2.6" fill="#62d6e6" opacity="0.10"/><circle cx="192" cy="644" r="2.6" fill="#62d6e6" opacity="0.10"/><circle cx="248" cy="644" r="2.6" fill="#62d6e6" opacity="0.10"/><circle cx="304" cy="644" r="2.6" fill="#62d6e6" opacity="0.10"/><circle cx="360" cy="644" r="2.6" fill="#62d6e6" opacity="0.10"/><circle cx="416" cy="644" r="2.6" fill="#62d6e6" opacity="0.10"/><circle cx="472" cy="644" r="2.6" fill="#62d6e6" opacity="0.10"/><circle cx="528" cy="644" r="2.6" fill="#62d6e6" opacity="0.10"/><circle cx="584" cy="644" r="2.6" fill="#62d6e6" opacity="0.10"/><circle cx="62" cy="676" r="2.6" fill="#62d6e6" opacity="0.10"/><circle cx="118" cy="676" r="2.6" fill="#62d6e6" opacity="0.10"/><circle cx="174" cy="676" r="2.6" fill="#62d6e6" opacity="0.10"/><circle cx="230" cy="676" r="2.6" fill="#62d6e6" opacity="0.10"/><circle cx="286" cy="676" r="2.6" fill="#62d6e6" opacity="0.10"/><circle cx="342" cy="676" r="2.6" fill="#62d6e6" opacity="0.10"/><circle cx="398" cy="676" r="2.6" fill="#62d6e6" opacity="0.10"/><circle cx="454" cy="676" r="2.6" fill="#62d6e6" opacity="0.10"/><circle cx="510" cy="676" r="2.6" fill="#62d6e6" opacity="0.10"/><circle cx="566" cy="676" r="2.6" fill="#62d6e6" opacity="0.10"/><circle cx="80" cy="708" r="2.6" fill="#62d6e6" opacity="0.10"/><circle cx="136" cy="708" r="2.6" fill="#62d6e6" opacity="0.10"/><circle cx="192" cy="708" r="2.6" fill="#62d6e6" opacity="0.10"/><circle cx="248" cy="708" r="2.6" fill="#62d6e6" opacity="0.10"/><circle cx="304" cy="708" r="2.6" fill="#62d6e6" opacity="0.10"/><circle cx="360" cy="708" r="2.6" fill="#62d6e6" opacity="0.10"/><circle cx="416" cy="708" r="2.6" fill="#62d6e6" opacity="0.10"/><circle cx="472" cy="708" r="2.6" fill="#62d6e6" opacity="0.10"/><circle cx="528" cy="708" r="2.6" fill="#62d6e6" opacity="0.10"/><circle cx="584" cy="708" r="2.6" fill="#62d6e6" opacity="0.10"/>
+  <g transform="translate(60 52)">
+    <rect x="0" y="0" width="196" height="44" rx="22" fill="#ffffff" fill-opacity=".16" stroke="#ffffff" stroke-opacity=".28"/>
+    <circle cx="24" cy="22" r="7" fill="#ffffff" fill-opacity=".9"/>
+    <text x="42" y="29" font-family="'Noto Sans TC','Microsoft JhengHei',sans-serif" font-size="18" fill="#ffffff" letter-spacing="1">一般／全身</text>
+  </g>
+  <g transform="translate(598 320)">
+    <circle r="118" fill="#ffffff" fill-opacity=".07"/>
+    <circle r="118" fill="none" stroke="#ffffff" stroke-opacity=".30" stroke-width="2"/>
+    <g opacity=".92" stroke="#ffffff" stroke-width="7" fill="none" stroke-linejoin="round"><rect x="-46" y="-18" width="92" height="36" rx="9"/><rect x="-18" y="-46" width="36" height="92" rx="9"/></g>
+  </g>
+  <polyline points="0.0,593.3 35.3,596.2 70.6,598.8 105.9,596.9 141.2,593.6 176.5,594.1 211.8,597.6 247.1,598.6 282.4,573.0 317.6,573.0 352.9,573.0 388.2,573.0 423.5,573.0 458.8,613.0 494.1,613.0 529.4,613.0 564.7,598.8 600.0,596.4 635.3,593.4 670.6,585.0 705.9,585.0 741.2,585.0 776.5,585.0 811.8,593.2 847.1,595.8 882.4,598.7 917.6,597.3 952.9,593.8 988.2,593.8 1023.5,597.2 1058.8,598.7 1094.1,595.9 1129.4,593.2 1164.7,594.9 1200.0,598.3" fill="none" stroke="#62d6e6" stroke-width="3" opacity=".55"/>
+  <text x="62" y="700" font-family="'Segoe UI',Arial,sans-serif" font-size="86" font-weight="700" fill="#ffffff" fill-opacity=".13" letter-spacing="6">G08</text>
+  <text x="1138" y="704" text-anchor="end" font-family="'Segoe UI',Arial,sans-serif" font-size="20" fill="#ffffff" fill-opacity=".45" letter-spacing="3">MRLAB · HEALTH</text>
+</svg>

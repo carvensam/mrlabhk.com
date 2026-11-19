@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>全部體檢計劃｜MR Lab 化驗所優惠站</title>
+  <meta name="description" content="搜尋及篩選香港體檢計劃：一般／全身、腹腔相關、女性及癌症相關，比較檢查內容、售價與分店。">
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="plans">
+  <header class="site-header" id="site-header"></header>
+
+  <main>
+    <div class="page-head">
+      <div class="container">
+        <div class="breadcrumb"><a href="index.html">首頁</a> / 全部體檢計劃</div>
+        <h1>全部體檢計劃</h1>
+        <p>醫家健康體檢中心嘅計劃排最前，其後為 48 個 ESD Life 計劃。可用分類及搜尋快速定位。</p>
+      </div>
+    </div>
+
+    <section class="section section--tight">
+      <div class="container">
+        <div class="filter-bar">
+          <div class="filter-row">
+            <label class="search-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>
+              <input type="search" id="planSearch" placeholder="搜尋計劃名稱、體檢中心、地區或檢查項目關鍵字…" aria-label="搜尋體檢計劃">
+            </label>
+          </div>
+          <div class="filter-row" style="margin-top:14px">
+            <div class="chips">
+              <button class="chip active" data-cat="all">全部</button>
+              <button class="chip" data-cat="featured">精選（醫家健康）</button>
+              <button class="chip" data-cat="general">一般／全身</button>
+              <button class="chip" data-cat="abdominal">腹腔相關</button>
+              <button class="chip" data-cat="women">女性</button>
+              <button class="chip" data-cat="cancer">癌症相關</button>
+            </div>
+          </div>
+          <p class="result-count" id="resultCount"></p>
+        </div>
+
+        <div class="grid grid--3" id="plans-grid"></div>
+
+        <div class="callout" style="margin-top:36px">
+          <h3>預約授權說明</h3>
+          <p>本站不設線上付款或直接網頁 Booking。所有 WhatsApp 按鈕均連去 4615 1993 並自動帶出計劃名稱。醫家健康體檢中心嘅計劃可直接查詢及預約；其他體檢中心無授權本平台代為 Booking，請直接聯絡該體檢中心自行預約。</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="site-footer"></footer>
+  <script src="data/featured.js"></script>
+  <script src="data/plans.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
