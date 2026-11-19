@@ -127,8 +127,6 @@
   function initHome() {
     var featured = FEATURED;
     document.getElementById("featured-grid").innerHTML = featured.map(planCard).join("");
-    document.getElementById("stat-plans").textContent = ALL.length + " 個";
-    document.getElementById("stat-centres").textContent = uniqueCentres().length + " 間";
 
     var cats = [
       ["general", "一般／全身檢查", "基本指標、三高、肝腎功能、超聲波及心電圖", "lab"],
@@ -283,7 +281,7 @@
       }).join("");
       return '<article class="card centre-card">' +
         '<div class="card-top"><span class="badge badge--code">' + esc(String(c.plans[0].code).toUpperCase().slice(0, 1)) + "</span>" +
-          (c.name.indexOf("醫家") === 0 ? '<span class="badge badge--auth">可經本平台查詢預約</span>' : '<span class="badge badge--noauth">請直接聯絡中心</span>') + "</div>" +
+          (c.name.indexOf("醫家") === 0 ? '<span class="badge badge--auth">可經本平台查詢預約</span>' : "") + "</div>" +
         "<h3>" + esc(c.name) + "</h3>" +
         '<p class="meta">' + c.locations.length + " 個地點 · " + c.plans.length + " 個計劃</p>" +
         "<ul>" + c.locations.map(function (l) {
