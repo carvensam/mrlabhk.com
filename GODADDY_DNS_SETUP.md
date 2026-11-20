@@ -5,14 +5,14 @@
 | 項目 | 狀態 |
 |---|---|
 | GitHub Repository | ✅ 已建立 `carvensam/mrlabhk.com`（public） |
-| 網站檔案 | ✅ 已推送到 `main`（54 個計劃 = 6 醫家精選 + 48 個來源計劃，每張獨立圖片） |
+| 網站檔案 | ✅ 已推送到 `main`（54 個計劃 = 6 個精選 + 48 個計劃，每張獨立圖片） |
 | GitHub Pages | ✅ 已啟用，build 狀態 `built`，source = `main` / root |
 | CNAME（GitHub 端） | ✅ 已設為 `www.mrlabhk.com`（repo 內亦有 `CNAME` 檔） |
 | Enforce HTTPS | ✅ 已開啟，SSL 憑證有效至 2027-02-17 |
 | GoDaddy DNS | ✅ `www` 及 `@` 的 A 記錄已指向 `185.199.108–111.153` |
-| 正式站點 | ✅ <https://www.mrlabhk.com> 全部頁面／資產回傳 200，HTTP 自動導 HTTPS |
+| 正式站點 | ✅ <https://www.mrlabhk.com> 全部網頁／資產回傳 200，HTTP 自動導 HTTPS |
 
-> 以下手動步驟為當初设定的記錄，供日後 DNS 需重新設定時參考。
+> 以下手動步驟為當初设定的記錄，供日後 DNS 需重新設定時使用。
 
 ---
 

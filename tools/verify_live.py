@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Verify the deployed site: pages, data files and every plan image."""
+"""Verify the live site: public copy, contact details, images and HTTPS."""
 import json
 import re
 import ssl
@@ -12,14 +12,24 @@ from pathlib import Path
 BASE = "https://www.mrlabhk.com/"
 CB = str(int(time.time()))
 PAGES = ["index.html", "plans.html", "plan-detail.html", "centres.html", "about.html", "partner.html"]
+PUBLIC_FILES = PAGES + [
+    "assets/js/app.js", "data/plans.js", "data/plans.json", "data/featured.js",
+    "README.md", "GODADDY_DNS_SETUP.md",
+]
+BANNED = [
+    "ESD" + chr(32) + "Life", "esd" + "life", "生活" + "易",
+    "來" + "源", "出" + "處", "貼" + "文", "海" + "報", "會" + "員",
+    "公" + "開", "僅" + "供", "參" + "考", "核" + "對", "整" + "理",
+    "為" + "準", "頁" + "面", "原" + "價", "標" + "示", "LUAHK",
+]
 
 
 def fetch(path):
     url = BASE + path + ("&" if "?" in path else "?") + "v=" + CB
     req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0", "Cache-Control": "no-cache"})
     try:
-        r = urllib.request.urlopen(req, timeout=25)
-        return r.status, r.headers.get("Content-Type", ""), r.read()
+        response = urllib.request.urlopen(req, timeout=25)
+        return response.status, response.headers.get("Content-Type", ""), response.read()
     except urllib.error.HTTPError as e:
         return e.code, "", b""
     except Exception as e:
@@ -36,16 +46,14 @@ def is_image(body):
 
 
 errors = []
-public_files = PAGES + [
-    "assets/js/app.js", "data/plans.js", "data/plans.json", "data/featured.js", "README.md",
-]
-BRAND = "ESD" + chr(32) + "Life"
-forbidden = re.compile(BRAND + r"|esd" + r"life|生活" + "易", re.I)
-for rel in public_files:
+texts = {}
+for rel in PUBLIC_FILES:
     status, _, body = fetch(rel)
     text = body.decode("utf-8", "ignore")
-    ok = status == 200 and len(body) > 100 and not forbidden.search(text)
-    print(f"FILE {rel}: status={status} bytes={len(body)} clean={ok}")
+    texts[rel] = text
+    hits = [term for term in BANNED if term in text]
+    ok = status == 200 and len(body) > 100 and not hits
+    print(f"FILE {rel}: status={status} bytes={len(body)} clean={ok} hits={hits[:3]}")
     if not ok:
         errors.append("file " + rel)
 
@@ -55,10 +63,16 @@ print(f"SOURCE TXT: status={status} removed={status == 404}")
 if status != 404:
     errors.append("source txt still public")
 
+featured_text = texts.get("data/featured.js", "")
+if "6661 8628" not in featured_text:
+    errors.append("live E06 phone missing")
+for place in ["尖沙咀", "佐敦", "中環", "荃灣"]:
+    if place not in featured_text:
+        errors.append(f"live E06 place missing: {place}")
+
 plans = json.loads(Path("data/plans.json").read_text(encoding="utf-8"))
-featured = Path("data/featured.js").read_text(encoding="utf-8")
 images = [p["image"] for p in plans]
-images += re.findall(r'"image"\s*:\s*"(assets/images/[^"]+)"', featured)
+images += re.findall(r'"image"\s*:\s*"(assets/images/[^"]+)"', featured_text)
 images = sorted(set(images))
 
 image_failures = []

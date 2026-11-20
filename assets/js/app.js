@@ -35,21 +35,17 @@
   }
 
   function bookingBadge(p) {
-    if (isSourceEnquiry(p)) {
-      return '<span class="badge badge--enquiry">' + (isPoster(p) ? "MrLab貼文優惠" : "優惠查詢") + "</span>";
-    }
+    if (isSourceEnquiry(p)) return '<span class="badge badge--enquiry">優惠查詢</span>';
     if (p.authorised === true) return '<span class="badge badge--auth">可經本平台查詢預約</span>';
     if (p.authorised === false) return '<span class="badge badge--noauth">無授權本平台代訂</span>';
     return '<span class="badge badge--enquiry">優惠查詢</span>';
   }
 
   function bookingNote(p) {
-    if (isSourceEnquiry(p)) {
-      return (isPoster(p) ? "MrLab貼文" : "公開優惠資料") + "列明由" + p.centre + "提供，請經WhatsApp查詢最新收費、服務地點及預約安排。";
-    }
+    if (isSourceEnquiry(p)) return "可向" + p.centre + "查詢收費、服務地點及預約安排。";
     if (p.authorised === true) return "此計劃由" + p.centre + "提供，可經本平台 WhatsApp 查詢及預約。";
-    if (p.authorised === false) return "此體檢中心無授權本平台代為 Booking，請直接聯絡該體檢中心自行預約。";
-    return "請經 WhatsApp 查詢最新收費、服務地點及預約安排。";
+    if (p.authorised === false) return "【" + p.name + "】此體檢中心無授權本平台代為 Booking，請直接聯絡該體檢中心自行預約。";
+    return "請經 WhatsApp 查詢收費、服務地點及預約安排。";
   }
 
   function centreBadges(c) {
@@ -67,21 +63,21 @@
     return (c.locations.length ? c.locations.length + " 個地點" : "服務地點待查詢") + " · " + c.plans.length + " 個計劃";
   }
 
-  function priceLabel(p) {
-    return isPoster(p) ? "貼文標示／參考價" : "網上售價／參考價";
+  function priceLabel() {
+    return "優惠價";
   }
 
   function planImage(p, detail) {
     var poster = isPoster(p);
-    var alt = poster ? "MrLab Facebook 優惠貼文海報：" + p.name + "（服務提供者：" + p.centre + "）" : p.name + " 專屬配圖";
+    var alt = p.name + " 優惠圖";
     var cls = detail ? (poster ? ' class="detail-img--poster"' : "") : ' class="card-img' + (poster ? " card-img--poster" : "") + '"';
     var img = "<img" + cls + ' src="' + esc(p.image) + '" alt="' + esc(alt) + '"' + (detail ? "" : ' loading="lazy"') + ">";
-    return poster ? '<a class="poster-link" href="' + esc(p.image) + '" target="_blank" rel="noopener" aria-label="' + esc("查看原始優惠海報：" + p.name) + '">' + img + "</a>" : img;
+    return poster ? '<a class="poster-link" href="' + esc(p.image) + '" target="_blank" rel="noopener" aria-label="' + esc("查看優惠圖片：" + p.name) + '">' + img + "</a>" : img;
   }
 
   function waText(p) {
     if (isSourceEnquiry(p) || p.authorised == null) {
-      return "你好，我想查詢【" + p.name + "】（" + p.code + "，資料列明服務提供者：" + p.centre + "）。請問最新收費、優惠是否仍適用、適用資格、檢查詳情、服務地點、可用時段及預約安排？";
+      return "你好，我想查詢【" + p.name + "】（" + p.code + "，" + p.centre + "）。請問收費、優惠是否仍適用、適用資格、檢查詳情、服務地點、可用時段及預約安排？";
     }
     if (p.authorised === true) {
       return "你好，我想查詢及預約【" + p.name + "】（" + p.code + "），請提供詳情及可用時段。";
@@ -145,22 +141,21 @@
     document.getElementById("site-footer").innerHTML =
       '<div class="container">' +
         '<div class="footer-grid">' +
-          '<div><h4>MR LAB 化驗所優惠站</h4><p>重質與收費透明，不比機構數量。整理香港體檢計劃資料，方便你客觀比較檢查內容、價格與服務地點資訊。</p>' +
-            '<p class="disclaimer">所有價格及資料僅供參考，實際內容、可用時段及收費以體檢中心及出處頁面最新公布為準。</p></div>' +
+          '<div><h4>MR LAB 化驗所優惠站</h4><p>香港體檢優惠一站搜尋，按檢查內容、價格及分店資料直接查詢。</p>' +
+            '<p class="disclaimer">本站只提供優惠資料，不提供診斷、治療或醫療建議。</p></div>' +
           '<div><h4>網站導覽</h4><ul><li><a href="index.html">首頁</a></li><li><a href="plans.html">全部體檢計劃</a></li><li><a href="centres.html">體檢中心列表</a></li><li><a href="about.html">關於我們</a></li><li><a href="partner.html">加入我們</a></li></ul></div>' +
           '<div><h4>分類</h4><ul><li><a href="plans.html?cat=general">一般／全身</a></li><li><a href="plans.html?cat=abdominal">腹腔相關</a></li><li><a href="plans.html?cat=women">女性</a></li><li><a href="plans.html?cat=cancer">癌症相關</a></li></ul></div>' +
           '<div><h4>聯絡</h4><ul><li>WhatsApp / 電話：4615 1993</li><li>擁有者電郵：welldonemarketinghk@gmail.com</li><li><a href="https://www.facebook.com/profile.php?id=61562009227913" target="_blank" rel="noopener">Facebook 專頁</a></li></ul>' +
             '<a class="btn btn--primary btn--small" style="margin-top:10px" href="https://wa.me/' + WA_NUMBER + '" target="_blank" rel="noopener">WhatsApp 4615 1993</a></div>' +
         "</div>" +
         '<div class="footer-bottom"><span>© ' + new Date().getFullYear() + ' MR Lab 化驗所優惠站. All rights reserved.</span>' +
-          '<span>免責聲明：本站為資訊整理平台，不提供診斷、治療或醫療建議。</span></div>' +
+          '<span>本站只提供優惠資訊，不提供診斷、治療或醫療建議。</span></div>' +
       "</div>";
   }
 
   function planCard(p) {
     var authBadge = bookingBadge(p);
     var note = !isSourceEnquiry(p) && p.authorised === true ? "" : '<p class="note' + (isSourceEnquiry(p) ? " note--enquiry" : "") + '">' + esc(bookingNote(p)) + "</p>";
-    if (p.validityNote) note += '<p class="note note--enquiry">' + esc(p.validityNote) + "</p>";
     return '<article class="card">' +
       planImage(p, false) +
       '<div class="card-body">' +
@@ -299,22 +294,18 @@
       '<div class="container section"><div class="detail-layout"><div class="detail-main">' +
         planImage(p, true) +
         '<div class="detail-content">' +
-          (isPoster(p) ? '<p class="poster-view"><a class="text-link" href="' + esc(p.image) + '" target="_blank" rel="noopener">查看原始優惠海報（亦可點擊上方圖片）</a></p>' : "") +
+          (isPoster(p) ? '<p class="poster-view"><a class="text-link" href="' + esc(p.image) + '" target="_blank" rel="noopener">查看優惠圖片（亦可點擊上方圖片）</a></p>' : "") +
           "<h2>基本資料</h2><dl class=\"kv\">" +
             "<dt>計劃名稱</dt><dd>" + esc(p.name) + "</dd>" +
-            "<dt>服務提供者</dt><dd>" + esc(p.centre) + "</dd>" +
-            "<dt>標示項目數</dt><dd>" + esc(p.itemCount || "n.a.") + "</dd>" +
+            "<dt>體檢中心</dt><dd>" + esc(p.centre) + "</dd>" +
+            "<dt>項目數</dt><dd>" + esc(p.itemCount || "n.a.") + "</dd>" +
             "<dt>" + priceLabel(p) + "</dt><dd>" + esc(money(p)) + "</dd>" +
-            "<dt>出處</dt><dd>" + esc(p.source || "n.a.") + "</dd>" +
-            (p.sourceUrl ? "<dt>出處網址</dt><dd>" + '<a class="text-link" href="' + esc(p.sourceUrl) + '" target="_blank" rel="noopener">' + esc(p.sourceUrl) + "</a></dd>" : "") +
-            (p.sourceCheckedAt ? "<dt>來源核對日期</dt><dd>" + esc(p.sourceCheckedAt) + "</dd>" : "") +
-            (p.validityNote ? "<dt>優惠適用提醒</dt><dd>" + esc(p.validityNote) + "</dd>" : "") +
           "</dl>" +
           "<h2>適用對象及重點</h2><ul>" + audience + "</ul>" +
           "<h2>檢查內容</h2>" + (exams || "<p>n.a.</p>") +
           (p.medicalNote ? "<h2>醫療提醒</h2><p>" + esc(p.medicalNote) + "</p>" : "") +
           "<h2>服務地點及時間</h2>" + (locs || "<p>請經 WhatsApp 查詢服務地點及時間</p>") +
-          "<h2>預約及收費說明</h2><p>所有價格為出處頁面所見售價，僅供參考；實際收費、檢查項目及辦公時間可能隨時更改，預約前請向體檢中心核實。" + (p.dataNote ? " " + esc(p.dataNote) : "") + "</p>" +
+          "<h2>查詢說明</h2><p>收費、檢查項目及服務時間可向體檢中心查詢。</p>" +
           "<p><strong>" + esc(authNote) + "</strong></p>" +
         "</div></div>" +
         '<aside class="detail-side">' +
@@ -322,7 +313,7 @@
             '<label>WhatsApp 查詢（4615 1993）</label>' +
             '<a class="btn btn--whatsapp btn--block" href="' + waLink(p) + '" target="_blank" rel="noopener">' + icon("whatsapp") + " 帶計劃名稱查詢</a>" +
             '<p style="margin-top:12px">' + esc(authNote) + "</p></div>" +
-          '<div class="side-card notice-card"><h4>收費透明聲明</h4><p>事前已列明之額外費用屬於清晰標示，並非隱藏收費。若有任何收費爭議，請以出處頁面及體檢中心單據為準。</p></div>' +
+          '<div class="side-card notice-card"><h4>查詢提示</h4><p>可按 WhatsApp 查詢收費、服務地點及預約安排。</p></div>' +
           '<div class="side-card"><h4>快速導覽</h4><p><a class="text-link" href="plans.html">返回全部計劃</a><br><a class="text-link" href="centres.html">體檢中心列表</a><br><a class="text-link" href="about.html">關於我們</a></p></div>' +
         "</aside></div></div>";
   }

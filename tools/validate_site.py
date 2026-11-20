@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Static validation: pages, asset references, data integrity, WhatsApp links."""
+"""Static validation: pages, assets, data integrity and plain-language copy."""
 import json
 import re
 from collections import Counter
@@ -9,13 +9,32 @@ ROOT = Path(__file__).resolve().parents[1]
 errors = []
 warnings = []
 
-pages = ["index.html", "plans.html", "plan-detail.html", "centres.html", "about.html", "partner.html"]
-for page in pages:
-    p = ROOT / page
-    if not p.exists():
+PAGES = ["index.html", "plans.html", "plan-detail.html", "centres.html", "about.html", "partner.html"]
+DROP_FIELDS = {"source", "sourceUrl", "sourceCheckedAt", "dataNote", "validityNote",
+               "hoursSourceUrl", "hoursCheckedAt"}
+
+BANNED = [
+    "ESD" + chr(32) + "Life", "esd" + "life", "生活" + "易",
+    "來" + "源", "出" + "處", "貼" + "文", "海" + "報", "會" + "員",
+    "公" + "開", "僅" + "供", "參" + "考", "核" + "對", "整" + "理",
+    "為" + "準", "頁" + "面", "原" + "價", "標" + "示", "LUAHK",
+]
+
+
+def load_js(path, var):
+    text = path.read_text(encoding="utf-8")
+    match = re.search(r"window\." + var + r"\s*=\s*(\[.*\])\s*;?\s*$", text, re.S)
+    if not match:
+        raise SystemExit("cannot parse " + str(path))
+    return json.loads(match.group(1))
+
+
+for page in PAGES:
+    path = ROOT / page
+    if not path.exists():
         errors.append(f"missing page: {page}")
         continue
-    html = p.read_text(encoding="utf-8")
+    html = path.read_text(encoding="utf-8")
     for ref in re.findall(r'(?:src|href)="([^"#:]+)"', html):
         if ref.startswith(("http", "//", "mailto")):
             continue
@@ -24,56 +43,63 @@ for page in pages:
             errors.append(f"{page}: missing referenced file {ref}")
 
 plans = json.loads((ROOT / "data" / "plans.json").read_text(encoding="utf-8"))
-featured_js = (ROOT / "data" / "featured.js").read_text(encoding="utf-8")
+featured = load_js(ROOT / "data" / "featured.js", "FEATURED_DATA")
 codes = [p["id"] for p in plans]
 if len(codes) != len(set(codes)):
     errors.append("duplicate plan ids")
-for p in plans:
-    img = ROOT / p["image"]
-    if not img.exists():
-        errors.append(f"{p['id']}: missing image {p['image']}")
-    if p.get("sourceUrl") and not p["sourceUrl"].startswith("https://"):
-        errors.append(f"{p['id']}: bad sourceUrl")
-    if not p["centre"] or not p["name"]:
-        errors.append(f"{p['id']}: missing basic data")
 
-c = Counter(p["category"] for p in plans)
-for cat, n in [("general", 12), ("abdominal", 12), ("women", 12), ("cancer", 12)]:
-    if c[cat] != n:
-        errors.append(f"category {cat}: expected {n}, got {c[cat]}")
+for item in plans + featured:
+    extra = DROP_FIELDS.intersection(item)
+    if extra:
+        errors.append(f"{item.get('id')}: leftover fields {sorted(extra)}")
+    if not item.get("centre") or not item.get("name"):
+        errors.append(f"{item.get('id')}: missing basic data")
 
-featured_ids = re.findall(r'"id"\s*:\s*"(e0[1-6])"', featured_js)
-if sorted(featured_ids) != [f"e{i:02d}" for i in range(1, 7)]:
-    errors.append(f"featured ids: expected e01-e06, got {sorted(featured_ids)}")
+counts = Counter(p["category"] for p in plans)
+for category, expected in [("general", 12), ("abdominal", 12), ("women", 12), ("cancer", 12)]:
+    if counts[category] != expected:
+        errors.append(f"category {category}: expected {expected}, got {counts[category]}")
 
-plan_imgs = [p["image"] for p in plans]
-featured_imgs = re.findall(r'"image"\s*:\s*"(assets/images/[^"]+)"', featured_js)
-all_imgs = plan_imgs + featured_imgs
-if len(all_imgs) != 54:
-    errors.append(f"expected 54 image references, got {len(all_imgs)}")
-if len(set(all_imgs)) != len(all_imgs):
-    dupes = [x for x, n in Counter(all_imgs).items() if n > 1]
-    errors.append(f"duplicate image references: {dupes}")
-for rel in all_imgs:
+featured_ids = sorted(p["id"] for p in featured)
+if featured_ids != [f"e{i:02d}" for i in range(1, 7)]:
+    errors.append(f"featured ids: expected e01-e06, got {featured_ids}")
+
+e06 = next((p for p in featured if p["id"] == "e06"), None)
+if e06:
+    phones = {loc.get("phone") for loc in e06.get("locations", [])}
+    addresses = {loc.get("address") for loc in e06.get("locations", [])}
+    if phones != {"6661 8628"}:
+        errors.append(f"e06 phone: expected 6661 8628, got {phones}")
+    expected_places = ["尖沙咀", "佐敦", "中環", "荃灣"]
+    if len(addresses) != 4 or not all(any(place in a for a in addresses) for place in expected_places):
+        errors.append(f"e06 addresses incomplete: {addresses}")
+
+images = [p["image"] for p in plans + featured]
+if len(images) != 54:
+    errors.append(f"expected 54 image references, got {len(images)}")
+if len(set(images)) != len(images):
+    errors.append(f"duplicate image references: {[x for x, n in Counter(images).items() if n > 1]}")
+for rel in images:
     if not (ROOT / rel).exists():
         errors.append(f"missing image: {rel}")
 
 app = (ROOT / "assets" / "js" / "app.js").read_text(encoding="utf-8")
-for needle in ['WA_NUMBER = "85246151993"', "encodeURIComponent", "無授權本平台代為 Booking", "plan-detail.html?id="]:
+for needle in ['WA_NUMBER = "85246151993"', "encodeURIComponent",
+               "無授權本平台代為 Booking", "plan-detail.html?id="]:
     if needle not in app:
         errors.append(f"app.js missing expected string: {needle}")
 
-public_files = pages + [
-    "assets/js/app.js", "data/plans.js", "data/plans.json", "data/featured.js", "README.md",
+public_files = PAGES + [
+    "assets/js/app.js", "data/plans.js", "data/plans.json", "data/featured.js",
+    "README.md", "GODADDY_DNS_SETUP.md",
 ]
-BRAND = "ESD" + chr(32) + "Life"
-forbidden = re.compile(BRAND + r"|esd" + r"life|生活" + "易", re.I)
 for rel in public_files:
     text = (ROOT / rel).read_text(encoding="utf-8")
-    if forbidden.search(text):
-        errors.append(f"{rel}: contains forbidden source-platform name")
+    for term in BANNED:
+        if term in text:
+            errors.append(f"{rel}: contains unwanted wording {term!r}")
 
-print(f"pages={len(pages)} plans={len(plans)} images={len(set(all_imgs))}")
+print(f"pages={len(PAGES)} plans={len(plans)} featured={len(featured)} images={len(set(images))}")
 print(f"errors={len(errors)} warnings={len(warnings)}")
 for e in errors:
     print("ERROR:", e)

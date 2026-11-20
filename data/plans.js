@@ -1,4 +1,4 @@
-/* Auto-generated from 香港體檢計劃資料（共 48 個）.txt — do not edit by hand. */
+/* 體檢優惠資料 */
 window.PLANS_DATA = [
   {
     "id": "g01",
@@ -8,7 +8,7 @@ window.PLANS_DATA = [
     "name": "美邦 成人升級全面身體檢查 E (優惠時段)",
     "centre": "美邦醫學體檢中心",
     "itemCount": "89項目",
-    "price": "HK$2,950（2026-11-19 所見，僅供參考）",
+    "price": "HK$2,950",
     "priceValue": 2950,
     "audience": [
       "適用於18歲或以上男士及女士",
@@ -134,8 +134,6 @@ window.PLANS_DATA = [
         "note": "荃灣- X光檢驗備註: 於荃灣檢驗中心登記後, 需於鄰近的X光化驗中心進行檢查"
       }
     ],
-    "source": "公開體檢產品資料",
-    "sourceUrl": "",
     "authorised": false,
     "featured": false,
     "image": "assets/images/g01.webp"
@@ -148,7 +146,7 @@ window.PLANS_DATA = [
     "name": "德信醫療 全面優越健康檢查[2項超聲波及4項癌症指標]",
     "centre": "德信醫療中心",
     "itemCount": "60項目",
-    "price": "HK$2,980（2026-11-19 所見，僅供參考）",
+    "price": "HK$2,980",
     "priceValue": 2980,
     "audience": [
       "適用於18歲或以上男士及女士",
@@ -214,8 +212,6 @@ window.PLANS_DATA = [
         "note": ""
       }
     ],
-    "source": "公開體檢產品資料",
-    "sourceUrl": "",
     "authorised": false,
     "featured": false,
     "image": "assets/images/g02.webp"
@@ -228,7 +224,7 @@ window.PLANS_DATA = [
     "name": "卓健醫療 全面身體檢查 (白金)",
     "centre": "卓健醫療體檢中心",
     "itemCount": "68項目",
-    "price": "HK$4,290（2026-11-19 所見，僅供參考）",
+    "price": "HK$4,290",
     "priceValue": 4290,
     "audience": [
       "適用於18歲或以上男士及女士",
@@ -378,7 +374,7 @@ window.PLANS_DATA = [
         "name": "中環",
         "address": "中環砵典乍街10號致生大廈1樓及2樓",
         "hours": [
-          "n.a.（來源頁面未列出此地點的辦公時間）"
+          "辦公時間請查詢"
         ],
         "phone": "2522 0108；預約熱線 8100 8138；WhatsApp 8301 8301",
         "note": ""
@@ -714,8 +710,6 @@ window.PLANS_DATA = [
         "note": ""
       }
     ],
-    "source": "公開體檢產品資料",
-    "sourceUrl": "",
     "authorised": false,
     "featured": false,
     "image": "assets/images/g03.webp"
@@ -728,7 +722,7 @@ window.PLANS_DATA = [
     "name": "時代 卓越健康檢查",
     "centre": "時代醫療服務中心",
     "itemCount": "71項目",
-    "price": "HK$3,800（2026-11-19 所見，僅供參考）",
+    "price": "HK$3,800",
     "priceValue": 3800,
     "audience": [
       "適用於18歲或以上男士及女士",
@@ -803,8 +797,6 @@ window.PLANS_DATA = [
         "note": "沙田分店不提供DEXA服務"
       }
     ],
-    "source": "公開體檢產品資料",
-    "sourceUrl": "",
     "authorised": false,
     "featured": false,
     "image": "assets/images/g04.webp"
@@ -817,7 +809,7 @@ window.PLANS_DATA = [
     "name": "壹森健康 ESD 標準全面檢查 (3項癌症指標及心電圖)",
     "centre": "Life Young Health 壹森健康",
     "itemCount": "90項目",
-    "price": "HK$2,980（2026-11-19 所見，僅供參考）",
+    "price": "HK$2,980",
     "priceValue": 2980,
     "audience": [
       "適合18歲或以上人士",
@@ -876,8 +868,6 @@ window.PLANS_DATA = [
         "note": "中環分店不提供X-Ray服務，如需揀選此服務請稍移玉步至香港醫療診斷中心。 地址：香港中環畢打街1-3號中建大廈515-519室（步程約3分鐘）"
       }
     ],
-    "source": "公開體檢產品資料",
-    "sourceUrl": "",
     "authorised": false,
     "featured": false,
     "image": "assets/images/g05.webp"
@@ -890,7 +880,7 @@ window.PLANS_DATA = [
     "name": "晉上醫療 優尚健康檢查",
     "centre": "晉上醫療體檢中心",
     "itemCount": "68項目",
-    "price": "HK$4,500（2026-11-19 所見，僅供參考）",
+    "price": "HK$4,500",
     "priceValue": 4500,
     "audience": [
       "適用於18歲或以上男士及女士",
@@ -942,8 +932,6 @@ window.PLANS_DATA = [
         "note": ""
       }
     ],
-    "source": "公開體檢產品資料",
-    "sourceUrl": "",
     "authorised": false,
     "featured": false,
     "image": "assets/images/g06.webp"
@@ -956,7 +944,7 @@ window.PLANS_DATA = [
     "name": "毅力Kinetics特選周年身體檢查計劃 (卓越)",
     "centre": "毅力醫護健康集團有限公司",
     "itemCount": "63項目",
-    "price": "HK$2,500（2026-11-19 所見，僅供參考）",
+    "price": "HK$2,500",
     "priceValue": 2500,
     "audience": [
       "適合18歲或以上人士",
@@ -1037,8 +1025,6 @@ window.PLANS_DATA = [
         "note": ""
       }
     ],
-    "source": "公開體檢產品資料",
-    "sourceUrl": "",
     "authorised": false,
     "featured": false,
     "image": "assets/images/g07.webp"
@@ -1051,7 +1037,7 @@ window.PLANS_DATA = [
     "name": "尚醫 特選健康檢查 (2項超聲波及癌症指標)",
     "centre": "尚醫健康",
     "itemCount": "80項目",
-    "price": "HK$3,800（2026-11-19 所見，僅供參考）",
+    "price": "HK$3,800",
     "priceValue": 3800,
     "audience": [
       "適用於18歲或以上男士及女士",
@@ -1105,8 +1091,6 @@ window.PLANS_DATA = [
         "note": ""
       }
     ],
-    "source": "公開體檢產品資料",
-    "sourceUrl": "",
     "authorised": false,
     "featured": false,
     "image": "assets/images/g08.webp"
@@ -1119,7 +1103,7 @@ window.PLANS_DATA = [
     "name": "港怡醫院 至尊迅捷檢查計劃套餐 (即日獲取報告分析)",
     "centre": "港怡醫院",
     "itemCount": "77項目",
-    "price": "HK$5,225（2026-11-19 所見，僅供參考）",
+    "price": "HK$5,225",
     "priceValue": 5225,
     "audience": [
       "適合18歲或以上人士",
@@ -1176,8 +1160,6 @@ window.PLANS_DATA = [
         "note": ""
       }
     ],
-    "source": "公開體檢產品資料",
-    "sourceUrl": "",
     "authorised": false,
     "featured": false,
     "image": "assets/images/g09.webp"
@@ -1190,7 +1172,7 @@ window.PLANS_DATA = [
     "name": "仁安體檢中心 全面健康檢查計劃",
     "centre": "仁安體檢中心",
     "itemCount": "58項目",
-    "price": "HK$5,400（2026-11-19 所見，僅供參考）",
+    "price": "HK$5,400",
     "priceValue": 5400,
     "audience": [
       "適用於16歲或以上人士",
@@ -1238,8 +1220,6 @@ window.PLANS_DATA = [
         "note": ""
       }
     ],
-    "source": "公開體檢產品資料",
-    "sourceUrl": "",
     "authorised": false,
     "featured": false,
     "image": "assets/images/g10.webp"
@@ -1252,7 +1232,7 @@ window.PLANS_DATA = [
     "name": "全仁醫務 皇牌健康檢查",
     "centre": "全仁醫務中心 (Trinity)",
     "itemCount": "64項目",
-    "price": "HK$7,980（2026-11-19 所見，僅供參考）",
+    "price": "HK$7,980",
     "priceValue": 7980,
     "audience": [
       "適用於18歲或以上男士及女士",
@@ -1323,8 +1303,6 @@ window.PLANS_DATA = [
         "note": ""
       }
     ],
-    "source": "公開體檢產品資料",
-    "sourceUrl": "",
     "authorised": false,
     "featured": false,
     "image": "assets/images/g11.webp"
@@ -1337,7 +1315,7 @@ window.PLANS_DATA = [
     "name": "九龍半島醫學中心 特選全面身體檢查 (上腹超聲波及3項癌症指標)",
     "centre": "九龍半島醫學中心",
     "itemCount": "91項目",
-    "price": "HK$4,380（2026-11-19 所見，僅供參考）",
+    "price": "HK$4,380",
     "priceValue": 4380,
     "audience": [
       "適合18歲或以上人士",
@@ -1397,8 +1375,6 @@ window.PLANS_DATA = [
         "note": ""
       }
     ],
-    "source": "公開體檢產品資料",
-    "sourceUrl": "",
     "authorised": false,
     "featured": false,
     "image": "assets/images/g12.webp"
@@ -1411,7 +1387,7 @@ window.PLANS_DATA = [
     "name": "晉上醫療 全腹超聲波檢查 (2項癌症指標)",
     "centre": "晉上醫療體檢中心",
     "itemCount": "64項目",
-    "price": "HK$6,000（2026-11-19 所見，僅供參考）",
+    "price": "HK$6,000",
     "priceValue": 6000,
     "audience": [
       "適用於18歲或以上男士及女士",
@@ -1463,8 +1439,6 @@ window.PLANS_DATA = [
         "note": ""
       }
     ],
-    "source": "公開體檢產品資料",
-    "sourceUrl": "",
     "authorised": false,
     "featured": false,
     "image": "assets/images/a01.webp"
@@ -1477,7 +1451,7 @@ window.PLANS_DATA = [
     "name": "美邦 全腹超聲波計劃",
     "centre": "美邦醫學體檢中心",
     "itemCount": "4項目",
-    "price": "HK$2,120（2026-11-19 所見，僅供參考）",
+    "price": "HK$2,120",
     "priceValue": 2120,
     "audience": [
       "適用於18歲或以上男士及女士",
@@ -1555,8 +1529,6 @@ window.PLANS_DATA = [
         "note": "荃灣- X光檢驗備註: 於荃灣檢驗中心登記後, 需於鄰近的X光化驗中心進行檢查"
       }
     ],
-    "source": "公開體檢產品資料",
-    "sourceUrl": "",
     "authorised": false,
     "featured": false,
     "image": "assets/images/a02.webp"
@@ -1569,7 +1541,7 @@ window.PLANS_DATA = [
     "name": "博思醫學 CT上腹部 - 無顯影劑",
     "centre": "博思醫學診斷中心",
     "itemCount": "4項目",
-    "price": "HK$2,400（2026-11-19 所見，僅供參考）",
+    "price": "HK$2,400",
     "priceValue": 2400,
     "audience": [
       "適用於18歲或以上男士及女士",
@@ -1658,8 +1630,6 @@ window.PLANS_DATA = [
         "note": ""
       }
     ],
-    "source": "公開體檢產品資料",
-    "sourceUrl": "",
     "authorised": false,
     "featured": false,
     "image": "assets/images/a03.webp"
@@ -1672,7 +1642,7 @@ window.PLANS_DATA = [
     "name": "博思醫學 全腹部(上腹及骨盆腔)磁力共振 - 顯影劑",
     "centre": "博思醫學診斷中心",
     "itemCount": "4項目",
-    "price": "HK$9,180（2026-11-19 所見，僅供參考）",
+    "price": "HK$9,180",
     "priceValue": 9180,
     "audience": [
       "適用18歲或以上",
@@ -1762,8 +1732,6 @@ window.PLANS_DATA = [
         "note": ""
       }
     ],
-    "source": "公開體檢產品資料",
-    "sourceUrl": "",
     "authorised": false,
     "featured": false,
     "image": "assets/images/a04.webp"
@@ -1776,7 +1744,7 @@ window.PLANS_DATA = [
     "name": "仁輝專科 胃及大腸內視鏡套餐",
     "centre": "仁輝專科中心 (仁輝內視鏡及日間醫療中心)",
     "itemCount": "3項目",
-    "price": "HK$16,000（2026-11-19 所見，僅供參考）",
+    "price": "HK$16,000",
     "priceValue": 16000,
     "audience": [
       "適用於16至75歲男士及女士",
@@ -1816,8 +1784,6 @@ window.PLANS_DATA = [
         "note": ""
       }
     ],
-    "source": "公開體檢產品資料",
-    "sourceUrl": "",
     "authorised": false,
     "featured": false,
     "image": "assets/images/a05.webp"
@@ -1830,7 +1796,7 @@ window.PLANS_DATA = [
     "name": "九龍半島醫學中心 大腸鏡檢查",
     "centre": "九龍半島醫學中心",
     "itemCount": "6項目",
-    "price": "HK$11,100（2026-11-19 所見，僅供參考）",
+    "price": "HK$11,100",
     "priceValue": 11100,
     "audience": [
       "適合18至75歲人士",
@@ -1859,8 +1825,6 @@ window.PLANS_DATA = [
         "note": ""
       }
     ],
-    "source": "公開體檢產品資料",
-    "sourceUrl": "",
     "authorised": false,
     "featured": false,
     "image": "assets/images/a06.webp"
@@ -1873,7 +1837,7 @@ window.PLANS_DATA = [
     "name": "中環HD 胃及大腸內視鏡套餐",
     "centre": "中環高清腸胃內視鏡中心",
     "itemCount": "2項目",
-    "price": "HK$19,400（2026-11-19 所見，僅供參考）",
+    "price": "HK$19,400",
     "priceValue": 19400,
     "audience": [
       "適用於16至75歲男士及女士",
@@ -1904,8 +1868,6 @@ window.PLANS_DATA = [
         "note": ""
       }
     ],
-    "source": "公開體檢產品資料",
-    "sourceUrl": "",
     "authorised": false,
     "featured": false,
     "image": "assets/images/a07.webp"
@@ -1918,7 +1880,7 @@ window.PLANS_DATA = [
     "name": "中環專科 腸胃健康檢查",
     "centre": "中環專科體檢中心",
     "itemCount": "11項目",
-    "price": "HK$4,500（2026-11-19 所見，僅供參考）",
+    "price": "HK$4,500",
     "priceValue": 4500,
     "audience": [
       "適用於18歲或以上女士或男士，以及想透過檢查身體狀況認知身體健康狀況的人士。",
@@ -1956,8 +1918,6 @@ window.PLANS_DATA = [
         "note": ""
       }
     ],
-    "source": "公開體檢產品資料",
-    "sourceUrl": "",
     "authorised": false,
     "featured": false,
     "image": "assets/images/a08.webp"
@@ -1970,7 +1930,7 @@ window.PLANS_DATA = [
     "name": "香港駿檢 胃部健康檢查計劃",
     "centre": "香港駿檢中心",
     "itemCount": "11項目",
-    "price": "HK$3,500（2026-11-19 所見，僅供參考）",
+    "price": "HK$3,500",
     "priceValue": 3500,
     "audience": [
       "適用於18歲或以上男士",
@@ -2009,8 +1969,6 @@ window.PLANS_DATA = [
         "note": ""
       }
     ],
-    "source": "公開體檢產品資料",
-    "sourceUrl": "",
     "authorised": false,
     "featured": false,
     "image": "assets/images/a09.webp"
@@ -2023,7 +1981,7 @@ window.PLANS_DATA = [
     "name": "時代 脂肪肝全面檢查計劃",
     "centre": "時代醫療服務中心",
     "itemCount": "36項目",
-    "price": "HK$1,980（2026-11-19 所見，僅供參考）",
+    "price": "HK$1,980",
     "priceValue": 1980,
     "audience": [
       "適用於18歲或以上男士及女士",
@@ -2066,8 +2024,6 @@ window.PLANS_DATA = [
         "note": ""
       }
     ],
-    "source": "公開體檢產品資料",
-    "sourceUrl": "",
     "authorised": false,
     "featured": false,
     "image": "assets/images/a10.webp"
@@ -2080,7 +2036,7 @@ window.PLANS_DATA = [
     "name": "明德醫療中心 肝臟健康檢查計劃",
     "centre": "明德醫療中心",
     "itemCount": "28項目",
-    "price": "HK$5,300（2026-11-19 所見，僅供參考）",
+    "price": "HK$5,300",
     "priceValue": 5300,
     "audience": [
       "適合18歲或以上人士",
@@ -2124,8 +2080,6 @@ window.PLANS_DATA = [
         "note": ""
       }
     ],
-    "source": "公開體檢產品資料",
-    "sourceUrl": "",
     "authorised": false,
     "featured": false,
     "image": "assets/images/a11.webp"
@@ -2138,7 +2092,7 @@ window.PLANS_DATA = [
     "name": "富樂醫療 肝功能健康檢查 (肝纖維化掃瞄) - 由普通科醫生主理",
     "centre": "富樂醫療",
     "itemCount": "38項目",
-    "price": "HK$1,100（2026-11-19 所見，僅供參考）",
+    "price": "HK$1,100",
     "priceValue": 1100,
     "audience": [
       "適用於18歲以上人士",
@@ -2178,8 +2132,6 @@ window.PLANS_DATA = [
         "note": ""
       }
     ],
-    "source": "公開體檢產品資料",
-    "sourceUrl": "",
     "authorised": false,
     "featured": false,
     "image": "assets/images/a12.webp"
@@ -2192,7 +2144,7 @@ window.PLANS_DATA = [
     "name": "美邦「活得精彩」女性週年身體檢查 (優越計劃)(優惠時段)",
     "centre": "美邦醫學體檢中心",
     "itemCount": "74項目",
-    "price": "HK$3,500（2026-11-19 所見，僅供參考）",
+    "price": "HK$3,500",
     "priceValue": 3500,
     "audience": [
       "適用於18歲或以上女士",
@@ -2281,8 +2233,6 @@ window.PLANS_DATA = [
         "note": "荃灣- X光檢驗備註: 於荃灣檢驗中心登記後, 需於鄰近的X光化驗中心進行檢查"
       }
     ],
-    "source": "公開體檢產品資料",
-    "sourceUrl": "",
     "authorised": false,
     "featured": false,
     "image": "assets/images/w01.webp"
@@ -2295,7 +2245,7 @@ window.PLANS_DATA = [
     "name": "尚醫 女性全面健康檢查 (7項超聲波及2項癌症指標)",
     "centre": "尚醫健康",
     "itemCount": "68項目",
-    "price": "HK$2,880（2026-11-19 所見，僅供參考）",
+    "price": "HK$2,880",
     "priceValue": 2880,
     "audience": [
       "適用於18歲或以上女士",
@@ -2341,8 +2291,6 @@ window.PLANS_DATA = [
         "note": ""
       }
     ],
-    "source": "公開體檢產品資料",
-    "sourceUrl": "",
     "authorised": false,
     "featured": false,
     "image": "assets/images/w02.webp"
@@ -2355,7 +2303,7 @@ window.PLANS_DATA = [
     "name": "德信醫療 女士健康護航檢查計劃 (5項癌症指標)",
     "centre": "德信醫療中心",
     "itemCount": "74項目",
-    "price": "HK$2,520（2026-11-19 所見，僅供參考）",
+    "price": "HK$2,520",
     "priceValue": 2520,
     "audience": [
       "適用於18歲或以上人士",
@@ -2427,8 +2375,6 @@ window.PLANS_DATA = [
         "note": ""
       }
     ],
-    "source": "公開體檢產品資料",
-    "sourceUrl": "",
     "authorised": false,
     "featured": false,
     "image": "assets/images/w03.webp"
@@ -2441,7 +2387,7 @@ window.PLANS_DATA = [
     "name": "仁安體檢中心 尊尚女士健康檢查計劃",
     "centre": "仁安體檢中心",
     "itemCount": "47項目",
-    "price": "HK$5,000（2026-11-19 所見，僅供參考）",
+    "price": "HK$5,000",
     "priceValue": 5000,
     "audience": [
       "適用於20歲或以上人士",
@@ -2491,8 +2437,6 @@ window.PLANS_DATA = [
         "note": ""
       }
     ],
-    "source": "公開體檢產品資料",
-    "sourceUrl": "",
     "authorised": false,
     "featured": false,
     "image": "assets/images/w04.webp"
@@ -2505,7 +2449,7 @@ window.PLANS_DATA = [
     "name": "時代 尊貴婦科超聲波及癌症檢查 (連子宮頸癌篩查)",
     "centre": "時代醫療服務中心",
     "itemCount": "57項目",
-    "price": "HK$2,950（2026-11-19 所見，僅供參考）",
+    "price": "HK$2,950",
     "priceValue": 2950,
     "audience": [
       "適合18歲以上女士",
@@ -2581,8 +2525,6 @@ window.PLANS_DATA = [
         "note": "沙田分店不提供DEXA服務"
       }
     ],
-    "source": "公開體檢產品資料",
-    "sourceUrl": "",
     "authorised": false,
     "featured": false,
     "image": "assets/images/w05.webp"
@@ -2595,7 +2537,7 @@ window.PLANS_DATA = [
     "name": "晉上醫療 女士至尊身體檢查 (9項超聲波)",
     "centre": "晉上醫療體檢中心",
     "itemCount": "63項目",
-    "price": "HK$3,980（2026-11-19 所見，僅供參考）",
+    "price": "HK$3,980",
     "priceValue": 3980,
     "audience": [
       "適用於18歲或以上女士",
@@ -2647,8 +2589,6 @@ window.PLANS_DATA = [
         "note": ""
       }
     ],
-    "source": "公開體檢產品資料",
-    "sourceUrl": "",
     "authorised": false,
     "featured": false,
     "image": "assets/images/w06.webp"
@@ -2661,7 +2601,7 @@ window.PLANS_DATA = [
     "name": "聯合醫務 優越女士驗身計劃",
     "centre": "聯合醫務",
     "itemCount": "78項目",
-    "price": "HK$3,880（2026-11-19 所見，僅供參考）",
+    "price": "HK$3,880",
     "priceValue": 3880,
     "audience": [
       "適合18歲或以上女士",
@@ -2755,8 +2695,6 @@ window.PLANS_DATA = [
         "note": "有女醫生應診"
       }
     ],
-    "source": "公開體檢產品資料",
-    "sourceUrl": "",
     "authorised": false,
     "featured": false,
     "image": "assets/images/w07.webp"
@@ -2769,7 +2707,7 @@ window.PLANS_DATA = [
     "name": "香港婦檢 女士全面健康檢查計劃 (40 歲以上)",
     "centre": "香港婦檢中心",
     "itemCount": "67項目",
-    "price": "HK$5,300（2026-11-19 所見，僅供參考）",
+    "price": "HK$5,300",
     "priceValue": 5300,
     "audience": [
       "適用於40歲或以上女士",
@@ -2823,8 +2761,6 @@ window.PLANS_DATA = [
         "note": ""
       }
     ],
-    "source": "公開體檢產品資料",
-    "sourceUrl": "",
     "authorised": false,
     "featured": false,
     "image": "assets/images/w08.webp"
@@ -2837,7 +2773,7 @@ window.PLANS_DATA = [
     "name": "全仁醫務 優越婦科檢查計劃 (5項超聲波及2項癌症指標)",
     "centre": "全仁醫務中心 (Trinity)",
     "itemCount": "48項目",
-    "price": "HK$5,125（2026-11-19 所見，僅供參考）",
+    "price": "HK$5,125",
     "priceValue": 5125,
     "audience": [
       "適合18歲或以上的女士",
@@ -2904,8 +2840,6 @@ window.PLANS_DATA = [
         "note": ""
       }
     ],
-    "source": "公開體檢產品資料",
-    "sourceUrl": "",
     "authorised": false,
     "featured": false,
     "image": "assets/images/w09.webp"
@@ -2918,7 +2852,7 @@ window.PLANS_DATA = [
     "name": "中環專科 精選全面女士健康檢查",
     "centre": "中環專科體檢中心",
     "itemCount": "69項目",
-    "price": "HK$4,200（2026-11-19 所見，僅供參考）",
+    "price": "HK$4,200",
     "priceValue": 4200,
     "audience": [
       "適用於35歲或以上女士",
@@ -2968,8 +2902,6 @@ window.PLANS_DATA = [
         "note": ""
       }
     ],
-    "source": "公開體檢產品資料",
-    "sourceUrl": "",
     "authorised": false,
     "featured": false,
     "image": "assets/images/w10.webp"
@@ -2982,7 +2914,7 @@ window.PLANS_DATA = [
     "name": "基研健康醫療 女士身體檢查計劃",
     "centre": "基研健康醫療有限公司",
     "itemCount": "48項目",
-    "price": "HK$2,580（2026-11-19 所見，僅供參考）",
+    "price": "HK$2,580",
     "priceValue": 2580,
     "audience": [
       "適用於18歲或以上女士",
@@ -3028,8 +2960,6 @@ window.PLANS_DATA = [
         "note": "超聲波檢查適用於星期二 (9:00am – 1:00pm; 2:00pm – 5:00pm)、星期三及星期五 (9:00am – 1:00pm)"
       }
     ],
-    "source": "公開體檢產品資料",
-    "sourceUrl": "",
     "authorised": false,
     "featured": false,
     "image": "assets/images/w11.webp"
@@ -3042,7 +2972,7 @@ window.PLANS_DATA = [
     "name": "仁安醫院 升級女士健康檢查計劃(超聲波檢查)",
     "centre": "仁安醫院",
     "itemCount": "30項目",
-    "price": "HK$3,680（2026-11-19 所見，僅供參考）",
+    "price": "HK$3,680",
     "priceValue": 3680,
     "audience": [
       "適用於18歲或以上女性",
@@ -3084,8 +3014,6 @@ window.PLANS_DATA = [
         "note": ""
       }
     ],
-    "source": "公開體檢產品資料",
-    "sourceUrl": "",
     "authorised": false,
     "featured": false,
     "image": "assets/images/w12.webp"
@@ -3098,7 +3026,7 @@ window.PLANS_DATA = [
     "name": "美邦 女性全面癌指標檢查組合",
     "centre": "美邦醫學體檢中心",
     "itemCount": "9項目",
-    "price": "HK$2,090（2026-11-19 所見，僅供參考）",
+    "price": "HK$2,090",
     "priceValue": 2090,
     "audience": [
       "適用於18歲或以上女士",
@@ -3160,8 +3088,6 @@ window.PLANS_DATA = [
         "note": "荃灣- X光檢驗備註: 於荃灣檢驗中心登記後, 需於鄰近的X光化驗中心進行檢查"
       }
     ],
-    "source": "公開體檢產品資料",
-    "sourceUrl": "",
     "authorised": false,
     "featured": false,
     "image": "assets/images/c01.webp"
@@ -3174,7 +3100,7 @@ window.PLANS_DATA = [
     "name": "港安醫療中心(太古坊) - ESD 男士癌症指標健康計劃 - 由普通科醫生主理",
     "centre": "港安醫療中心 (太古坊)",
     "itemCount": "46項目",
-    "price": "HK$7,280（2026-11-19 所見，僅供參考）",
+    "price": "HK$7,280",
     "priceValue": 7280,
     "audience": [
       "適用於18歲或以上男士",
@@ -3227,8 +3153,6 @@ window.PLANS_DATA = [
         "note": ""
       }
     ],
-    "source": "公開體檢產品資料",
-    "sourceUrl": "",
     "authorised": false,
     "featured": false,
     "image": "assets/images/c02.webp"
@@ -3241,7 +3165,7 @@ window.PLANS_DATA = [
     "name": "晉上醫療 女性癌症預防檢查",
     "centre": "晉上醫療體檢中心",
     "itemCount": "8項目",
-    "price": "HK$2,380（2026-11-19 所見，僅供參考）",
+    "price": "HK$2,380",
     "priceValue": 2380,
     "audience": [
       "適用於25歲或以上女士",
@@ -3278,8 +3202,6 @@ window.PLANS_DATA = [
         "note": ""
       }
     ],
-    "source": "公開體檢產品資料",
-    "sourceUrl": "",
     "authorised": false,
     "featured": false,
     "image": "assets/images/c03.webp"
@@ -3292,7 +3214,7 @@ window.PLANS_DATA = [
     "name": "仁和體檢 腫瘤標記COMBO套餐（女性）",
     "centre": "香港仁和體檢",
     "itemCount": "7項目",
-    "price": "HK$680（2026-11-19 所見，僅供參考）",
+    "price": "HK$680",
     "priceValue": 680,
     "audience": [
       "適用於18歲或以上女士",
@@ -3331,8 +3253,6 @@ window.PLANS_DATA = [
         "note": ""
       }
     ],
-    "source": "公開體檢產品資料",
-    "sourceUrl": "",
     "authorised": false,
     "featured": false,
     "image": "assets/images/c04.webp"
@@ -3345,7 +3265,7 @@ window.PLANS_DATA = [
     "name": "時代 消化系統癌症檢查計劃 (綜合)",
     "centre": "時代醫療服務中心",
     "itemCount": "25項目",
-    "price": "HK$2,510（2026-11-19 所見，僅供參考）",
+    "price": "HK$2,510",
     "priceValue": 2510,
     "audience": [
       "適用於18歲或以上男士及女士",
@@ -3405,8 +3325,6 @@ window.PLANS_DATA = [
         "note": "沙田分店不提供DEXA服務"
       }
     ],
-    "source": "公開體檢產品資料",
-    "sourceUrl": "",
     "authorised": false,
     "featured": false,
     "image": "assets/images/c05.webp"
@@ -3419,7 +3337,7 @@ window.PLANS_DATA = [
     "name": "香港專科 女士癌症篩查",
     "centre": "香港專科體檢及造影診斷中心",
     "itemCount": "59項目",
-    "price": "HK$3,980（2026-11-19 所見，僅供參考）",
+    "price": "HK$3,980",
     "priceValue": 3980,
     "audience": [
       "適用於18歲或以上女士",
@@ -3464,8 +3382,6 @@ window.PLANS_DATA = [
         "note": ""
       }
     ],
-    "source": "公開體檢產品資料",
-    "sourceUrl": "",
     "authorised": false,
     "featured": false,
     "image": "assets/images/c06.webp"
@@ -3478,7 +3394,7 @@ window.PLANS_DATA = [
     "name": "中環專科 早期癌症篩查計劃 – 進階版",
     "centre": "中環專科體檢中心",
     "itemCount": "40項目",
-    "price": "HK$4,300（2026-11-19 所見，僅供參考）",
+    "price": "HK$4,300",
     "priceValue": 4300,
     "audience": [
       "適用於18歲或以上人士，以及想透過檢查身體狀況認知身體健康狀況的人士",
@@ -3517,8 +3433,6 @@ window.PLANS_DATA = [
         "note": ""
       }
     ],
-    "source": "公開體檢產品資料",
-    "sourceUrl": "",
     "authorised": false,
     "featured": false,
     "image": "assets/images/c07.webp"
@@ -3531,7 +3445,7 @@ window.PLANS_DATA = [
     "name": "博思醫學 肺炎及早期肺癌篩查 - LDCT低劑量肺部電腦掃描",
     "centre": "博思醫學診斷中心",
     "itemCount": "4項目",
-    "price": "HK$1,900（2026-11-19 所見，僅供參考）",
+    "price": "HK$1,900",
     "priceValue": 1900,
     "audience": [
       "適用於50歲或以上男士及女士",
@@ -3622,8 +3536,6 @@ window.PLANS_DATA = [
         "note": ""
       }
     ],
-    "source": "公開體檢產品資料",
-    "sourceUrl": "",
     "authorised": false,
     "featured": false,
     "image": "assets/images/c08.webp"
@@ -3636,7 +3548,7 @@ window.PLANS_DATA = [
     "name": "新都醫療 全面星級肝癌風險評估",
     "centre": "香港新都醫療集團",
     "itemCount": "37項目",
-    "price": "HK$3,600（2026-11-19 所見，僅供參考）",
+    "price": "HK$3,600",
     "priceValue": 3600,
     "audience": [
       "適用於18歲或以上男士及女士",
@@ -3776,8 +3688,6 @@ window.PLANS_DATA = [
         "note": ""
       }
     ],
-    "source": "公開體檢產品資料",
-    "sourceUrl": "",
     "authorised": false,
     "featured": false,
     "image": "assets/images/c09.webp"
@@ -3790,7 +3700,7 @@ window.PLANS_DATA = [
     "name": "基研健康醫療 胃癌篩檢組合",
     "centre": "基研健康醫療有限公司",
     "itemCount": "6項目",
-    "price": "HK$1,980（2026-11-19 所見，僅供參考）",
+    "price": "HK$1,980",
     "priceValue": 1980,
     "audience": [
       "適用於18歲或以上人士",
@@ -3822,8 +3732,6 @@ window.PLANS_DATA = [
         "note": "超聲波檢查適用於星期二 (9:00am – 1:00pm; 2:00pm – 5:00pm)、星期三及星期五 (9:00am – 1:00pm)"
       }
     ],
-    "source": "公開體檢產品資料",
-    "sourceUrl": "",
     "authorised": false,
     "featured": false,
     "image": "assets/images/c10.webp"
@@ -3836,7 +3744,7 @@ window.PLANS_DATA = [
     "name": "天馬醫療 大腸健康篩查計劃",
     "centre": "天馬醫療專科中心",
     "itemCount": "55項目",
-    "price": "HK$2,480（2026-11-19 所見，僅供參考）",
+    "price": "HK$2,480",
     "priceValue": 2480,
     "audience": [
       "適合18歲或以上人士",
@@ -3877,7 +3785,7 @@ window.PLANS_DATA = [
           "週二及週五：上午9時至下午 1時 (其他日子：需預約)",
           "週六、週日及公眾假期：休息"
         ],
-        "phone": "電話 6235 0198（頁面註明可經 WhatsApp 查詢／預約）",
+        "phone": "電話 6235 0198",
         "note": ""
       },
       {
@@ -3887,12 +3795,10 @@ window.PLANS_DATA = [
           "週二及週五：上午9時至下午 1時 (其他日子：需預約)",
           "週六、週日及公眾假期：休息"
         ],
-        "phone": "電話 6235 0198（頁面註明可經 WhatsApp 查詢／預約）",
+        "phone": "電話 6235 0198",
         "note": ""
       }
     ],
-    "source": "公開體檢產品資料",
-    "sourceUrl": "",
     "authorised": false,
     "featured": false,
     "image": "assets/images/c11.webp"
@@ -3905,7 +3811,7 @@ window.PLANS_DATA = [
     "name": "明確醫療 癌症循環腫瘤細胞篩檢計劃 (CTC)",
     "centre": "明確醫療中心",
     "itemCount": "8項目",
-    "price": "HK$5,600（2026-11-19 所見，僅供參考）",
+    "price": "HK$5,600",
     "priceValue": 5600,
     "audience": [
       "適用於40歲或以上男士及女士",
@@ -3944,8 +3850,6 @@ window.PLANS_DATA = [
         "note": ""
       }
     ],
-    "source": "公開體檢產品資料",
-    "sourceUrl": "",
     "authorised": false,
     "featured": false,
     "image": "assets/images/c12.webp"
