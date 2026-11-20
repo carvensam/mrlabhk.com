@@ -2,14 +2,17 @@
 
 Date: 2026-11-20
 
-Checked the live site in the desktop browser after forcing all lazy-loaded images to load.
+Checked the live site with a cache-busting query. All lazy-loaded images were forced to load before counting.
 
-| Page | Images | Broken |
-| --- | ---: | ---: |
-| `/` | 7 | 0 |
-| `/plans.html` | 55 | 0 |
-| `/plan-detail.html?id=g01` | 2 | 0 |
+| Page | Images | Broken | Unwanted wording |
+| --- | ---: | ---: | ---: |
+| `/index.html` | 7 | 0 | 0 |
+| `/plans.html` | 55 | 0 | 0 |
+| `/plan-detail.html?id=e06` | 2 | 0 | 0 |
+| `/centres.html` | 1 | 0 | 0 |
+| `/about.html` | 1 | 0 | 0 |
+| `/partner.html` | 1 | 0 | 0 |
 
-Console errors: 0 on all three pages.
+Console errors: 0 on all six pages.
 
-Full-page screenshots were not captured because the desktop browser window was not visible in the running session; DOM image-rendering checks and HTTP asset checks both passed.
+E06 detail and centre pages show the corrected E Plus phone `6661 8628` and full four-branch addresses.
