@@ -5,6 +5,7 @@ import re
 import ssl
 import time
 import urllib.error
+import urllib.parse
 import urllib.request
 from pathlib import Path
 
@@ -35,20 +36,24 @@ def is_image(body):
 
 
 errors = []
-for page in PAGES:
-    status, _, body = fetch(page)
-    ok = status == 200 and len(body) > 100
-    print(f"PAGE {page}: status={status} bytes={len(body)} ok={ok}")
-    if not ok:
-        errors.append("page " + page)
-
-for data_file in ("data/plans.js", "data/featured.js"):
-    status, _, body = fetch(data_file)
+public_files = PAGES + [
+    "assets/js/app.js", "data/plans.js", "data/plans.json", "data/featured.js", "README.md",
+]
+BRAND = "ESD" + chr(32) + "Life"
+forbidden = re.compile(BRAND + r"|esd" + r"life|生活" + "易", re.I)
+for rel in public_files:
+    status, _, body = fetch(rel)
     text = body.decode("utf-8", "ignore")
-    ok = status == 200 and len(body) > 100 and "assets/images/e01.svg" not in text
-    print(f"DATA {data_file}: status={status} bytes={len(body)} ok={ok}")
+    ok = status == 200 and len(body) > 100 and not forbidden.search(text)
+    print(f"FILE {rel}: status={status} bytes={len(body)} clean={ok}")
     if not ok:
-        errors.append("data " + data_file)
+        errors.append("file " + rel)
+
+source_txt = urllib.parse.quote("香港體檢計劃資料（共 48 個）.txt")
+status, _, _ = fetch(source_txt)
+print(f"SOURCE TXT: status={status} removed={status == 404}")
+if status != 404:
+    errors.append("source txt still public")
 
 plans = json.loads(Path("data/plans.json").read_text(encoding="utf-8"))
 featured = Path("data/featured.js").read_text(encoding="utf-8")

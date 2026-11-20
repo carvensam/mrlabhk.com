@@ -10,10 +10,10 @@
 - `centres.html`：體檢中心列表
 - `about.html`：關於我們
 - `partner.html`：加入我們
-- `data/plans.js` / `data/plans.json`：48 個 ESD Life 歷史資料計劃
+- `data/plans.js` / `data/plans.json`：48 個 來源平台 歷史資料計劃
 - `data/featured.js`：五款 MrLab Facebook 貼文優惠，加上先前加入的醫家 EPH2.0 公開會員優惠
 - `assets/images/mrlab-*.jpg`：從對應 MrLab 貼文保存的真實完整海報
-- `assets/images/*.svg`：ESD Life 計劃示意圖、原有會員優惠配圖及 logo/favicon
+- `assets/images/*.svg`：來源平台 計劃示意圖、原有會員優惠配圖及 logo/favicon
 - `assets/css/style.css`、`assets/js/app.js`：網站視覺樣式及共用邏輯
 - `tools/`：資料解析、示意圖生成及靜態驗證工具
 
@@ -46,9 +46,9 @@ DR70和其他腫瘤指標不是單獨確診或排除癌症的檢查。网站文�
 
 ## 其他資料及查詢
 
-48個 ESD Life 計劃資料依原附件整理，為2026-11-19所見售價，今次沒有更改其內容、來源、分類或授權標示。
+48個來源計劃資料依原附件整理，為2026-11-19所見售價，今次沒有更改其內容、來源、分類或授權標示。
 
-WhatsApp：`https://wa.me/85246151993`，各計劃查詢連結自動帶入計劃名稱。ESD Life 原有未授權中心提示繼續保留。
+WhatsApp：`https://wa.me/85246151993`，各計劃查詢連結自動帶入計劃名稱。來源平台 原有未授權中心提示繼續保留。
 
 ## 部署
 

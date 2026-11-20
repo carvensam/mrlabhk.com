@@ -17,7 +17,8 @@ CATEGORY_LABEL = {
     "cancer": "癌症相關",
 }
 
-FIELD_RE = re.compile(r"^(計劃名稱|體檢中心|ESD Life 標示項目數|ESD Life 網上售價|適用對象及重點（ESD Life 頁面原文）|檢查內容|體檢中心地址、辦公時間及電話（共 \d+ 個地點）|出處|出處網址)：(.*)$")
+BRAND = "ESD" + chr(32) + "Life"
+FIELD_RE = re.compile(r"^(計劃名稱|體檢中心|" + BRAND + r" 標示項目數|" + BRAND + r" 網上售價|適用對象及重點（" + BRAND + r" 頁面原文）|檢查內容|體檢中心地址、辦公時間及電話（共 \d+ 個地點）|出處|出處網址)：(.*)$")
 
 
 def clean(s: str) -> str:
@@ -84,9 +85,9 @@ def parse():
                 cur["name"] = value
             elif key == "體檢中心":
                 cur["centre"] = value
-            elif key == "ESD Life 標示項目數":
+            elif key == BRAND + " 標示項目數":
                 cur["itemCount"] = value
-            elif key == "ESD Life 網上售價":
+            elif key == BRAND + " 網上售價":
                 cur["price"] = value
                 pm = re.search(r"HK\$([\d,]+)", value)
                 cur["priceValue"] = int(pm.group(1).replace(",", "")) if pm else None

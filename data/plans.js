@@ -134,8 +134,8 @@ window.PLANS_DATA = [
         "note": "荃灣- X光檢驗備註: 於荃灣檢驗中心登記後, 需於鄰近的X光化驗中心進行檢查"
       }
     ],
-    "source": "ESD Life 健康網購（health.ESDlife）",
-    "sourceUrl": "https://health.esdlife.com/shop/hk/product/美邦-成人升級全面身體檢查-e-優惠時段",
+    "source": "公開體檢產品資料",
+    "sourceUrl": "",
     "authorised": false,
     "featured": false,
     "image": "assets/images/g01.webp"
@@ -214,8 +214,8 @@ window.PLANS_DATA = [
         "note": ""
       }
     ],
-    "source": "ESD Life 健康網購（health.ESDlife）",
-    "sourceUrl": "https://health.esdlife.com/shop/hk/product/德信醫療-全面優越健康檢查2項超聲波及4項癌症指標",
+    "source": "公開體檢產品資料",
+    "sourceUrl": "",
     "authorised": false,
     "featured": false,
     "image": "assets/images/g02.webp"
@@ -378,7 +378,7 @@ window.PLANS_DATA = [
         "name": "中環",
         "address": "中環砵典乍街10號致生大廈1樓及2樓",
         "hours": [
-          "n.a.（ESD Life 頁面未列出此地點的辦公時間）"
+          "n.a.（來源頁面未列出此地點的辦公時間）"
         ],
         "phone": "2522 0108；預約熱線 8100 8138；WhatsApp 8301 8301",
         "note": ""
@@ -714,8 +714,8 @@ window.PLANS_DATA = [
         "note": ""
       }
     ],
-    "source": "ESD Life 健康網購（health.ESDlife）",
-    "sourceUrl": "https://health.esdlife.com/shop/hk/product/卓健醫療-全面身體檢查-白金-2",
+    "source": "公開體檢產品資料",
+    "sourceUrl": "",
     "authorised": false,
     "featured": false,
     "image": "assets/images/g03.webp"
@@ -803,8 +803,8 @@ window.PLANS_DATA = [
         "note": "沙田分店不提供DEXA服務"
       }
     ],
-    "source": "ESD Life 健康網購（health.ESDlife）",
-    "sourceUrl": "https://health.esdlife.com/shop/hk/product/時代-卓越健康檢查",
+    "source": "公開體檢產品資料",
+    "sourceUrl": "",
     "authorised": false,
     "featured": false,
     "image": "assets/images/g04.webp"
@@ -876,8 +876,8 @@ window.PLANS_DATA = [
         "note": "中環分店不提供X-Ray服務，如需揀選此服務請稍移玉步至香港醫療診斷中心。 地址：香港中環畢打街1-3號中建大廈515-519室（步程約3分鐘）"
       }
     ],
-    "source": "ESD Life 健康網購（health.ESDlife）",
-    "sourceUrl": "https://health.esdlife.com/shop/hk/product/壹森健康-esd-標準全面檢查-3項癌症指標及心電圖",
+    "source": "公開體檢產品資料",
+    "sourceUrl": "",
     "authorised": false,
     "featured": false,
     "image": "assets/images/g05.webp"
@@ -942,8 +942,8 @@ window.PLANS_DATA = [
         "note": ""
       }
     ],
-    "source": "ESD Life 健康網購（health.ESDlife）",
-    "sourceUrl": "https://health.esdlife.com/shop/hk/product/晉上醫療-優尚健康檢查",
+    "source": "公開體檢產品資料",
+    "sourceUrl": "",
     "authorised": false,
     "featured": false,
     "image": "assets/images/g06.webp"
@@ -1037,8 +1037,8 @@ window.PLANS_DATA = [
         "note": ""
       }
     ],
-    "source": "ESD Life 健康網購（health.ESDlife）",
-    "sourceUrl": "https://health.esdlife.com/shop/hk/product/毅力kinetics特選周年身體檢查計劃-卓越",
+    "source": "公開體檢產品資料",
+    "sourceUrl": "",
     "authorised": false,
     "featured": false,
     "image": "assets/images/g07.webp"
@@ -1105,8 +1105,8 @@ window.PLANS_DATA = [
         "note": ""
       }
     ],
-    "source": "ESD Life 健康網購（health.ESDlife）",
-    "sourceUrl": "https://health.esdlife.com/shop/hk/product/尚醫-特選健康檢查-2項超聲波及癌症指標",
+    "source": "公開體檢產品資料",
+    "sourceUrl": "",
     "authorised": false,
     "featured": false,
     "image": "assets/images/g08.webp"
@@ -1176,8 +1176,8 @@ window.PLANS_DATA = [
         "note": ""
       }
     ],
-    "source": "ESD Life 健康網購（health.ESDlife）",
-    "sourceUrl": "https://health.esdlife.com/shop/hk/product/港怡醫院-至尊迅捷檢查計劃套餐-即日獲取報告分析",
+    "source": "公開體檢產品資料",
+    "sourceUrl": "",
     "authorised": false,
     "featured": false,
     "image": "assets/images/g09.webp"
@@ -1238,8 +1238,8 @@ window.PLANS_DATA = [
         "note": ""
       }
     ],
-    "source": "ESD Life 健康網購（health.ESDlife）",
-    "sourceUrl": "https://health.esdlife.com/shop/hk/product/仁安體檢中心-全面健康檢查計劃",
+    "source": "公開體檢產品資料",
+    "sourceUrl": "",
     "authorised": false,
     "featured": false,
     "image": "assets/images/g10.webp"
@@ -1323,8 +1323,8 @@ window.PLANS_DATA = [
         "note": ""
       }
     ],
-    "source": "ESD Life 健康網購（health.ESDlife）",
-    "sourceUrl": "https://health.esdlife.com/shop/hk/product/全仁醫務-皇牌健康檢查",
+    "source": "公開體檢產品資料",
+    "sourceUrl": "",
     "authorised": false,
     "featured": false,
     "image": "assets/images/g11.webp"
@@ -1397,8 +1397,8 @@ window.PLANS_DATA = [
         "note": ""
       }
     ],
-    "source": "ESD Life 健康網購（health.ESDlife）",
-    "sourceUrl": "https://health.esdlife.com/shop/hk/product/九龍半島醫學中心-特選全面身體檢查-上腹超聲波及3項癌症指標",
+    "source": "公開體檢產品資料",
+    "sourceUrl": "",
     "authorised": false,
     "featured": false,
     "image": "assets/images/g12.webp"
@@ -1463,8 +1463,8 @@ window.PLANS_DATA = [
         "note": ""
       }
     ],
-    "source": "ESD Life 健康網購（health.ESDlife）",
-    "sourceUrl": "https://health.esdlife.com/shop/hk/product/晉上醫療-全腹超聲波檢查-2項癌症指標",
+    "source": "公開體檢產品資料",
+    "sourceUrl": "",
     "authorised": false,
     "featured": false,
     "image": "assets/images/a01.webp"
@@ -1555,8 +1555,8 @@ window.PLANS_DATA = [
         "note": "荃灣- X光檢驗備註: 於荃灣檢驗中心登記後, 需於鄰近的X光化驗中心進行檢查"
       }
     ],
-    "source": "ESD Life 健康網購（health.ESDlife）",
-    "sourceUrl": "https://health.esdlife.com/shop/hk/product/美邦-全腹超聲波計劃",
+    "source": "公開體檢產品資料",
+    "sourceUrl": "",
     "authorised": false,
     "featured": false,
     "image": "assets/images/a02.webp"
@@ -1658,8 +1658,8 @@ window.PLANS_DATA = [
         "note": ""
       }
     ],
-    "source": "ESD Life 健康網購（health.ESDlife）",
-    "sourceUrl": "https://health.esdlife.com/shop/hk/product/博思醫學-ct上腹部-無顯影劑",
+    "source": "公開體檢產品資料",
+    "sourceUrl": "",
     "authorised": false,
     "featured": false,
     "image": "assets/images/a03.webp"
@@ -1762,8 +1762,8 @@ window.PLANS_DATA = [
         "note": ""
       }
     ],
-    "source": "ESD Life 健康網購（health.ESDlife）",
-    "sourceUrl": "https://health.esdlife.com/shop/hk/product/博思醫學-全腹部上腹及骨盆腔磁力共振-顯影劑",
+    "source": "公開體檢產品資料",
+    "sourceUrl": "",
     "authorised": false,
     "featured": false,
     "image": "assets/images/a04.webp"
@@ -1816,8 +1816,8 @@ window.PLANS_DATA = [
         "note": ""
       }
     ],
-    "source": "ESD Life 健康網購（health.ESDlife）",
-    "sourceUrl": "https://health.esdlife.com/shop/hk/product/仁輝專科-胃及大腸內視鏡套餐",
+    "source": "公開體檢產品資料",
+    "sourceUrl": "",
     "authorised": false,
     "featured": false,
     "image": "assets/images/a05.webp"
@@ -1859,8 +1859,8 @@ window.PLANS_DATA = [
         "note": ""
       }
     ],
-    "source": "ESD Life 健康網購（health.ESDlife）",
-    "sourceUrl": "https://health.esdlife.com/shop/hk/product/九龍半島醫學中心-大腸鏡檢查",
+    "source": "公開體檢產品資料",
+    "sourceUrl": "",
     "authorised": false,
     "featured": false,
     "image": "assets/images/a06.webp"
@@ -1904,8 +1904,8 @@ window.PLANS_DATA = [
         "note": ""
       }
     ],
-    "source": "ESD Life 健康網購（health.ESDlife）",
-    "sourceUrl": "https://health.esdlife.com/shop/hk/product/中環hd-胃及大腸內視鏡套餐",
+    "source": "公開體檢產品資料",
+    "sourceUrl": "",
     "authorised": false,
     "featured": false,
     "image": "assets/images/a07.webp"
@@ -1956,8 +1956,8 @@ window.PLANS_DATA = [
         "note": ""
       }
     ],
-    "source": "ESD Life 健康網購（health.ESDlife）",
-    "sourceUrl": "https://health.esdlife.com/shop/hk/product/中環專科-腸胃健康檢查",
+    "source": "公開體檢產品資料",
+    "sourceUrl": "",
     "authorised": false,
     "featured": false,
     "image": "assets/images/a08.webp"
@@ -2009,8 +2009,8 @@ window.PLANS_DATA = [
         "note": ""
       }
     ],
-    "source": "ESD Life 健康網購（health.ESDlife）",
-    "sourceUrl": "https://health.esdlife.com/shop/hk/product/香港駿檢-胃部健康檢查計劃",
+    "source": "公開體檢產品資料",
+    "sourceUrl": "",
     "authorised": false,
     "featured": false,
     "image": "assets/images/a09.webp"
@@ -2066,8 +2066,8 @@ window.PLANS_DATA = [
         "note": ""
       }
     ],
-    "source": "ESD Life 健康網購（health.ESDlife）",
-    "sourceUrl": "https://health.esdlife.com/shop/hk/product/時代-脂肪肝全面檢查計劃",
+    "source": "公開體檢產品資料",
+    "sourceUrl": "",
     "authorised": false,
     "featured": false,
     "image": "assets/images/a10.webp"
@@ -2124,8 +2124,8 @@ window.PLANS_DATA = [
         "note": ""
       }
     ],
-    "source": "ESD Life 健康網購（health.ESDlife）",
-    "sourceUrl": "https://health.esdlife.com/shop/hk/product/明德醫療中心-肝臟健康檢查計劃",
+    "source": "公開體檢產品資料",
+    "sourceUrl": "",
     "authorised": false,
     "featured": false,
     "image": "assets/images/a11.webp"
@@ -2178,8 +2178,8 @@ window.PLANS_DATA = [
         "note": ""
       }
     ],
-    "source": "ESD Life 健康網購（health.ESDlife）",
-    "sourceUrl": "https://health.esdlife.com/shop/hk/product/富樂醫療-肝功能健康檢查-肝纖維化掃瞄-由普通科醫生主理",
+    "source": "公開體檢產品資料",
+    "sourceUrl": "",
     "authorised": false,
     "featured": false,
     "image": "assets/images/a12.webp"
@@ -2281,8 +2281,8 @@ window.PLANS_DATA = [
         "note": "荃灣- X光檢驗備註: 於荃灣檢驗中心登記後, 需於鄰近的X光化驗中心進行檢查"
       }
     ],
-    "source": "ESD Life 健康網購（health.ESDlife）",
-    "sourceUrl": "https://health.esdlife.com/shop/hk/product/美邦活得精彩女性週年身體檢查-優越計劃優惠時段",
+    "source": "公開體檢產品資料",
+    "sourceUrl": "",
     "authorised": false,
     "featured": false,
     "image": "assets/images/w01.webp"
@@ -2341,8 +2341,8 @@ window.PLANS_DATA = [
         "note": ""
       }
     ],
-    "source": "ESD Life 健康網購（health.ESDlife）",
-    "sourceUrl": "https://health.esdlife.com/shop/hk/product/尚醫-女性全面健康檢查-7項超聲波及2項癌症指標",
+    "source": "公開體檢產品資料",
+    "sourceUrl": "",
     "authorised": false,
     "featured": false,
     "image": "assets/images/w02.webp"
@@ -2427,8 +2427,8 @@ window.PLANS_DATA = [
         "note": ""
       }
     ],
-    "source": "ESD Life 健康網購（health.ESDlife）",
-    "sourceUrl": "https://health.esdlife.com/shop/hk/product/德信醫療-女士健康護航檢查計劃-5項癌症指標",
+    "source": "公開體檢產品資料",
+    "sourceUrl": "",
     "authorised": false,
     "featured": false,
     "image": "assets/images/w03.webp"
@@ -2491,8 +2491,8 @@ window.PLANS_DATA = [
         "note": ""
       }
     ],
-    "source": "ESD Life 健康網購（health.ESDlife）",
-    "sourceUrl": "https://health.esdlife.com/shop/hk/product/仁安體檢中心-尊尚女士健康檢查計劃",
+    "source": "公開體檢產品資料",
+    "sourceUrl": "",
     "authorised": false,
     "featured": false,
     "image": "assets/images/w04.webp"
@@ -2581,8 +2581,8 @@ window.PLANS_DATA = [
         "note": "沙田分店不提供DEXA服務"
       }
     ],
-    "source": "ESD Life 健康網購（health.ESDlife）",
-    "sourceUrl": "https://health.esdlife.com/shop/hk/product/時代-尊貴婦科超聲波及癌症檢查-連子宮頸癌篩查",
+    "source": "公開體檢產品資料",
+    "sourceUrl": "",
     "authorised": false,
     "featured": false,
     "image": "assets/images/w05.webp"
@@ -2647,8 +2647,8 @@ window.PLANS_DATA = [
         "note": ""
       }
     ],
-    "source": "ESD Life 健康網購（health.ESDlife）",
-    "sourceUrl": "https://health.esdlife.com/shop/hk/product/晉上醫療-女士至尊身體檢查-9項超聲波",
+    "source": "公開體檢產品資料",
+    "sourceUrl": "",
     "authorised": false,
     "featured": false,
     "image": "assets/images/w06.webp"
@@ -2755,8 +2755,8 @@ window.PLANS_DATA = [
         "note": "有女醫生應診"
       }
     ],
-    "source": "ESD Life 健康網購（health.ESDlife）",
-    "sourceUrl": "https://health.esdlife.com/shop/hk/product/聯合醫務-優越女士驗身計劃",
+    "source": "公開體檢產品資料",
+    "sourceUrl": "",
     "authorised": false,
     "featured": false,
     "image": "assets/images/w07.webp"
@@ -2823,8 +2823,8 @@ window.PLANS_DATA = [
         "note": ""
       }
     ],
-    "source": "ESD Life 健康網購（health.ESDlife）",
-    "sourceUrl": "https://health.esdlife.com/shop/hk/product/香港婦檢-女士全面健康檢查計劃-40-歲以上",
+    "source": "公開體檢產品資料",
+    "sourceUrl": "",
     "authorised": false,
     "featured": false,
     "image": "assets/images/w08.webp"
@@ -2904,8 +2904,8 @@ window.PLANS_DATA = [
         "note": ""
       }
     ],
-    "source": "ESD Life 健康網購（health.ESDlife）",
-    "sourceUrl": "https://health.esdlife.com/shop/hk/product/全仁醫務-優越婦科檢查計劃-5項超聲波及2項癌症指標",
+    "source": "公開體檢產品資料",
+    "sourceUrl": "",
     "authorised": false,
     "featured": false,
     "image": "assets/images/w09.webp"
@@ -2968,8 +2968,8 @@ window.PLANS_DATA = [
         "note": ""
       }
     ],
-    "source": "ESD Life 健康網購（health.ESDlife）",
-    "sourceUrl": "https://health.esdlife.com/shop/hk/product/中環專科-精選全面女士健康檢查",
+    "source": "公開體檢產品資料",
+    "sourceUrl": "",
     "authorised": false,
     "featured": false,
     "image": "assets/images/w10.webp"
@@ -3028,8 +3028,8 @@ window.PLANS_DATA = [
         "note": "超聲波檢查適用於星期二 (9:00am – 1:00pm; 2:00pm – 5:00pm)、星期三及星期五 (9:00am – 1:00pm)"
       }
     ],
-    "source": "ESD Life 健康網購（health.ESDlife）",
-    "sourceUrl": "https://health.esdlife.com/shop/hk/product/基研健康醫療-女士身體檢查計劃",
+    "source": "公開體檢產品資料",
+    "sourceUrl": "",
     "authorised": false,
     "featured": false,
     "image": "assets/images/w11.webp"
@@ -3084,8 +3084,8 @@ window.PLANS_DATA = [
         "note": ""
       }
     ],
-    "source": "ESD Life 健康網購（health.ESDlife）",
-    "sourceUrl": "https://health.esdlife.com/shop/hk/product/仁安醫院-升級女士健康檢查計劃超聲波檢查",
+    "source": "公開體檢產品資料",
+    "sourceUrl": "",
     "authorised": false,
     "featured": false,
     "image": "assets/images/w12.webp"
@@ -3160,8 +3160,8 @@ window.PLANS_DATA = [
         "note": "荃灣- X光檢驗備註: 於荃灣檢驗中心登記後, 需於鄰近的X光化驗中心進行檢查"
       }
     ],
-    "source": "ESD Life 健康網購（health.ESDlife）",
-    "sourceUrl": "https://health.esdlife.com/shop/hk/product/美邦-女性全面癌指標檢查組合",
+    "source": "公開體檢產品資料",
+    "sourceUrl": "",
     "authorised": false,
     "featured": false,
     "image": "assets/images/c01.webp"
@@ -3227,8 +3227,8 @@ window.PLANS_DATA = [
         "note": ""
       }
     ],
-    "source": "ESD Life 健康網購（health.ESDlife）",
-    "sourceUrl": "https://health.esdlife.com/shop/hk/product/港安醫療中心太古坊-esd-男士癌症指標健康計劃-由普通科醫生主理",
+    "source": "公開體檢產品資料",
+    "sourceUrl": "",
     "authorised": false,
     "featured": false,
     "image": "assets/images/c02.webp"
@@ -3278,8 +3278,8 @@ window.PLANS_DATA = [
         "note": ""
       }
     ],
-    "source": "ESD Life 健康網購（health.ESDlife）",
-    "sourceUrl": "https://health.esdlife.com/shop/hk/product/晉上醫療-女性癌症預防檢查",
+    "source": "公開體檢產品資料",
+    "sourceUrl": "",
     "authorised": false,
     "featured": false,
     "image": "assets/images/c03.webp"
@@ -3331,8 +3331,8 @@ window.PLANS_DATA = [
         "note": ""
       }
     ],
-    "source": "ESD Life 健康網購（health.ESDlife）",
-    "sourceUrl": "https://health.esdlife.com/shop/hk/product/仁和體檢-腫瘤標記combo套餐女性",
+    "source": "公開體檢產品資料",
+    "sourceUrl": "",
     "authorised": false,
     "featured": false,
     "image": "assets/images/c04.webp"
@@ -3405,8 +3405,8 @@ window.PLANS_DATA = [
         "note": "沙田分店不提供DEXA服務"
       }
     ],
-    "source": "ESD Life 健康網購（health.ESDlife）",
-    "sourceUrl": "https://health.esdlife.com/shop/hk/product/時代-消化系統癌症檢查計劃-綜合",
+    "source": "公開體檢產品資料",
+    "sourceUrl": "",
     "authorised": false,
     "featured": false,
     "image": "assets/images/c05.webp"
@@ -3464,8 +3464,8 @@ window.PLANS_DATA = [
         "note": ""
       }
     ],
-    "source": "ESD Life 健康網購（health.ESDlife）",
-    "sourceUrl": "https://health.esdlife.com/shop/hk/product/香港專科-女士癌症篩查",
+    "source": "公開體檢產品資料",
+    "sourceUrl": "",
     "authorised": false,
     "featured": false,
     "image": "assets/images/c06.webp"
@@ -3517,8 +3517,8 @@ window.PLANS_DATA = [
         "note": ""
       }
     ],
-    "source": "ESD Life 健康網購（health.ESDlife）",
-    "sourceUrl": "https://health.esdlife.com/shop/hk/product/中環專科-早期癌症篩查計劃-進階版",
+    "source": "公開體檢產品資料",
+    "sourceUrl": "",
     "authorised": false,
     "featured": false,
     "image": "assets/images/c07.webp"
@@ -3622,8 +3622,8 @@ window.PLANS_DATA = [
         "note": ""
       }
     ],
-    "source": "ESD Life 健康網購（health.ESDlife）",
-    "sourceUrl": "https://health.esdlife.com/shop/hk/product/博思醫學-肺炎及早期肺癌篩查-ldct低劑量肺部電腦掃描",
+    "source": "公開體檢產品資料",
+    "sourceUrl": "",
     "authorised": false,
     "featured": false,
     "image": "assets/images/c08.webp"
@@ -3776,8 +3776,8 @@ window.PLANS_DATA = [
         "note": ""
       }
     ],
-    "source": "ESD Life 健康網購（health.ESDlife）",
-    "sourceUrl": "https://health.esdlife.com/shop/hk/product/新都醫療-全面星級肝癌風險評估",
+    "source": "公開體檢產品資料",
+    "sourceUrl": "",
     "authorised": false,
     "featured": false,
     "image": "assets/images/c09.webp"
@@ -3822,8 +3822,8 @@ window.PLANS_DATA = [
         "note": "超聲波檢查適用於星期二 (9:00am – 1:00pm; 2:00pm – 5:00pm)、星期三及星期五 (9:00am – 1:00pm)"
       }
     ],
-    "source": "ESD Life 健康網購（health.ESDlife）",
-    "sourceUrl": "https://health.esdlife.com/shop/hk/product/基研健康醫療-胃癌篩檢組合",
+    "source": "公開體檢產品資料",
+    "sourceUrl": "",
     "authorised": false,
     "featured": false,
     "image": "assets/images/c10.webp"
@@ -3891,8 +3891,8 @@ window.PLANS_DATA = [
         "note": ""
       }
     ],
-    "source": "ESD Life 健康網購（health.ESDlife）",
-    "sourceUrl": "https://health.esdlife.com/shop/hk/product/天馬醫療-大腸健康篩查計劃",
+    "source": "公開體檢產品資料",
+    "sourceUrl": "",
     "authorised": false,
     "featured": false,
     "image": "assets/images/c11.webp"
@@ -3944,8 +3944,8 @@ window.PLANS_DATA = [
         "note": ""
       }
     ],
-    "source": "ESD Life 健康網購（health.ESDlife）",
-    "sourceUrl": "https://health.esdlife.com/shop/hk/product/明確醫療-癌症循環腫瘤細胞篩檢計劃-ctc",
+    "source": "公開體檢產品資料",
+    "sourceUrl": "",
     "authorised": false,
     "featured": false,
     "image": "assets/images/c12.webp"

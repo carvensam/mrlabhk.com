@@ -32,7 +32,7 @@ for p in plans:
     img = ROOT / p["image"]
     if not img.exists():
         errors.append(f"{p['id']}: missing image {p['image']}")
-    if not p["sourceUrl"].startswith("https://"):
+    if p.get("sourceUrl") and not p["sourceUrl"].startswith("https://"):
         errors.append(f"{p['id']}: bad sourceUrl")
     if not p["centre"] or not p["name"]:
         errors.append(f"{p['id']}: missing basic data")
@@ -62,6 +62,16 @@ app = (ROOT / "assets" / "js" / "app.js").read_text(encoding="utf-8")
 for needle in ['WA_NUMBER = "85246151993"', "encodeURIComponent", "無授權本平台代為 Booking", "plan-detail.html?id="]:
     if needle not in app:
         errors.append(f"app.js missing expected string: {needle}")
+
+public_files = pages + [
+    "assets/js/app.js", "data/plans.js", "data/plans.json", "data/featured.js", "README.md",
+]
+BRAND = "ESD" + chr(32) + "Life"
+forbidden = re.compile(BRAND + r"|esd" + r"life|生活" + "易", re.I)
+for rel in public_files:
+    text = (ROOT / rel).read_text(encoding="utf-8")
+    if forbidden.search(text):
+        errors.append(f"{rel}: contains forbidden source-platform name")
 
 print(f"pages={len(pages)} plans={len(plans)} images={len(set(all_imgs))}")
 print(f"errors={len(errors)} warnings={len(warnings)}")

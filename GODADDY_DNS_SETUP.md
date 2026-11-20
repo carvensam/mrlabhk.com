@@ -5,7 +5,7 @@
 | 項目 | 狀態 |
 |---|---|
 | GitHub Repository | ✅ 已建立 `carvensam/mrlabhk.com`（public） |
-| 網站檔案 | ✅ 已推送到 `main`（54 個計劃 = 6 醫家精選 + 48 ESD Life，每張獨立 SVG 圖片） |
+| 網站檔案 | ✅ 已推送到 `main`（54 個計劃 = 6 醫家精選 + 48 個來源計劃，每張獨立圖片） |
 | GitHub Pages | ✅ 已啟用，build 狀態 `built`，source = `main` / root |
 | CNAME（GitHub 端） | ✅ 已設為 `www.mrlabhk.com`（repo 內亦有 `CNAME` 檔） |
 | Enforce HTTPS | ✅ 已開啟，SSL 憑證有效至 2027-02-17 |

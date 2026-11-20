@@ -306,7 +306,7 @@
             "<dt>標示項目數</dt><dd>" + esc(p.itemCount || "n.a.") + "</dd>" +
             "<dt>" + priceLabel(p) + "</dt><dd>" + esc(money(p)) + "</dd>" +
             "<dt>出處</dt><dd>" + esc(p.source || "n.a.") + "</dd>" +
-            "<dt>出處網址</dt><dd>" + (p.sourceUrl ? '<a class="text-link" href="' + esc(p.sourceUrl) + '" target="_blank" rel="noopener">' + esc(p.sourceUrl) + "</a>" : "n.a.") + "</dd>" +
+            (p.sourceUrl ? "<dt>出處網址</dt><dd>" + '<a class="text-link" href="' + esc(p.sourceUrl) + '" target="_blank" rel="noopener">' + esc(p.sourceUrl) + "</a></dd>" : "") +
             (p.sourceCheckedAt ? "<dt>來源核對日期</dt><dd>" + esc(p.sourceCheckedAt) + "</dd>" : "") +
             (p.validityNote ? "<dt>優惠適用提醒</dt><dd>" + esc(p.validityNote) + "</dd>" : "") +
           "</dl>" +
