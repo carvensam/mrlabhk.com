@@ -335,7 +335,7 @@ button, input, select { font: inherit; }
 
 /* ---------- centre thumbnails ---------- */
 .centre-card { padding: 0 0 24px; }
-.centre-img { width: 100%; height: 124px; object-fit: cover; object-position: center; border-bottom: 1px solid var(--line); background: var(--ice-200); }
+.centre-img { display: block; width: 100%; height: auto; aspect-ratio: 8 / 3; object-fit: contain; object-position: center; border-bottom: 1px solid var(--line); background: #eaf3f8; }
 .centre-card .card-top { padding: 18px 24px 0; }
 .centre-card h3, .centre-card .meta, .centre-card ul, .centre-card .plan-links { margin-left: 24px; margin-right: 24px; }
 

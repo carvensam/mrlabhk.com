@@ -7,7 +7,6 @@
   var ITEMS = window.ITEMS_DATA || [];
   var ALL = FEATURED.concat(PLANS);
   var WA_NUMBER = "85246151993";
-  var CENTRE_IMAGES = {"2": "assets/images/centre-02.png", "3": "assets/images/centre-03.png", "4": "assets/images/centre-04.png", "5": "assets/images/centre-05.png", "6": "assets/images/centre-06.png", "7": "assets/images/centre-07.png", "11": "assets/images/centre-11.png", "13": "assets/images/centre-13.png", "14": "assets/images/centre-14.png", "15": "assets/images/centre-15.jpg", "16": "assets/images/centre-16.jpg", "17": "assets/images/centre-17.jpg", "18": "assets/images/centre-18.jpg", "19": "assets/images/centre-19.jpg", "20": "assets/images/centre-20.png", "21": "assets/images/centre-21.png", "22": "assets/images/centre-22.jpg", "23": "assets/images/centre-23.jpg", "24": "assets/images/centre-24.jpg", "25": "assets/images/centre-25.jpg", "27": "assets/images/centre-27.jpg", "28": "assets/images/centre-28.jpg", "29": "assets/images/centre-29.jpg"};
 
   var CAT_LABEL = {
     featured: "精選",
@@ -59,9 +58,7 @@
   }
 
   function centreImage(name, index) {
-    var key = "" + index;
-    var src = CENTRE_IMAGES[key] || CENTRE_IMAGES[name] || "assets/images/centre-" + String(index).padStart(2, "0") + ".svg";
-    if (index === 1) src = "assets/images/logo-mrlab.png";
+    var src = "assets/images/centre-" + String(index).padStart(2, "0") + ".png";
     return '<img class="centre-img" src="' + esc(src) + '" alt="' + esc(name) + ' 識別圖" loading="lazy">';
   }
 

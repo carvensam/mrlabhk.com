@@ -23,3 +23,4 @@ Additional checks:
 - Footer shows only `WhatsApp / 電話：4639 4019` and `電郵：info@welldonemarketinghk.com`; no old phone, Gmail or Facebook copy.
 - E06 detail and centre pages retain phone `6661 8628`, all four addresses and the three opening-hour lines.
 - Item glossary renders 102 `<details>` rows; clicking a row opens it, and category chips filter correctly.
+- All 31 centre thumbnails are uniform 640×240 PNGs; 31/31 load with zero broken images.
