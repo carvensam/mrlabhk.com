@@ -163,10 +163,9 @@
   {
     "index": 20,
     "name": "明德醫療中心",
-    "kind": "logo",
-    "url": "https://www.matilda.org/hubfs/website_assets/img/logo-main.svg",
+    "kind": "wordmark",
     "officialUrl": "https://www.matilda.org/zh-hk/matilda-medical-centre",
-    "evidence": "Official Matilda Medical Centre page uses the parent Matilda Hospital logo; Central address and phone match.",
+    "evidence": "Official page confirms 明德醫療中心 at the Central address; no separate centre-specific logo, so an exact-name wordmark is used.",
     "confidence": "high"
   },
   {
@@ -182,9 +181,13 @@
     "index": 22,
     "name": "聯合醫務",
     "kind": "logo",
-    "url": "https://www.ump.com.hk/images/logo.png?v=20261124233945",
-    "officialUrl": "https://www.ump.com.hk/",
-    "evidence": "Official corporate site footer: 聯合醫務集團有限公司 / UMP Healthcare Holdings Limited.",
+    "url": "https://group.ump.com.hk/images/logos/ump-logo.png",
+    "urls": [
+      "https://group.ump.com.hk/images/logos/ump-logo.png",
+      "https://www.ump.com.hk/images/logo.png?v=20261124233945"
+    ],
+    "officialUrl": "https://group.ump.com.hk/tc",
+    "evidence": "Official corporate site header and footer logo for 聯合醫務集團有限公司 / UMP Healthcare Holdings Limited; centre network listed.",
     "confidence": "high"
   },
   {
