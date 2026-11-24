@@ -8,7 +8,7 @@
 - `plans.html`：全部體檢計劃（分類篩選及搜尋）
 - `plan-detail.html?id=<plan-id>`：計劃詳情
 - `centres.html`：體檢中心列表（首間為香港生物醫學核心化驗所，其次為醫家健康體檢中心）
-- `items.html`：體檢項目解說（按分類列出，點擊展開白話說明）
+- `items.html`：體檢項目解說（按分類列出，點擊展開詳細解說）
 - `about.html`：關於我們
 - `partner.html`：加入我們
 - `data/plans.js` / `data/plans.json`：48 個計劃
