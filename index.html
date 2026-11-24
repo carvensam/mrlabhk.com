@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>MR Lab 化驗所優惠站｜香港體檢優惠</title>
-  <meta name="description" content="MR Lab 化驗所優惠站收集香港體檢優惠，按檢查內容、價格及分店資料方便搜尋。">
+  <meta name="description" content="化驗所優惠站列出香港體檢計劃、體檢中心、服務地點及檢查項目，方便按資料查閱及查詢。">
   <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -12,37 +12,81 @@
   <header class="site-header" id="site-header"></header>
 
   <main>
-    <section class="hero">
+    <section class="hero hero--health">
+      <div class="hero-grid" aria-hidden="true"></div>
       <div class="container hero-inner">
-        <div>
-          <span class="eyebrow">體檢優惠一站搜尋</span>
-          <h1>睇清檢查內容，<br><em>搵啱</em>體檢優惠。</h1>
-          <p class="lead">按檢查項目、售價、適用對象同分店資料搜尋，直接經 WhatsApp 查詢。</p>
+        <div class="hero-copy">
+          <span class="hero-kicker"><span class="pulse-dot"></span> 體檢資料一站查閱</span>
+          <p class="hero-slogan">回饋社會．全民體檢</p>
+          <h1>做體檢之前，<br><em>先睇清楚、問明白。</em></h1>
+          <p class="lead">計劃內容、體檢中心、服務地點同檢查項目分開陳列，想比較乜都有得搵。</p>
           <div class="hero-actions">
-            <a class="btn btn--primary" href="plans.html">瀏覽全部體檢計劃 <span aria-hidden="true">→</span></a>
-            <a class="btn btn--ghost" href="https://wa.me/85246151993?text=" target="_blank" rel="noopener">WhatsApp 4615 1993 查詢</a>
+            <a class="btn btn--primary" href="plans.html">瀏覽體檢計劃 <span aria-hidden="true">→</span></a>
+            <a class="btn btn--whatsapp" href="https://wa.me/85246151993?text=" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.4A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1-.2.3-.6.8-.8 1-.1.2-.3.2-.5.1-.3-.1-1.1-.4-2.1-1.3-.8-.7-1.3-1.5-1.5-1.8-.1-.3 0-.5.2-.6l.4-.5c.1-.2.2-.3.3-.5 0-.2 0-.4 0-.5l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.3.3-1 1-1 2.4s1 2.7 1.1 2.9c.1.2 1.9 2.9 4.6 4 .6.3 1.1.4 1.5.5.6.2 1.2.2 1.6.1.5-.1 1.4-.6 1.6-1.2.2-.6.2-1.1.1-1.2 0-.1-.2-.2-.4-.3z"/></svg>
+              WhatsApp 查詢
+            </a>
           </div>
           <div class="trust-row">
-            <span class="trust-chip">檢查項目清晰</span>
-            <span class="trust-chip">售價一目了然</span>
-            <span class="trust-chip">服務地點可查詢</span>
+            <span class="trust-chip">計劃資料</span>
+            <span class="trust-chip">中心資料</span>
+            <span class="trust-chip">檢查項目</span>
+            <span class="trust-chip">地點時間</span>
           </div>
         </div>
-        <div class="hero-panel">
-          <h3>快速查閱</h3>
-          <p style="margin:0 0 18px;color:rgba(255,255,255,.85);font-size:14px">按需要直接前往體檢計劃或體檢中心列表。</p>
-          <a class="btn btn--light btn--block" href="plans.html">瀏覽全部體檢計劃 →</a>
-          <a class="btn btn--ghost btn--block" style="margin-top:10px" href="centres.html">體檢中心列表 →</a>
-          <div class="trust-chip" style="margin-top:20px;display:block;text-align:center">所有查詢經 WhatsApp 4615 1993 進行</div>
+
+        <div class="hero-visual" aria-label="體檢資料示意圖">
+          <svg viewBox="0 0 520 420" role="img" aria-label="體檢報告、心電圖與實驗室圖示">
+            <defs>
+              <linearGradient id="cardG" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffffff"/><stop offset="1" stop-color="#dff4f6"/></linearGradient>
+              <linearGradient id="softG" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#8fe3ee"/><stop offset="1" stop-color="#38c6c0"/></linearGradient>
+            </defs>
+            <circle cx="410" cy="80" r="74" fill="#ffffff" opacity=".08"/>
+            <circle cx="86" cy="348" r="92" fill="#ffffff" opacity=".07"/>
+            <g transform="translate(58,54)">
+              <rect x="0" y="0" width="298" height="312" rx="24" fill="url(#cardG)" opacity=".97"/>
+              <rect x="26" y="26" width="60" height="8" rx="4" fill="#0f4c81" opacity=".85"/>
+              <rect x="26" y="46" width="106" height="6" rx="3" fill="#0f4c81" opacity=".28"/>
+              <circle cx="246" cy="46" r="22" fill="#0ea5a4" opacity=".18"/>
+              <path d="M236 46h7l4-8 6 16 5-8h7" fill="none" stroke="#0e8f86" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+              <g stroke="#cfe3ef" stroke-width="2"><path d="M26 82h246M26 126h246M26 170h246M26 214h246M26 258h246"/></g>
+              <g fill="#0f4c81" opacity=".55">
+                <rect x="26" y="94" width="92" height="6" rx="3"/><rect x="138" y="94" width="48" height="6" rx="3"/>
+                <rect x="26" y="138" width="120" height="6" rx="3"/><rect x="168" y="138" width="40" height="6" rx="3"/>
+                <rect x="26" y="182" width="76" height="6" rx="3"/><rect x="118" y="182" width="58" height="6" rx="3"/>
+                <rect x="26" y="226" width="104" height="6" rx="3"/><rect x="150" y="226" width="44" height="6" rx="3"/>
+              </g>
+              <g fill="#0ea5a4" opacity=".8"><circle cx="248" cy="97" r="5"/><circle cx="248" cy="141" r="5"/><circle cx="248" cy="185" r="5"/><circle cx="248" cy="229" r="5"/><circle cx="248" cy="273" r="5"/></g>
+            </g>
+            <g transform="translate(300,236)">
+              <rect x="0" y="0" width="182" height="142" rx="20" fill="#073154" opacity=".92"/>
+              <path d="M18 86h28l12-30 18 56 15-40 12 14h18l10-22 12 22h20" fill="none" stroke="url(#softG)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M18 112h146" stroke="#ffffff" stroke-width="2" opacity=".18"/>
+              <circle cx="36" cy="32" r="10" fill="#8fe3ee" opacity=".9"/><rect x="56" y="28" width="72" height="6" rx="3" fill="#ffffff" opacity=".7"/>
+            </g>
+            <g transform="translate(404,54)" opacity=".95">
+              <circle cx="0" cy="0" r="38" fill="#ffffff" opacity=".16"/>
+              <path d="M-14 2h7l5-12 9 24 6-14h7" fill="none" stroke="#8fe3ee" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+            </g>
+          </svg>
+          <div class="hero-badge hero-badge--top"><strong>54</strong><span>體檢計劃</span></div>
+          <div class="hero-badge hero-badge--bottom"><strong>102</strong><span>項目解說</span></div>
         </div>
+      </div>
+      <div class="container hero-metrics">
+        <div><strong>54</strong><span>個計劃</span></div>
+        <div><strong>31</strong><span>間體檢中心</span></div>
+        <div><strong>8</strong><span>大項目分類</span></div>
+        <div><strong>4</strong><span>類資料可按需要查閱</span></div>
       </div>
     </section>
 
     <section class="section section--tight">
       <div class="container">
         <div class="info-strip">
-          <div><div class="dot">✓</div><h4>重質不重量</h4><p>專注檢查內容同資料清晰度，唔以機構數量作招徠。</p></div>
-          <div><div class="dot">$</div><h4>收費一目了然</h4><p>售價清楚列明，收費及優惠內容可直接查詢。</p></div>
+          <div><div class="dot">✓</div><h4>資料分得清楚</h4><p>計劃、中心、地點同項目各自陳列，唔使喺一大段文字入面搵。</p></div>
+          <div><div class="dot">$</div><h4>收費一目了然</h4><p>每個計劃都有獨立價錢同檢查內容，方便直接比較。</p></div>
+          <div><div class="dot">＋</div><h4>項目有白話解說</h4><p>體檢項目按分類列出，點擊即睇說明，明白啲先揀。</p></div>
         </div>
       </div>
     </section>
@@ -68,6 +112,28 @@
 
     <section class="section">
       <div class="container">
+        <div class="database-card">
+          <div class="database-copy">
+            <span class="eyebrow">Item glossary</span>
+            <h2>體檢項目解說</h2>
+            <p>體檢常見項目按類別列出：血液、肝腎、感染、癌症指標、影像、尿液、大便及其他。逐個名稱點擊，即可展開白話說明。</p>
+            <ul class="database-list">
+              <li><strong>8</strong> 大分類</li><li><strong>102</strong> 個項目</li><li><strong>逐項</strong> 展開解說</li>
+            </ul>
+            <a class="btn btn--primary" href="items.html">前往項目解說 <span aria-hidden="true">→</span></a>
+          </div>
+          <div class="database-preview" aria-hidden="true">
+            <div class="db-row"><span>血液檢查</span><i></i></div>
+            <div class="db-row"><span>肝腎功能</span><i></i></div>
+            <div class="db-row"><span>影像檢查</span><i></i></div>
+            <div class="db-row"><span>尿液檢查</span><i></i></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt">
+      <div class="container">
         <div class="section-head">
           <div><span class="eyebrow">Centres</span><h2>體檢中心列名預覽</h2><p>按中心瀏覽相關體檢優惠。</p></div>
           <a class="text-link" href="centres.html">完整中心列表 →</a>
@@ -75,21 +141,12 @@
         <div class="grid grid--3" id="centre-preview"></div>
       </div>
     </section>
-
-    <section class="section section--alt">
-      <div class="container">
-        <div class="callout">
-          <h3>如何查詢？</h3>
-          <p>每張計劃卡都有 WhatsApp 按鈕，會自動帶出計劃名稱。需要由體檢中心自行預約的計劃，卡面及詳情頁會有提示。</p>
-          <a class="btn btn--primary" style="margin-top:14px" href="https://wa.me/85246151993?text=" target="_blank" rel="noopener">WhatsApp 4615 1993</a>
-        </div>
-      </div>
-    </section>
   </main>
 
   <footer class="site-footer" id="site-footer"></footer>
   <script src="data/featured.js"></script>
   <script src="data/plans.js"></script>
+  <script src="data/items.js"></script>
   <script src="assets/js/app.js"></script>
 </body>
 </html>

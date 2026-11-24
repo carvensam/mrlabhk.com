@@ -7,12 +7,14 @@
 - `index.html`：首頁
 - `plans.html`：全部體檢計劃（分類篩選及搜尋）
 - `plan-detail.html?id=<plan-id>`：計劃詳情
-- `centres.html`：體檢中心列表
+- `centres.html`：體檢中心列表（首間為香港生物醫學核心化驗所，其次為醫家健康體檢中心）
+- `items.html`：體檢項目解說（按分類列出，點擊展開白話說明）
 - `about.html`：關於我們
 - `partner.html`：加入我們
 - `data/plans.js` / `data/plans.json`：48 個計劃
 - `data/featured.js`：6 個精選優惠
-- `assets/images/`：54 張計劃圖片、logo 及 favicon
+- `data/items.js`：8 大類共 102 個體檢項目解說
+- `assets/images/`：54 張計劃圖片、logo、中心識別圖及 favicon
 - `assets/css/style.css`、`assets/js/app.js`：網站樣式及共用邏輯
 - `tools/`：資料處理及驗證工具
 
@@ -43,7 +45,7 @@ DR70 及其他腫瘤指標並非單獨確診或排除癌症的檢查，詳情頁
 
 ## 查詢
 
-WhatsApp：`https://wa.me/85246151993`，各計劃查詢連結自動帶入計劃名稱。需要由體檢中心自行預約的計劃，卡面及詳情頁均有提示。
+對外展示：WhatsApp / 電話：4639 4019；電郵：info@welldonemarketinghk.com。各計劃 WhatsApp 按鈕連結至 `https://wa.me/85246151993` 並自動帶入計劃名稱。需要由體檢中心自行預約的計劃，卡面及詳情頁均有提示。
 
 ## 部署
 

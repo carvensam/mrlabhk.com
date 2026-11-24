@@ -9,7 +9,7 @@ ROOT = Path(__file__).resolve().parents[1]
 errors = []
 warnings = []
 
-PAGES = ["index.html", "plans.html", "plan-detail.html", "centres.html", "about.html", "partner.html"]
+PAGES = ["index.html", "plans.html", "plan-detail.html", "centres.html", "items.html", "about.html", "partner.html"]
 DROP_FIELDS = {"source", "sourceUrl", "sourceCheckedAt", "dataNote", "validityNote",
                "hoursSourceUrl", "hoursCheckedAt"}
 
@@ -90,7 +90,7 @@ for needle in ['WA_NUMBER = "85246151993"', "encodeURIComponent",
         errors.append(f"app.js missing expected string: {needle}")
 
 public_files = PAGES + [
-    "assets/js/app.js", "data/plans.js", "data/plans.json", "data/featured.js",
+    "assets/js/app.js", "data/plans.js", "data/plans.json", "data/featured.js", "data/items.js",
     "README.md", "GODADDY_DNS_SETUP.md",
 ]
 for rel in public_files:

@@ -4,8 +4,10 @@
 
   var FEATURED = window.FEATURED_DATA || [];
   var PLANS = window.PLANS_DATA || [];
+  var ITEMS = window.ITEMS_DATA || [];
   var ALL = FEATURED.concat(PLANS);
   var WA_NUMBER = "85246151993";
+  var CENTRE_IMAGES = {"2": "assets/images/centre-02.png", "3": "assets/images/centre-03.png", "4": "assets/images/centre-04.png", "5": "assets/images/centre-05.png", "6": "assets/images/centre-06.png", "7": "assets/images/centre-07.png", "11": "assets/images/centre-11.png", "13": "assets/images/centre-13.png", "14": "assets/images/centre-14.png", "15": "assets/images/centre-15.jpg", "16": "assets/images/centre-16.jpg", "17": "assets/images/centre-17.jpg", "18": "assets/images/centre-18.jpg", "19": "assets/images/centre-19.jpg", "20": "assets/images/centre-20.png", "21": "assets/images/centre-21.png", "22": "assets/images/centre-22.jpg", "23": "assets/images/centre-23.jpg", "24": "assets/images/centre-24.jpg", "25": "assets/images/centre-25.jpg", "27": "assets/images/centre-27.jpg", "28": "assets/images/centre-28.jpg", "29": "assets/images/centre-29.jpg"};
 
   var CAT_LABEL = {
     featured: "精選",
@@ -48,23 +50,19 @@
     return "請經 WhatsApp 查詢收費、服務地點及預約安排。";
   }
 
-  function centreBadges(c) {
-    var seen = {};
-    return c.plans.map(function (p) {
-      if (!isSourceEnquiry(p) && p.authorised === false) return "";
-      var badge = bookingBadge(p);
-      if (seen[badge]) return "";
-      seen[badge] = true;
-      return badge;
-    }).join("");
-  }
-
   function locationSummary(c) {
     return (c.locations.length ? c.locations.length + " 個地點" : "服務地點待查詢") + " · " + c.plans.length + " 個計劃";
   }
 
   function priceLabel() {
     return "優惠價";
+  }
+
+  function centreImage(name, index) {
+    var key = "" + index;
+    var src = CENTRE_IMAGES[key] || CENTRE_IMAGES[name] || "assets/images/centre-" + String(index).padStart(2, "0") + ".svg";
+    if (index === 1) src = "assets/images/logo-mrlab.png";
+    return '<img class="centre-img" src="' + esc(src) + '" alt="' + esc(name) + ' 識別圖" loading="lazy">';
   }
 
   function planImage(p, detail) {
@@ -115,6 +113,7 @@
       ["index", "首頁", "index.html"],
       ["plans", "全部體檢計劃", "plans.html"],
       ["centres", "體檢中心", "centres.html"],
+      ["items", "體檢項目解說", "items.html"],
       ["about", "關於我們", "about.html"],
       ["partner", "加入我們", "partner.html"]
     ];
@@ -124,12 +123,12 @@
     document.getElementById("site-header").innerHTML =
       '<div class="container header-inner">' +
         '<a class="brand" href="index.html" aria-label="MR Lab 首頁">' +
-          '<img src="assets/images/logo.svg" alt="MR Lab 標誌">' +
+          '<img src="assets/images/logo-mrlab.png" alt="MR Lab 標誌">' +
           '<span class="brand-text"><strong>MR LAB</strong><span>化驗所優惠站</span></span>' +
         "</a>" +
         '<button class="nav-toggle" id="navToggle" aria-label="開啟導覽">&#9776;</button>' +
         '<nav class="main-nav" id="mainNav">' + nav + "</nav>" +
-        '<a class="header-cta" href="https://wa.me/' + WA_NUMBER + '?text=' + encodeURIComponent("你好，我想查詢化驗所優惠站嘅體檢計劃。") + '" target="_blank" rel="noopener">' + icon("whatsapp") + " WhatsApp 查詢</a>" +
+        '<a class="header-cta btn--whatsapp" href="https://wa.me/' + WA_NUMBER + '?text=' + encodeURIComponent("你好，我想查詢化驗所優惠站嘅體檢計劃。") + '" target="_blank" rel="noopener">' + icon("whatsapp") + " WhatsApp 查詢</a>" +
       "</div>";
     var btn = document.getElementById("navToggle");
     if (btn) btn.addEventListener("click", function () {
@@ -143,10 +142,10 @@
         '<div class="footer-grid">' +
           '<div><h4>MR LAB 化驗所優惠站</h4><p>香港體檢優惠一站搜尋，按檢查內容、價格及分店資料直接查詢。</p>' +
             '<p class="disclaimer">本站只提供優惠資料，不提供診斷、治療或醫療建議。</p></div>' +
-          '<div><h4>網站導覽</h4><ul><li><a href="index.html">首頁</a></li><li><a href="plans.html">全部體檢計劃</a></li><li><a href="centres.html">體檢中心列表</a></li><li><a href="about.html">關於我們</a></li><li><a href="partner.html">加入我們</a></li></ul></div>' +
+          '<div><h4>網站導覽</h4><ul><li><a href="index.html">首頁</a></li><li><a href="plans.html">全部體檢計劃</a></li><li><a href="centres.html">體檢中心列表</a></li><li><a href="items.html">體檢項目解說</a></li><li><a href="about.html">關於我們</a></li><li><a href="partner.html">加入我們</a></li></ul></div>' +
           '<div><h4>分類</h4><ul><li><a href="plans.html?cat=general">一般／全身</a></li><li><a href="plans.html?cat=abdominal">腹腔相關</a></li><li><a href="plans.html?cat=women">女性</a></li><li><a href="plans.html?cat=cancer">癌症相關</a></li></ul></div>' +
-          '<div><h4>聯絡</h4><ul><li>WhatsApp / 電話：4615 1993</li><li>擁有者電郵：welldonemarketinghk@gmail.com</li><li><a href="https://www.facebook.com/profile.php?id=61562009227913" target="_blank" rel="noopener">Facebook 專頁</a></li></ul>' +
-            '<a class="btn btn--primary btn--small" style="margin-top:10px" href="https://wa.me/' + WA_NUMBER + '" target="_blank" rel="noopener">WhatsApp 4615 1993</a></div>' +
+          '<div><h4>聯絡</h4><ul><li>WhatsApp / 電話：4639 4019</li><li>電郵：info@welldonemarketinghk.com</li></ul>' +
+            '<a class="btn btn--whatsapp btn--small" style="margin-top:10px" href="https://wa.me/' + WA_NUMBER + '" target="_blank" rel="noopener">WhatsApp 查詢</a></div>' +
         "</div>" +
         '<div class="footer-bottom"><span>© ' + new Date().getFullYear() + ' MR Lab 化驗所優惠站. All rights reserved.</span>' +
           '<span>本站只提供優惠資訊，不提供診斷、治療或醫療建議。</span></div>' +
@@ -190,8 +189,9 @@
     var centres = uniqueCentres();
     document.getElementById("centre-preview").innerHTML = centres.slice(0, 6).map(function (c, i) {
       return '<article class="card centre-card">' +
+        centreImage(c.name, i + 1) +
         '<div class="card-top"><span class="badge badge--code">' + String(i + 1).padStart(2, "0") + "</span>" +
-          centreBadges(c) + "</div>" +
+          "</div>" +
         "<h3>" + esc(c.name) + "</h3>" +
         '<p class="meta">' + locationSummary(c) + "</p>" +
         (c.locations.length ? '<ul>' + c.locations.slice(0, 2).map(function (l) {
@@ -216,10 +216,13 @@
       });
     });
     var list = Object.keys(map).map(function (k) { return map[k]; });
+    function rank(name) {
+      if (name.indexOf("香港生物醫學核心化驗所") === 0) return 0;
+      if (name.indexOf("醫家健康體檢中心") === 0) return 1;
+      return 2;
+    }
     list.sort(function (a, b) {
-      var aa = a.name.indexOf("醫家") === 0 ? 0 : 1;
-      var bb = b.name.indexOf("醫家") === 0 ? 0 : 1;
-      return aa - bb || a.index - b.index;
+      return rank(a.name) - rank(b.name) || a.index - b.index;
     });
     return list;
   }
@@ -310,7 +313,7 @@
         "</div></div>" +
         '<aside class="detail-side">' +
           '<div class="side-card"><span class="price-label">' + priceLabel(p) + '</span><span class="price-value">' + esc(money(p)) + "</span>" +
-            '<label>WhatsApp 查詢（4615 1993）</label>' +
+            '<label>WhatsApp 查詢</label>' +
             '<a class="btn btn--whatsapp btn--block" href="' + waLink(p) + '" target="_blank" rel="noopener">' + icon("whatsapp") + " 帶計劃名稱查詢</a>" +
             '<p style="margin-top:12px">' + esc(authNote) + "</p></div>" +
           '<div class="side-card notice-card"><h4>查詢提示</h4><p>可按 WhatsApp 查詢收費、服務地點及預約安排。</p></div>' +
@@ -321,13 +324,14 @@
   function initCentres() {
     var list = uniqueCentres();
     document.getElementById("centre-count").textContent = list.length + " 間體檢中心";
-    document.getElementById("centres-grid").innerHTML = list.map(function (c) {
+    document.getElementById("centres-grid").innerHTML = list.map(function (c, i) {
       var links = c.plans.map(function (p) {
         return '<a href="plan-detail.html?id=' + encodeURIComponent(p.id) + '">' + esc(p.code) + " " + esc(p.name) + "</a>";
       }).join("");
       return '<article class="card centre-card">' +
-        '<div class="card-top"><span class="badge badge--code">' + esc(String(c.plans[0].code).toUpperCase().slice(0, 1)) + "</span>" +
-          centreBadges(c) + "</div>" +
+        centreImage(c.name, i + 1) +
+        '<div class="card-top"><span class="badge badge--code">' + String(i + 1).padStart(2, "0") + "</span>" +
+          "</div>" +
         "<h3>" + esc(c.name) + "</h3>" +
         '<p class="meta">' + locationSummary(c) + "</p>" +
         (c.locations.length ? "<ul>" + c.locations.map(function (l) {
@@ -339,6 +343,51 @@
     }).join("");
   }
 
+  function initItems() {
+    var root = document.getElementById("items-root");
+    var chips = document.getElementById("item-chips");
+    var search = document.getElementById("itemSearch");
+    var active = "all";
+
+    chips.innerHTML = '<button class="chip active" data-item-cat="all">全部 ' + ITEMS.reduce(function (n, g) { return n + g.items.length; }, 0) + " 項</button>" +
+      ITEMS.map(function (g) {
+        return '<button class="chip" data-item-cat="' + esc(g.id) + '">' + esc(g.name) + " " + g.items.length + "</button>";
+      }).join("");
+
+    function apply() {
+      var q = (search.value || "").trim().toLowerCase();
+      chips.querySelectorAll(".chip").forEach(function (c) { c.classList.toggle("active", c.dataset.itemCat === active); });
+      var total = 0;
+      var html = ITEMS.map(function (g) {
+        if (active !== "all" && active !== g.id) return "";
+        var rows = g.items.filter(function (it) {
+          if (!q) return true;
+          return (it.name + " " + it.en + " " + it.desc).toLowerCase().indexOf(q) !== -1;
+        }).map(function (it) {
+          total++;
+          return '<details class="item-row"><summary><span class="item-name">' + esc(it.name) +
+            '</span><span class="item-en">' + esc(it.en) + '</span><span class="item-plus" aria-hidden="true">＋</span></summary>' +
+            '<div class="item-desc">' + esc(it.desc) + "</div></details>";
+        }).join("");
+        if (!rows) return "";
+        return '<section class="item-group"><div class="item-group-head"><span class="cat-icon">' + icon(g.icon) +
+          '</span><div><h2>' + esc(g.name) + '</h2><p>' + esc(g.intro) + "</p></div></div>" +
+          '<div class="item-list">' + rows + "</div></section>";
+      }).join("");
+      document.getElementById("item-count").textContent = "共 " + total + " 個項目" + (q || active !== "all" ? "符合目前篩選" : "");
+      root.innerHTML = html || '<div class="empty">搵唔到符合條件嘅項目，請試吓其他關鍵字或分類。</div>';
+    }
+
+    chips.addEventListener("click", function (e) {
+      var btn = e.target.closest(".chip[data-item-cat]");
+      if (!btn) return;
+      active = btn.dataset.itemCat;
+      apply();
+    });
+    search.addEventListener("input", apply);
+    apply();
+  }
+
   document.addEventListener("DOMContentLoaded", function () {
     renderHeader();
     renderFooter();
@@ -347,5 +396,6 @@
     else if (page === "plans") initPlans();
     else if (page === "detail") initDetail();
     else if (page === "centres") initCentres();
+    else if (page === "items") initItems();
   });
 })();

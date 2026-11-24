@@ -1,0 +1,26 @@
+/* 體檢中心識別圖 */
+window.CENTRE_IMAGES = {
+  "2": "assets/images/centre-02.png",
+  "3": "assets/images/centre-03.png",
+  "4": "assets/images/centre-04.png",
+  "5": "assets/images/centre-05.png",
+  "6": "assets/images/centre-06.png",
+  "7": "assets/images/centre-07.png",
+  "11": "assets/images/centre-11.png",
+  "13": "assets/images/centre-13.png",
+  "14": "assets/images/centre-14.png",
+  "15": "assets/images/centre-15.jpg",
+  "16": "assets/images/centre-16.jpg",
+  "17": "assets/images/centre-17.jpg",
+  "18": "assets/images/centre-18.jpg",
+  "19": "assets/images/centre-19.jpg",
+  "20": "assets/images/centre-20.png",
+  "21": "assets/images/centre-21.png",
+  "22": "assets/images/centre-22.jpg",
+  "23": "assets/images/centre-23.jpg",
+  "24": "assets/images/centre-24.jpg",
+  "25": "assets/images/centre-25.jpg",
+  "27": "assets/images/centre-27.jpg",
+  "28": "assets/images/centre-28.jpg",
+  "29": "assets/images/centre-29.jpg"
+};

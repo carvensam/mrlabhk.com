@@ -11,9 +11,9 @@ from pathlib import Path
 
 BASE = "https://www.mrlabhk.com/"
 CB = str(int(time.time()))
-PAGES = ["index.html", "plans.html", "plan-detail.html", "centres.html", "about.html", "partner.html"]
+PAGES = ["index.html", "plans.html", "plan-detail.html", "centres.html", "items.html", "about.html", "partner.html"]
 PUBLIC_FILES = PAGES + [
-    "assets/js/app.js", "data/plans.js", "data/plans.json", "data/featured.js",
+    "assets/js/app.js", "data/plans.js", "data/plans.json", "data/featured.js", "data/items.js",
     "README.md", "GODADDY_DNS_SETUP.md",
 ]
 BANNED = [
