@@ -2,7 +2,7 @@
 
 ## 2026-11-25 — centre logo rebuild, live verification
 
-Deployed commit `00aea66`. Checked the live site with a cache-busting query. All lazy-loaded images were forced to load before counting.
+Deployed commit `9f99665` (includes the `00aea66` logo rebuild). Checked the live site with a cache-busting query. All lazy-loaded images were forced to load before counting.
 
 | Page | Images | Broken | Centre thumbnails | Unwanted wording | Console errors |
 | --- | ---: | ---: | ---: | ---: | ---: |
@@ -20,6 +20,7 @@ Additional checks:
 - All 31 centre thumbnails are uniform 640×240 PNGs, fully inside the canvas with no clipping or edge contact.
 - Logo identity was re-checked against each centre’s official website and recorded in `tools/logo_sources.json`; centres without a standalone centre-specific mark use an exact-name wordmark.
 - Index 27 (`香港仁和體檢`) uses the darker official re:HEALTH asset so it remains legible on the light panel.
+- Index 20 (`明德醫療中心`) uses an exact-name wordmark because no centre-specific mark is published; index 22 (`聯合醫務`) uses the corporate site’s transparent UMP logo.
 - Centre order is `香港生物醫學核心化驗所` → `醫家健康體檢中心` → `美邦醫學體檢中心`.
 - Homepage slogan renders as `回饋社會．全民體檢`.
 - Centre cards contain no authorisation / booking sentences; the required note remains on plan cards, plan detail and WhatsApp prefill.
