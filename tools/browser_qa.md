@@ -21,6 +21,7 @@ Additional checks:
 - Logo identity was re-checked against each centre’s official website and recorded in `tools/logo_sources.json`; centres without a standalone centre-specific mark use an exact-name wordmark.
 - Index 27 (`香港仁和體檢`) uses the darker official re:HEALTH asset so it remains legible on the light panel.
 - Index 20 (`明德醫療中心`) uses an exact-name wordmark because no centre-specific mark is published; index 22 (`聯合醫務`) uses the corporate site’s transparent UMP logo.
+- Final automated audit: 30 manifest entries, 31 valid PNGs, 31 mapping refs, 0 banned wording, and WhatsApp numbers limited to `85246151993`.
 - Centre order is `香港生物醫學核心化驗所` → `醫家健康體檢中心` → `美邦醫學體檢中心`.
 - Homepage slogan renders as `回饋社會．全民體檢`.
 - Centre cards contain no authorisation / booking sentences; the required note remains on plan cards, plan detail and WhatsApp prefill.
