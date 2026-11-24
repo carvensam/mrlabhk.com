@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 180" role="img" aria-label="體檢中心識別圖">
-  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0e8f86"/><stop offset="1" stop-color="#1fb6a8"/></linearGradient></defs>
-  <rect width="280" height="180" fill="url(#g)"/>
-  <circle cx="242" cy="26" r="58" fill="#fff" opacity=".09"/>
-  <circle cx="20" cy="162" r="48" fill="#fff" opacity=".08"/>
-  <g fill="none" stroke="#fff" stroke-width="2.4" opacity=".16"><circle cx="44" cy="40" r="6"/><circle cx="70" cy="40" r="6"/><circle cx="96" cy="40" r="6"/><path d="M210 148h18m12 0h18m12 0h10"/></g>
-  <g fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" opacity=".95" transform="translate(18,0)"><path d="M100 60v18a22 22 0 0 0 44 0V60M122 100v12a20 20 0 0 0 40 0V96"/><circle cx="100" cy="56" r="5"/><circle cx="162" cy="92" r="5"/></g>
-  <g fill="#fff" opacity=".9"><rect x="184" y="112" width="66" height="6" rx="3"/><rect x="184" y="128" width="44" height="6" rx="3" opacity=".6"/></g>
-</svg>

@@ -1,5 +1,9 @@
 # -*- coding: utf-8 -*-
-"""Normalise centre thumbnails to a uniform 640x240 PNG canvas."""
+"""Legacy thumbnail normaliser.
+
+Superseded by remake_centre_logos.py, which uses confirmed identity sources.
+Kept only for reference.
+"""
 import sys
 from pathlib import Path
 

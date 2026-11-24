@@ -16,7 +16,7 @@
 - `data/items.js`：8 大類共 102 個體檢項目解說
 - `assets/images/`：54 張計劃圖片、logo、中心識別圖及 favicon
 - `assets/css/style.css`、`assets/js/app.js`：網站樣式及共用邏輯
-- `tools/`：資料處理及驗證工具
+- `tools/`：資料處理及驗證工具，包括中心識別圖清單 `logo_sources.json` 及重建腳本 `remake_centre_logos.py`
 
 ## 本機驗證
 

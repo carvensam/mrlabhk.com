@@ -1,0 +1,276 @@
+[
+  {
+    "index": 2,
+    "name": "醫家健康體檢中心",
+    "kind": "logo",
+    "url": "https://img1.wsimg.com/isteam/ip/fc35c3e0-6e6b-43a1-a814-b821398587c4/%E6%9C%AA%E5%91%BD%E5%90%8D%E8%A8%AD%E8%A8%88.png",
+    "officialUrl": "https://e-plushealth.com/",
+    "evidence": "Site title and header logo: E Plus Health Care Centre; HK centre addresses listed.",
+    "confidence": "medium-high"
+  },
+  {
+    "index": 3,
+    "name": "美邦醫學體檢中心",
+    "kind": "logo",
+    "url": "https://mobilemedical.com.hk/image/catalog/Mobile_Medical_only_Logo_With_R.png",
+    "officialUrl": "https://mobilemedical.com.hk/",
+    "evidence": "Official site title and About page name 美邦醫學體檢中心有限公司.",
+    "confidence": "high"
+  },
+  {
+    "index": 4,
+    "name": "德信醫療中心",
+    "kind": "logo",
+    "url": "https://www.swindonmedical.com/wp-content/uploads/2023/06/Swindon-Logo.png",
+    "officialUrl": "https://www.swindonmedical.com/",
+    "evidence": "Official site title 德信醫療; JSON-LD Organization.name Swindon Medical 德信醫療; HK centre address listed.",
+    "confidence": "high"
+  },
+  {
+    "index": 5,
+    "name": "卓健醫療體檢中心",
+    "kind": "logo",
+    "url": "https://www.qhms.com/uploads/QHC_logo_401be2b48f.png",
+    "officialUrl": "https://www.qhms.com/",
+    "evidence": "Quality HealthCare official header logo; health-screening FAQ names 卓健醫療體檢中心.",
+    "confidence": "high"
+  },
+  {
+    "index": 6,
+    "name": "時代醫療服務中心",
+    "kind": "logo",
+    "url": "https://www.medtimes.com.hk/uploads/media/Letterhead_Medtimes%20Medical%20Group%20(GRP-LMG-YN-V2110)_OP-01.png",
+    "officialUrl": "https://www.medtimes.com.hk/",
+    "evidence": "Official site names 時代醫療集團有限公司 / Medtimes Medical Group Limited; transparent press logo asset.",
+    "confidence": "medium-high"
+  },
+  {
+    "index": 7,
+    "name": "Life Young Health 壹森健康",
+    "kind": "logo",
+    "url": "https://lyhealthy.com/front/img/Lifeyounglogo.svg",
+    "officialUrl": "https://lyhealthy.com/",
+    "evidence": "Official site title 壹森健康醫療中心; header logo alt Life Young Health.",
+    "confidence": "high"
+  },
+  {
+    "index": 8,
+    "name": "晉上醫療體檢中心",
+    "kind": "logo",
+    "url": "https://static.wixstatic.com/media/d7ea71_559b92d345ac4a3da181a3b2f4ac6ba1~mv2.jpg",
+    "officialUrl": "https://www.cshealthcare.com.hk/",
+    "evidence": "Official site heading 晉上醫療 / CS Healthcare Medical Centre; legal name 晉上醫療管理有限公司.",
+    "confidence": "high"
+  },
+  {
+    "index": 9,
+    "name": "毅力醫護健康集團有限公司",
+    "kind": "logo",
+    "url": "https://img.shoplineapp.com/media/image_clips/60595cbc8c5e7d00170f0100/original.png?1616469180",
+    "officialUrl": "https://www.kinetics.hk/",
+    "evidence": "Official site title 毅力醫護健康集團 / Kinetics Medical & Health Group; linked e-shop terms name the same company.",
+    "confidence": "medium-high"
+  },
+  {
+    "index": 10,
+    "name": "尚醫健康",
+    "kind": "logo",
+    "url": "https://youngplus.com.hk/wp-content/themes/ormedia/images/youngplus_wellness_logo.png?v=1",
+    "officialUrl": "https://youngplus.com.hk/",
+    "evidence": "Official site title Young+ Wellness 尚醫健康; CHP lists YOUNG+ WELLNESS CENTRE / 尚醫健康醫療服務中心.",
+    "confidence": "high"
+  },
+  {
+    "index": 11,
+    "name": "港怡醫院",
+    "kind": "logo",
+    "url": "https://gleneagles.hk/assets/img/logo.png",
+    "officialUrl": "https://gleneagles.hk/tc/",
+    "evidence": "Official header logo alt Gleneagles Hospital Hong Kong; HKU teaching hospital.",
+    "confidence": "high"
+  },
+  {
+    "index": 12,
+    "name": "仁安體檢中心",
+    "kind": "logo",
+    "url": "https://www.union.org/uih/images/uih-logo.png",
+    "officialUrl": "https://www.union.org/uih/tc/mhcc.php",
+    "evidence": "Official page H1 仁安體檢中心 (H Zentre); operated by 仁安醫院有限公司; header logo is 仁安醫療造影體檢中心.",
+    "confidence": "high"
+  },
+  {
+    "index": 13,
+    "name": "全仁醫務中心 (Trinity)",
+    "kind": "logo",
+    "url": "https://trinitymedical.com.hk/wp-content/uploads/2021/04/logo1.png",
+    "officialUrl": "https://trinitymedical.com.hk/zh",
+    "evidence": "Official site title and schema: Trinity Medical Centre 全仁醫務中心.",
+    "confidence": "high"
+  },
+  {
+    "index": 14,
+    "name": "九龍半島醫學中心",
+    "kind": "logo",
+    "url": "https://kpmhealth.com/wp-content/uploads/2024/03/admin_logo_2.png",
+    "officialUrl": "https://kpmhealth.com/",
+    "evidence": "Official About page: 九龍半島醫學中心; custom site logo and schema logo.",
+    "confidence": "high"
+  },
+  {
+    "index": 15,
+    "name": "博思醫學診斷中心",
+    "kind": "logo",
+    "url": "https://hkai-medical.com/wp-content/uploads/2025/04/HKAI-logo.png",
+    "officialUrl": "https://hkai-medical.com/",
+    "evidence": "Official site title 博思醫學診斷中心; header logo alt 博思醫學診斷中心.",
+    "confidence": "high"
+  },
+  {
+    "index": 16,
+    "name": "仁輝專科中心 (仁輝內視鏡及日間醫療中心)",
+    "kind": "logo",
+    "url": "https://hongkongmed.com/wp-content/uploads/2025/04/hkmed-logo.png",
+    "officialUrl": "https://hongkongmed.com/",
+    "evidence": "Official site schema alternateName includes 仁輝專科中心 and 仁輝內視鏡及日間醫療中心.",
+    "confidence": "high"
+  },
+  {
+    "index": 17,
+    "name": "中環高清腸胃內視鏡中心",
+    "kind": "logo",
+    "url": "https://www.hdendoscopy.hk/images/top_logo.svg",
+    "officialUrl": "https://www.hdendoscopy.hk/tc",
+    "evidence": "Official header logo; Central address and phone match the centre.",
+    "confidence": "high"
+  },
+  {
+    "index": 18,
+    "name": "中環專科體檢中心",
+    "kind": "logo",
+    "url": "https://www.tchc.hk/wp-content/themes/pc/images/logo.png?v=2.2",
+    "officialUrl": "https://www.tchc.hk/",
+    "evidence": "Official site names 中環專科體檢中心有限公司 / The Central Health Centre and warns of impersonators.",
+    "confidence": "high"
+  },
+  {
+    "index": 19,
+    "name": "香港駿檢中心",
+    "kind": "wordmark",
+    "officialUrl": "https://www.hkwwc.com.hk/",
+    "evidence": "Official group site uses combined Hong Kong Well Women & Well Men Centre branding; no standalone exact-name logo found.",
+    "confidence": "medium"
+  },
+  {
+    "index": 20,
+    "name": "明德醫療中心",
+    "kind": "logo",
+    "url": "https://www.matilda.org/hubfs/website_assets/img/logo-main.svg",
+    "officialUrl": "https://www.matilda.org/zh-hk/matilda-medical-centre",
+    "evidence": "Official Matilda Medical Centre page uses the parent Matilda Hospital logo; Central address and phone match.",
+    "confidence": "high"
+  },
+  {
+    "index": 21,
+    "name": "富樂醫療",
+    "kind": "logo",
+    "url": "https://www.fullertonhealth.com/hk/wp-content/uploads/2019/12/logo-fullerton-health-small.png",
+    "officialUrl": "https://www.fullertonhealth.com/hk/",
+    "evidence": "Official HK site header logo; entity Fullerton Health Hong Kong Limited 富樂醫療香港有限公司.",
+    "confidence": "high"
+  },
+  {
+    "index": 22,
+    "name": "聯合醫務",
+    "kind": "logo",
+    "url": "https://www.ump.com.hk/images/logo.png?v=20261124233945",
+    "officialUrl": "https://www.ump.com.hk/",
+    "evidence": "Official corporate site footer: 聯合醫務集團有限公司 / UMP Healthcare Holdings Limited.",
+    "confidence": "high"
+  },
+  {
+    "index": 23,
+    "name": "香港婦檢中心",
+    "kind": "logo",
+    "url": "https://www.hkwwc.com.hk/wp-content/uploads/2022/04/%E6%9C%AA%E5%91%BD%E5%90%8D%E8%A8%AD%E8%A8%88-2-1.png",
+    "officialUrl": "https://www.hkwwc.com.hk/",
+    "evidence": "Official site header logo; site footer Hong Kong Well Women Centre; Jordan licence CL000484.",
+    "confidence": "medium-high"
+  },
+  {
+    "index": 24,
+    "name": "基研健康醫療有限公司",
+    "kind": "file",
+    "path": "tools/logo_assets/healthgene_logo.png",
+    "url": "http://www.healthgene.com.hk/wp-content/uploads/2019/04/gene_logo80.png",
+    "officialUrl": "https://www.healthgene.com.hk/",
+    "evidence": "Official site title and contact page: 基研健康醫療有限公司 / HEALTH GENE LIMITED.",
+    "confidence": "high"
+  },
+  {
+    "index": 25,
+    "name": "仁安醫院",
+    "kind": "logo",
+    "url": "https://www.union.org/appassets/union_logo.png?v=1722839271",
+    "officialUrl": "https://www.union.org/tc/",
+    "evidence": "Official site title 仁安醫院; official logo asset.",
+    "confidence": "high"
+  },
+  {
+    "index": 26,
+    "name": "港安醫療中心 (太古坊)",
+    "kind": "logo",
+    "url": "https://adventistmedical.hk/assets/frontend/common/images/header-logo-tc@2x.png",
+    "officialUrl": "https://adventistmedical.hk/tc/center",
+    "evidence": "Official site names 港安醫療中心 – 太古坊 and the Taikoo Place address; group-level transparent header logo.",
+    "confidence": "high"
+  },
+  {
+    "index": 27,
+    "name": "香港仁和體檢",
+    "kind": "logo",
+    "url": "https://rehealth.com.hk/wp-content/uploads/2023/12/reHealthlogo.webp",
+    "urls": [
+      "https://rehealth.com.hk/wp-content/uploads/2023/12/reHealthlogo.webp",
+      "https://rehealth.com.hk/wp-content/uploads/2023/07/rehealth-logo.png"
+    ],
+    "officialUrl": "https://rehealth.com.hk/",
+    "evidence": "Official site title and schema: re:HEALTH 香港仁和體檢中心; the 2023/12 transparent asset is the dark, legible header logo; Causeway Bay and Mong Kok addresses listed.",
+    "confidence": "high"
+  },
+  {
+    "index": 28,
+    "name": "香港專科體檢及造影診斷中心",
+    "kind": "logo",
+    "url": "https://www.specialists.hk/image/logo_v2.png",
+    "officialUrl": "https://www.specialists.hk/tc/",
+    "evidence": "Official site lists 香港專科體檢及造影診斷中心 under 香港專科 and names the company in its privacy policy; group logo.",
+    "confidence": "medium-high"
+  },
+  {
+    "index": 29,
+    "name": "香港新都醫療集團",
+    "kind": "logo",
+    "url": "https://www.newtownmedical.com.hk/images/logo.svg",
+    "officialUrl": "https://www.newtownmedical.com.hk/tc",
+    "evidence": "Official site states 香港新都醫療集團成立於1986年; schema logo is this SVG.",
+    "confidence": "high"
+  },
+  {
+    "index": 30,
+    "name": "天馬醫療專科中心",
+    "kind": "logo",
+    "url": "https://www.tamarindspecialists.hk/images/logo.jpg",
+    "officialUrl": "https://www.tamarindspecialists.hk/zh-hant/",
+    "evidence": "Official site title 天馬醫療專科中心 and centre list; page-specific Tamarind Specialists logo.",
+    "confidence": "medium-high"
+  },
+  {
+    "index": 31,
+    "name": "明確醫療中心",
+    "kind": "logo",
+    "url": "https://eshop.clearbridgemedical.com.hk/cdn/shop/files/21.png?v=1740936661&width=500",
+    "officialUrl": "https://eshop.clearbridgemedical.com.hk/zh-hant",
+    "evidence": "Official branded eshop title/site name Clearbridge Medical Center 明確醫療中心; header logo alt matches.",
+    "confidence": "medium-high"
+  }
+]

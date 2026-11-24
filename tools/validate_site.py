@@ -2,6 +2,7 @@
 """Static validation: pages, assets, data integrity and plain-language copy."""
 import json
 import re
+import struct
 from collections import Counter
 from pathlib import Path
 
@@ -23,7 +24,7 @@ BANNED = [
 
 def load_js(path, var):
     text = path.read_text(encoding="utf-8")
-    match = re.search(r"window\." + var + r"\s*=\s*(\[.*\])\s*;?\s*$", text, re.S)
+    match = re.search(r"window\." + var + r"\s*=\s*(\{.*\}|\[.*\])\s*;?\s*$", text, re.S)
     if not match:
         raise SystemExit("cannot parse " + str(path))
     return json.loads(match.group(1))
@@ -82,6 +83,25 @@ if len(set(images)) != len(images):
 for rel in images:
     if not (ROOT / rel).exists():
         errors.append(f"missing image: {rel}")
+
+for idx in range(1, 32):
+    thumb = ROOT / "assets" / "images" / ("centre-%02d.png" % idx)
+    if not thumb.exists():
+        errors.append("missing centre thumbnail: %s" % thumb.name)
+        continue
+    header = thumb.read_bytes()[:24]
+    if len(header) < 24 or header[:8] != b"\x89PNG\r\n\x1a\n":
+        errors.append("bad centre thumbnail format: %s" % thumb.name)
+        continue
+    width, height = struct.unpack(">II", header[16:24])
+    if (width, height) != (640, 240):
+        errors.append("centre thumbnail size %s: %dx%d" % (thumb.name, width, height))
+
+centre_map = load_js(ROOT / "data" / "centre-images.js", "CENTRE_IMAGES")
+for idx in range(1, 32):
+    ref = "assets/images/centre-%02d.png" % idx
+    if centre_map.get(str(idx)) != ref:
+        errors.append("centre image mapping for %d: %r" % (idx, centre_map.get(str(idx))))
 
 app = (ROOT / "assets" / "js" / "app.js").read_text(encoding="utf-8")
 for needle in ['WA_NUMBER = "85246151993"', "encodeURIComponent",
