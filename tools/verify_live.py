@@ -41,6 +41,7 @@ def is_image(body):
         b"<svg" in body[:200]
         or body.startswith(b"\x89PNG")
         or body.startswith(b"\xff\xd8\xff")
+        or body.startswith(b"\x00\x00\x01\x00")
         or b"WEBP" in body[:16]
     )
 

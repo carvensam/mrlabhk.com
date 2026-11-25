@@ -9,7 +9,7 @@ Deployed in `bce1853` with a follow-up root `favicon.ico` fallback. The browser/
 - Live QA used `fetch` with `cache: 'no-store'` to bypass the CDN HTML cache: 7/7 pages returned the new versioned icon links and all icon assets returned status 200.
 - Live `favicon.svg` contains the embedded MR Lab logo data and no longer contains the previous heartbeat mark; live `favicon.png` is 17,170 bytes with valid PNG header bytes.
 - Live root `favicon.ico` now returns `image/x-icon` at 12,045 bytes; before this follow-up it returned 404.
-- `tools/verify_live.py`: `errors=0 image_failures=0 ssl_ok=True`; 88 live images checked, no failures.
+- `tools/verify_live.py` now recognises ICO magic bytes; final run: `errors=0 image_failures=0 ssl_ok=True`; 88 live images checked, no failures.
 - The host sends `Cache-Control: max-age=600` for HTML. A hard refresh or a fresh tab may be needed once before an old cached tab shows the new browser icon.
 
 ## 2026-11-25 — centre logo rebuild, live verification
