@@ -1,5 +1,14 @@
 # Browser visual QA
 
+## 2026-11-25 — mobile header WhatsApp alignment
+
+The top-right WhatsApp button was overflowing on narrow screens because the inline SVG had no fixed size and the header kept desktop gaps while showing the full label.
+
+- `assets/js/app.js`: the header CTA label is wrapped in `.header-cta-label` and the link has `aria-label="WhatsApp 查詢"`.
+- `assets/css/style.css`: header SVG is fixed at 18×18 with `line-height: 1`; at `max-width: 760px` the header gap is 10px, the label is hidden and the CTA becomes a 36×36 green circle pinned to the right edge.
+- Simulated 375px and 320px layout: brand, menu toggle and WhatsApp circle all stay inside the header container; WhatsApp sits at the far right with no horizontal overflow.
+- `tools/validate_site.py`: `pages=7 plans=48 featured=6 images=54`, `errors=0 warnings=0`; 0 console errors.
+
 ## 2026-11-25 — browser/meta icon replacement
 
 Deployed in `bce1853` with a follow-up root `favicon.ico` fallback. The browser/meta icon was rebuilt from `assets/images/logo-mrlab.png`. All 7 pages now link to versioned `favicon.ico?v=20261125`, `favicon.svg?v=20261125`, `favicon.png?v=20261125` and `apple-touch-icon`.

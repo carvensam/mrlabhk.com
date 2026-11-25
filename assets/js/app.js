@@ -125,7 +125,7 @@
         "</a>" +
         '<button class="nav-toggle" id="navToggle" aria-label="開啟導覽">&#9776;</button>' +
         '<nav class="main-nav" id="mainNav">' + nav + "</nav>" +
-        '<a class="header-cta btn--whatsapp" href="https://wa.me/' + WA_NUMBER + '?text=' + encodeURIComponent("你好，我想查詢化驗所優惠站嘅體檢計劃。") + '" target="_blank" rel="noopener">' + icon("whatsapp") + " WhatsApp 查詢</a>" +
+        '<a class="header-cta btn--whatsapp" aria-label="WhatsApp 查詢" href="https://wa.me/' + WA_NUMBER + '?text=' + encodeURIComponent("你好，我想查詢化驗所優惠站嘅體檢計劃。") + '" target="_blank" rel="noopener">' + icon("whatsapp") + '<span class="header-cta-label">WhatsApp 查詢</span></a>' +
       "</div>";
     var btn = document.getElementById("navToggle");
     if (btn) btn.addEventListener("click", function () {
