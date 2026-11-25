@@ -4,6 +4,7 @@
 
 Removed `e06` / 醫家 EPH2.0 升級檢查計劃（58項）from `data/featured.js`, together with `assets/images/e06.webp` and its build-tool references. Featured plans are now `e01`–`e05`; image references total 53. Validators no longer check E06 phone or addresses. With no remaining plan, 醫家健康體檢中心 no longer appears in the centre list.
 
+- All 7 pages now load `data/featured.js?v=20261125d`, `data/plans.js?v=20261125d` and `data/items.js?v=20261125d` where used, so cached copies cannot restore the removed plan.
 - `tools/validate_site.py`: `pages=7 plans=48 featured=5 images=53`, `errors=0 warnings=0`.
 
 ## 2026-11-25 — wording update
