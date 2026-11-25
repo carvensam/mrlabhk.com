@@ -65,11 +65,6 @@ if status != 404:
     errors.append("source txt still public")
 
 featured_text = texts.get("data/featured.js", "")
-if "6661 8628" not in featured_text:
-    errors.append("live E06 phone missing")
-for place in ["尖沙咀", "佐敦", "中環", "荃灣"]:
-    if place not in featured_text:
-        errors.append(f"live E06 place missing: {place}")
 
 plans = json.loads(Path("data/plans.json").read_text(encoding="utf-8"))
 images = [p["image"] for p in plans]

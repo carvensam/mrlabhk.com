@@ -1,5 +1,11 @@
 # Browser visual QA
 
+## 2026-11-25 — E06 plan removed
+
+Removed `e06` / 醫家 EPH2.0 升級檢查計劃（58項）from `data/featured.js`, together with `assets/images/e06.webp` and its build-tool references. Featured plans are now `e01`–`e05`; image references total 53. Validators no longer check E06 phone or addresses. With no remaining plan, 醫家健康體檢中心 no longer appears in the centre list.
+
+- `tools/validate_site.py`: `pages=7 plans=48 featured=5 images=53`, `errors=0 warnings=0`.
+
 ## 2026-11-25 — wording update
 
 Replaced all second-person singular and plural wording in site copy with `大家`, including WhatsApp prefill text and the DNS setup note. A full repository search now returns 0 matches for the old second-person forms.

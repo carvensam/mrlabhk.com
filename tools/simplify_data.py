@@ -25,19 +25,6 @@ REPLACE = [
     ("（2026-11-19 所見，僅供參考）", ""),
 ]
 
-EPLUS_ADDRESSES = {
-    "尖沙咀": "九龍尖沙咀加拿分道18號恒生尖沙咀大廈7樓704室",
-    "佐敦": "九龍佐敦彌敦道301-309號嘉賓商業大廈9樓911室",
-    "中環": "香港中環德輔道中21-23號歐陸貿易中心17樓1701室",
-    "荃灣": "新界荃灣青山公路荃灣段264-298號南豐中心12樓1211室",
-}
-EPLUS_HOURS = [
-    "星期一至星期日及公眾假期 09:00–17:30",
-    "午膳時間 13:00–14:00",
-    "聖誕及農曆新年休息",
-]
-
-
 def clean_text(value):
     if not isinstance(value, str):
         return value
@@ -86,16 +73,6 @@ for item in plans + featured:
         match = re.match(r"(HK\$[\d,]+)", item["price"])
         if match:
             item["price"] = match.group(1)
-
-for item in featured:
-    if item.get("id") == "e06":
-        for loc in item.get("locations", []):
-            name = loc.get("name", "")
-            if name in EPLUS_ADDRESSES:
-                loc["address"] = EPLUS_ADDRESSES[name]
-            loc["hours"] = list(EPLUS_HOURS)
-            loc["phone"] = "6661 8628"
-            loc.pop("note", None)
 
 plans = clean_object(plans)
 featured = clean_object(featured)

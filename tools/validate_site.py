@@ -62,22 +62,12 @@ for category, expected in [("general", 12), ("abdominal", 12), ("women", 12), ("
         errors.append(f"category {category}: expected {expected}, got {counts[category]}")
 
 featured_ids = sorted(p["id"] for p in featured)
-if featured_ids != [f"e{i:02d}" for i in range(1, 7)]:
-    errors.append(f"featured ids: expected e01-e06, got {featured_ids}")
-
-e06 = next((p for p in featured if p["id"] == "e06"), None)
-if e06:
-    phones = {loc.get("phone") for loc in e06.get("locations", [])}
-    addresses = {loc.get("address") for loc in e06.get("locations", [])}
-    if phones != {"6661 8628"}:
-        errors.append(f"e06 phone: expected 6661 8628, got {phones}")
-    expected_places = ["尖沙咀", "佐敦", "中環", "荃灣"]
-    if len(addresses) != 4 or not all(any(place in a for a in addresses) for place in expected_places):
-        errors.append(f"e06 addresses incomplete: {addresses}")
+if featured_ids != [f"e{i:02d}" for i in range(1, 6)]:
+    errors.append(f"featured ids: expected e01-e05, got {featured_ids}")
 
 images = [p["image"] for p in plans + featured]
-if len(images) != 54:
-    errors.append(f"expected 54 image references, got {len(images)}")
+if len(images) != 53:
+    errors.append(f"expected 53 image references, got {len(images)}")
 if len(set(images)) != len(images):
     errors.append(f"duplicate image references: {[x for x, n in Counter(images).items() if n > 1]}")
 for rel in images:
