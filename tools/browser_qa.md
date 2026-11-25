@@ -2,13 +2,14 @@
 
 ## 2026-11-25 — browser/meta icon replacement
 
-Deployed commit `bce1853`. The browser/meta icon was rebuilt from `assets/images/logo-mrlab.png`. All 7 pages now link to versioned `favicon.svg?v=20261125`, `favicon.png?v=20261125` and `apple-touch-icon`.
+Deployed in `bce1853` with a follow-up root `favicon.ico` fallback. The browser/meta icon was rebuilt from `assets/images/logo-mrlab.png`. All 7 pages now link to versioned `favicon.ico?v=20261125`, `favicon.svg?v=20261125`, `favicon.png?v=20261125` and `apple-touch-icon`.
 
-- Local QA: 7/7 pages returned all three icon links with status 200, matching MIME types and PNG magic bytes; 0 console errors.
+- Local QA: 7/7 pages returned all four icon links with status 200, matching MIME types and valid ICO/PNG headers; 0 console errors.
 - `tools/validate_site.py`: `pages=7 plans=48 featured=6 images=54`, `errors=0 warnings=0`.
 - Live QA used `fetch` with `cache: 'no-store'` to bypass the CDN HTML cache: 7/7 pages returned the new versioned icon links and all icon assets returned status 200.
 - Live `favicon.svg` contains the embedded MR Lab logo data and no longer contains the previous heartbeat mark; live `favicon.png` is 17,170 bytes with valid PNG header bytes.
-- `tools/verify_live.py`: `errors=0 image_failures=0 ssl_ok=True`; 87 live images checked, no failures.
+- Live root `favicon.ico` now returns `image/x-icon` at 12,045 bytes; before this follow-up it returned 404.
+- `tools/verify_live.py`: `errors=0 image_failures=0 ssl_ok=True`; 88 live images checked, no failures.
 - The host sends `Cache-Control: max-age=600` for HTML. A hard refresh or a fresh tab may be needed once before an old cached tab shows the new browser icon.
 
 ## 2026-11-25 — centre logo rebuild, live verification

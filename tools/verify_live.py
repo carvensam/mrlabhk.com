@@ -74,7 +74,7 @@ plans = json.loads(Path("data/plans.json").read_text(encoding="utf-8"))
 images = [p["image"] for p in plans]
 images += re.findall(r'"image"\s*:\s*"(assets/images/[^"]+)"', featured_text)
 images += ["assets/images/centre-%02d.png" % i for i in range(1, 32)]
-images += ["assets/images/favicon.png", "assets/images/favicon.svg"]
+images += ["assets/images/favicon.png", "assets/images/favicon.svg", "favicon.ico"]
 images = sorted(set(images))
 
 image_failures = []
