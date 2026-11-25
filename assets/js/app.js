@@ -72,12 +72,12 @@
 
   function waText(p) {
     if (isSourceEnquiry(p) || p.authorised == null) {
-      return "你好，我想查詢【" + p.name + "】（" + p.code + "，" + p.centre + "）。請問收費、優惠是否仍適用、適用資格、檢查詳情、服務地點、可用時段及預約安排？";
+      return "大家好，我想查詢【" + p.name + "】（" + p.code + "，" + p.centre + "）。請問收費、優惠是否仍適用、適用資格、檢查詳情、服務地點、可用時段及預約安排？";
     }
     if (p.authorised === true) {
-      return "你好，我想查詢及預約【" + p.name + "】（" + p.code + "），請提供詳情及可用時段。";
+      return "大家好，我想查詢及預約【" + p.name + "】（" + p.code + "），請提供詳情及可用時段。";
     }
-    return "你好，我想查詢【" + p.name + "】（" + p.code + "）。本人了解該體檢中心無授權本平台代為 Booking，會直接聯絡該體檢中心自行預約，請提供聯絡方式。";
+    return "大家好，我想查詢【" + p.name + "】（" + p.code + "）。本人了解該體檢中心無授權本平台代為 Booking，會直接聯絡該體檢中心自行預約，請提供聯絡方式。";
   }
 
   function waLink(p) {
@@ -125,7 +125,7 @@
         "</a>" +
         '<button class="nav-toggle" id="navToggle" aria-label="開啟導覽">&#9776;</button>' +
         '<nav class="main-nav" id="mainNav">' + nav + "</nav>" +
-        '<a class="header-cta btn--whatsapp" aria-label="WhatsApp 查詢" href="https://wa.me/' + WA_NUMBER + '?text=' + encodeURIComponent("你好，我想查詢化驗所優惠站嘅體檢計劃。") + '" target="_blank" rel="noopener">' + icon("whatsapp") + '<span class="header-cta-label">WhatsApp 查詢</span></a>' +
+        '<a class="header-cta btn--whatsapp" aria-label="WhatsApp 查詢" href="https://wa.me/' + WA_NUMBER + '?text=' + encodeURIComponent("大家好，我想查詢化驗所優惠站嘅體檢計劃。") + '" target="_blank" rel="noopener">' + icon("whatsapp") + '<span class="header-cta-label">WhatsApp 查詢</span></a>' +
       "</div>";
     var btn = document.getElementById("navToggle");
     if (btn) btn.addEventListener("click", function () {

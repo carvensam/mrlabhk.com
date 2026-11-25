@@ -67,7 +67,7 @@ python -c "import urllib.request; r=urllib.request.urlopen('https://www.mrlabhk.
 
 ## 若 GoDaddy 想用 CNAME（替代方案）
 
-如果 GoDaddy 介面唔俾你加 `www` 嘅 A 記錄，可以改用：
+如果 GoDaddy 介面唔俾大家加 `www` 嘅 A 記錄，可以改用：
 - `www` → **CNAME** → `carvensam.github.io`
 
 但 A 記錄（4 個 IP）係 GitHub 官方推薦做法，兼容性較好，建議優先使用。

@@ -1,12 +1,16 @@
 # Browser visual QA
 
+## 2026-11-25 — wording update
+
+Replaced all second-person singular and plural wording in site copy with `大家`, including WhatsApp prefill text and the DNS setup note. A full repository search now returns 0 matches for the old second-person forms.
+
 ## 2026-11-25 — mobile header WhatsApp alignment
 
 The top-right WhatsApp button was overflowing on narrow screens because the inline SVG had no fixed size and the header kept desktop gaps while showing the full label.
 
 - `assets/js/app.js`: the header CTA label is wrapped in `.header-cta-label` and the link has `aria-label="WhatsApp 查詢"`.
 - `assets/css/style.css`: header SVG is fixed at 18×18 with `line-height: 1`; at `max-width: 760px` the header gap is 10px, the label is hidden and the CTA becomes a 36×36 green circle pinned to the right edge.
-- All 7 pages now load `style.css?v=20261125b` and `app.js?v=20261125b` so cached copies cannot keep the old header layout.
+- All 7 pages now load `style.css?v=20261125b` and `app.js?v=20261125c` so cached copies cannot keep the old header layout.
 - Simulated 375px and 320px layout: brand, menu toggle and WhatsApp circle all stay inside the header container; WhatsApp sits at the far right with no horizontal overflow.
 - `tools/validate_site.py`: `pages=7 plans=48 featured=6 images=54`, `errors=0 warnings=0`; 0 console errors.
 
