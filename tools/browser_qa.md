@@ -1,5 +1,25 @@
 # Browser visual QA
 
+## 2026-11-27 — final live audit
+
+Checked all 7 live pages with cache-busting queries. All lazy images were forced to load before counting.
+
+| Page | Images | Broken | Console errors | Unwanted wording | Bad WhatsApp links |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| `/index.html` | 12 | 0 | 0 | 0 | 0 |
+| `/plans.html` | 54 | 0 | 0 | 0 | 0 |
+| `/plan-detail.html?id=e01` | 2 | 0 | 0 | 0 | 0 |
+| `/centres.html` | 31 | 0 | 0 | 0 | 0 |
+| `/items.html` | 1 | 0 | 0 | 0 | 0 |
+| `/about.html` | 1 | 0 | 0 | 0 | 0 |
+| `/partner.html` | 1 | 0 | 0 | 0 | 0 |
+
+- All pages use 4 versioned meta/icon links and show the required contact details.
+- All WhatsApp links start with `https://wa.me/85246151993`.
+- Homepage shows 5 featured cards; centre list shows 30 centres; no `E06` or removed centre remains.
+- `tools/validate_site.py`: `pages=7 plans=48 featured=5 images=53`, `errors=0 warnings=0`.
+- `tools/verify_live.py`: `errors=0 image_failures=0 ssl_ok=True`; 87 live images checked.
+
 ## 2026-11-25 — E06 plan removed
 
 Removed `e06` / 醫家 EPH2.0 升級檢查計劃（58項）from `data/featured.js`, together with `assets/images/e06.webp` and its build-tool references. Featured plans are now `e01`–`e05`; image references total 53. Validators no longer check E06 phone or addresses. With no remaining plan, 醫家健康體檢中心 no longer appears in the centre list.
