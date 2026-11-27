@@ -1,5 +1,15 @@
 # Browser visual QA
 
+## 2026-11-27 — text-link arrow sizing fix
+
+A follow-up 320px layout audit found that the inline arrow SVG inside `.text-link` had no CSS size, so the browser rendered it at about 297×297px on every page that used those links. Deployed in `8487be8`.
+
+- `assets/css/style.css`: `.text-link svg` is fixed at 16×16 with `flex: 0 0 auto`; `.text-link` now wraps long labels instead of forcing `nowrap` overflow.
+- All 7 pages now load `style.css?v=20261127a` so cached copies cannot keep the oversized icons.
+- Live check after deployment: every `.text-link svg` measures 16px wide and each link sits inside its container; 0 horizontal overflow on all 7 pages at simulated 320px, 0 console errors.
+- `tools/validate_site.py`: `pages=7 plans=48 featured=5 images=53`, `errors=0 warnings=0`.
+- `tools/verify_live.py`: `errors=0 image_failures=0 ssl_ok=True`; 87 live images checked, no failures.
+
 ## 2026-11-27 — final live audit
 
 Checked all 7 live pages with cache-busting queries. All lazy images were forced to load before counting.
