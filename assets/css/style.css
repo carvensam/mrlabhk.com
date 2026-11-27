@@ -57,7 +57,8 @@ button, input, select { font: inherit; }
   color: var(--blue-600); text-transform: uppercase; margin-bottom: 12px;
 }
 .eyebrow::before { content: ""; width: 26px; height: 2px; background: var(--teal-400); border-radius: 2px; }
-.text-link { color: var(--blue-600); font-weight: 700; white-space: nowrap; }
+.text-link { color: var(--blue-600); font-weight: 700; white-space: normal; overflow-wrap: anywhere; }
+.text-link svg { width: 16px; height: 16px; flex: 0 0 auto; vertical-align: -3px; }
 .text-link:hover { text-decoration: underline; }
 
 /* ---------- header ---------- */
