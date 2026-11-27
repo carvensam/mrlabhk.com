@@ -19,6 +19,7 @@ Checked all 7 live pages with cache-busting queries. All lazy images were forced
 - Homepage shows 5 featured cards; centre list shows 30 centres; no `E06` or removed centre remains.
 - `tools/validate_site.py`: `pages=7 plans=48 featured=5 images=53`, `errors=0 warnings=0`.
 - `tools/verify_live.py`: `errors=0 image_failures=0 ssl_ok=True`; 87 live images checked.
+- All 53 detail pages (`e01`–`e05` plus all 48 standard plans) rendered their plan content, with 0 missing-plan fallbacks, 0 broken images and 0 console errors.
 
 ## 2026-11-25 — E06 plan removed
 
