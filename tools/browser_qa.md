@@ -1,5 +1,25 @@
 # Browser visual QA
 
+## 2026-11-27 — post-deploy comprehensive audit
+
+Checked the deployed site again with cache-busting queries after the text-link arrow fix. No files were changed by this audit.
+
+| Page | Images | Broken | Console errors | Banned wording | Bad WhatsApp links |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| `/index.html` | 12 | 0 | 0 | 0 | 0 |
+| `/plans.html` | 54 | 0 | 0 | 0 | 0 |
+| `/plan-detail.html?id=e01` | 2 | 0 | 0 | 0 | 0 |
+| `/centres.html` | 31 | 0 | 0 | 0 | 0 |
+| `/items.html` | 1 | 0 | 0 | 0 | 0 |
+| `/about.html` | 1 | 0 | 0 | 0 | 0 |
+| `/partner.html` | 1 | 0 | 0 | 0 | 0 |
+
+- All 7 pages load `style.css?v=20261127a`; all `.text-link svg` elements measure 16px; no console errors.
+- All pages carry 4 versioned icon links; contact details, slogan `回饋社會．全民體檢`, 5 featured cards and 30 centres remain correct.
+- Re-checked all 53 detail pages (`a01`–`a12`, `c01`–`c12`, `e01`–`e05`, `g01`–`g12`, `w01`–`w12`): every page has a title, substantial detail content, no `找不到此計劃` fallback, no broken images and no console errors.
+- `tools/validate_site.py`: `pages=7 plans=48 featured=5 images=53`, `errors=0 warnings=0`.
+- `tools/verify_live.py`: `errors=0 image_failures=0 ssl_ok=True`; 87 live images checked, no failures.
+
 ## 2026-11-27 — text-link arrow sizing fix
 
 A follow-up 320px layout audit found that the inline arrow SVG inside `.text-link` had no CSS size, so the browser rendered it at about 297×297px on every page that used those links. Deployed in `8487be8`.
